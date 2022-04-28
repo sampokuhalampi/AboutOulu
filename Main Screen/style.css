@@ -44,20 +44,21 @@ h1 {
 
 .dropdown {  
     display: inline-block;
-    position: relative;    
+    position: relative;
 }  
 
 .dropbtn {
     background-color: #f9f9f9;  
     color: black;  
     padding: 10px;  
-    font-size: 12px;  
+    font-size: 16px;  
+    border: 0px;
 }
 
 .dropdown-content {  
     position: center;  
     background-color: lightgrey;  
-    min-width: 20px;  
+    min-width: 20px;
     display: none;  
     z-index: 1;  
    
@@ -83,6 +84,21 @@ h1 {
     padding: 20px;
     text-align: center;
     
+}
+
+.ravintolat {
+    padding: 15px 38px;
+    border: 0px;
+}
+
+.nahtavyydet {
+    padding: 15px 31px;
+    border: 0px;
+}
+
+.aktiviteetit {
+    padding: 15px 38px;
+    border: 0px;
 }
 
 img { 
@@ -112,16 +128,6 @@ img {
         background-color: rgb(200, 200, 200);  
     }  
     
-    .ravintolat {
-        position: right;
-        top: 50px;
+  
     
-    }
-    
-    #nahtavyydet {
-        position: center;
-    }
-    
-    #aktiviteetit {
-        position: center;
-    } */
+   
