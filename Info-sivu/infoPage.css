@@ -4,6 +4,13 @@
     font-family: sans-serif;
 }
 
+.takaisinPainike {
+
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
 .information {
     text-align: center;
     font-family: sans-serif;
