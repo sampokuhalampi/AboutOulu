@@ -11,6 +11,13 @@ body {
     background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
 }
 
+.takaisinPainike {
+
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
 .information {
     font-weight: normal;
     text-align: center;
