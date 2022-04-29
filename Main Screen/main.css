@@ -7,26 +7,27 @@
     padding: 10px;
     background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
 }
+
 body {
     background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
     position: relative;
 }
+
 .information {
     text-align: center;
     font-family: sans-serif;
 }
 
 .info {
-
     position: absolute;
     left: 0;
     top: 8px;
 }
 
 h3 {
-
     font-weight: normal;
 }
+
 h1 {
     margin: 0;
     display: inline-block;
@@ -45,15 +46,11 @@ h1 {
 
 .dropdown {  
     width : 200px; 
-    
     margin : 20px auto; 
     position: relative;
     z-index: 20;
-    display: inline-block;
-    
+    display: inline-block;  
 }  
-
-
 
 .dropdown-content {  
     clear:both;
@@ -62,11 +59,9 @@ h1 {
     overflow: hidden;
     text-align: center;
     background-color: rgb(190, 200, 229);
-    
     transition: height .4s ease;
     margin-top: 0px;
     position: absolute;
-   
 }
 
 #dropdown-content li button {
@@ -74,7 +69,6 @@ h1 {
     color : #2d2f31;
     display: block;
     border: none;
-    
 }
 
 .dropdown-content li {
@@ -83,11 +77,6 @@ h1 {
     text-align: center;
 }
 
-
-
-
-
-  
   span {
     padding : 15px;
     background : #2d2f31; 
@@ -96,16 +85,12 @@ h1 {
     font-variant : small-caps;
     cursor : pointer;
     display: block;
-    
-  }
+}
   
   span::after {
     float: right;
     right: 10%;
-    
-  }
-
-
+}
 
 button {
     border: none;
@@ -118,17 +103,13 @@ button {
     outline: none;
 }
 
-
-  
 #touch {
     position: absolute; opacity: 0; height: 0px;
 }    
   
 #touch:checked + .dropdown-content {
-    height: 125px;
-    
+    height: 125px;   
 } 
-
 
 .mainfeed {
     display: block;
@@ -137,11 +118,7 @@ button {
     padding: 20px;
     text-align: center;
     position: relative;
-    
 }
-/* 
-Muuta näiden arvoja vielä että on oikean kokoinen */
-
 
 img { 
     width: 35%;
@@ -154,23 +131,17 @@ img {
 
 #mainpic1 {
     grid-column-start: 1;
-    grid-column-end: 3;
-    
+    grid-column-end: 3; 
 }
 
 #mainpic3 {
     grid-row-start: 2;
     grid-row-end: 4;
 }
+
 #mainpic4 {
     grid-column-start: 2;
     grid-column-end: 4;
 }
 
-
-  
-    /* .dropdown:hover .dropbtn {  
-        background-color: rgb(200, 200, 200);  
-    }  
-    
   
