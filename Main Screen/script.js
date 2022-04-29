@@ -15,8 +15,7 @@ button.onClick = ravintolat () ({
 })
 
 function nahtavyydet() {
-    // location.href = "/Ravintolat/index.html"
-    location.href = "/Info-sivu/infoPage.html"
+    location.href = "/Kategoriat/Nähtävyydet/nahtavyydet.html"
 
 }
 
@@ -24,12 +23,10 @@ button.onClick = nahtavyydet () ({
 
 })
 
-function aktiviteetit() {
-    // location.href = "/Ravintolat/index.html"
-    location.href = "/Info-sivu/infoPage.html"
-
+function hotellit() {
+    location.href = "/Kategoriat/Hotellit/hotellit.html"
 }
 
-button.onClick = aktiviteetit () ({
+    button.onClick = aktiviteetit () ({
 
 })
