@@ -2,6 +2,11 @@
     background-color: #f9f9f9;
     text-align: center;
     font-family: sans-serif;
+    background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
 }
 
 .information {
@@ -29,4 +34,10 @@ h1 {
     font-weight: normal;
     font-family: sans-serif;
     text-align: center;
+}
+
+.kohteenKuva {
+    max-width: 50%;
+    max-height: 50%;
+
 }
