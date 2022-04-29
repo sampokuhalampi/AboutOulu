@@ -1,0 +1,177 @@
+.heading {
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
+}
+body {
+    background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
+    position: relative;
+}
+.information {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.info {
+
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+h3 {
+
+    font-weight: normal;
+}
+h1 {
+    margin: 0;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.button1 {
+    position: absolute;
+    left: 0;
+}
+
+.header1 {
+
+    display: inline-block;
+}
+
+.dropdown {  
+    width : 200px; 
+    background: rgb(190, 200, 229);;
+    margin : 20px auto; 
+    position: relative;
+    z-index: 20;
+
+    
+}  
+
+
+
+.dropdown-content {  
+    clear:both;
+    width: auto;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    
+    transition: height .4s ease;
+    margin-top: 0px;
+    position: absolute;
+    
+    
+    
+    
+   
+}  
+
+
+
+
+  
+  span {
+    padding : 15px;
+    background : #2d2f31; 
+    color : white;
+    font-size : 1.2em;
+    font-variant : small-caps;
+    cursor : pointer;
+    display: block;
+    
+  }
+  
+  span::after {
+    float: right;
+    right: 10%;
+    
+  }
+
+
+
+button {
+    border: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
+#dropdown-content li button {
+    text-decoration : none; 
+    color : #2d2f31;
+    display: block;
+    border: none;
+}
+
+.dropdown-content li {
+    padding : 10px;
+    list-style: none;
+    text-align: center;
+}
+
+  
+#touch {
+    position: absolute; opacity: 0; height: 0px;
+}    
+  
+#touch:checked + .dropdown-content {
+    height: 125px;
+    
+} 
+
+
+.mainfeed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    
+}
+/* 
+Muuta näiden arvoja vielä että on oikean kokoinen */
+
+
+img { 
+    width: 35%;
+    height: 35%;
+    border-radius: 5px;
+    align-items: center;
+    object-fit: cover;
+    position: relative;
+}
+
+#mainpic1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+
+#mainpic3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#mainpic4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+  
+    /* .dropdown:hover .dropbtn {  
+        background-color: rgb(200, 200, 200);  
+    }  
+    
+  
+
+   
