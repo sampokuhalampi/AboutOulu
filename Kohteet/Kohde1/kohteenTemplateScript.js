@@ -5,3 +5,4 @@ function takaisin () {
 button.onClick = takaisin () ({
     
 })
+
