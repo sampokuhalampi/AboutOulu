@@ -45,11 +45,11 @@ h1 {
 
 .dropdown {  
     width : 200px; 
-    background: rgb(190, 200, 229);;
+    
     margin : 20px auto; 
     position: relative;
     z-index: 20;
-
+    display: inline-block;
     
 }  
 
@@ -57,20 +57,32 @@ h1 {
 
 .dropdown-content {  
     clear:both;
-    width: auto;
+    width: 100%;
     height: 0px;
     overflow: hidden;
     text-align: center;
+    background-color: rgb(190, 200, 229);
     
     transition: height .4s ease;
     margin-top: 0px;
     position: absolute;
-    
-    
-    
-    
    
-}  
+}
+
+#dropdown-content li button {
+    text-decoration : none; 
+    color : #2d2f31;
+    display: block;
+    border: none;
+    
+}
+
+.dropdown-content li {
+    padding : 10px;
+    list-style: none;
+    text-align: center;
+}
+
 
 
 
@@ -105,18 +117,7 @@ button {
     cursor: pointer;
     outline: none;
 }
-#dropdown-content li button {
-    text-decoration : none; 
-    color : #2d2f31;
-    display: block;
-    border: none;
-}
 
-.dropdown-content li {
-    padding : 10px;
-    list-style: none;
-    text-align: center;
-}
 
   
 #touch {
@@ -173,5 +174,3 @@ img {
     }  
     
   
-
-   
