@@ -14,10 +14,64 @@
     <div class="heading">
         <h1 class="header1">AboutOulu</h1>
         <h3>Hotellit</h3>
-    <div class="takaisin">
-        <button onclick="takaisin()" style="height:40px; width:100px; border-radius: 8%; background-color: rgb(190, 200, 229);">Takaisin</button>
+        <div class="takaisin">
+            <button onclick="takaisin()"
+                style="height:40px; width:100px; border-radius: 8%; background-color: rgb(190, 200, 229);">Takaisin</button>
+        </div>
     </div>
+    <div class="hakuboksi">
+        <form action="" onsubmit="return false">
+            <input type="text" id="haku" placeholder="Hae hotellia">
+        </form>
     </div>
-    
+    <div class="dropdown">
+        <nav></nav>
+
+        <label for="touch"><span>Rajaus</span></label>
+        <input type="checkbox" id="touch">
+        <div class="dropdown-content" style="list-style-type:none;">
+            <div class="container">
+                <h3>Rajaus</h3>
+                <div class="filterboksi">
+                    <a href="#" class="btn active" data-filter="kaikki">Kaikki</a>
+                    <a href="#" class="btn" data-filter="aikuisille">Vain aikuisille</a>
+                    <a href="#" class="btn" data-filter="netti">Ilmainen nettiyhteys</a>
+                    <a href="#" class="btn" data-filter="lapset">Lapsiystävällinen</a>
+                    <a href="#" class="btn" data-filter="peruutus">Ilmainen peruutus</a>
+                    <a href="#" class="btn" data-filter="maksu">Maksa paikanpäällä</a>
+                    <a href="#" class="btn" data-filter="aamupala">Aamiainen sisältyy</a>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="mainfeed"></div>
+        <div class="hotelli">
+            <section class="container" id="hotellit">
+                <div class="Scandic">
+                    <div class="hotelienTiedot">
+                        <img id="mainpic1" src="/Kuvat/Main_page/img.main_scandic.jpeg" alt="Scandic Oulu">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="Sokos">
+                    <div class="hotelienTiedot">
+                        <img id="mainpic3" src="/Kuvat/Main_page/img.main_sokoshotel.jpeg" alt="Sokos">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="Radisson">
+                    <div class="hotelienTiedot">
+                        <img id="mainpic4" src="/Kuvat/Main_page/img.main_radisson.jpeg" alt="Radisson blu">
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </main>
 </body>
+
 </html>
