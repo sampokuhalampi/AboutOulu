@@ -15,7 +15,7 @@
         <h1 class="logo">AboutOulu</h1>
     </div>
     <div class="takaisinPainike">
-        <button onClick="takaisin()" style="height:40px; width:100px; border-radius: 8%;">Takaisin</button>     
+        <button onClick="takaisin()" style="height:40px; width:100px; border-radius: 8%;">Takaisin</button>
     </div>
     <div>
         <h3 class="paikannimi">(Paikannimi)</h3>
@@ -26,11 +26,34 @@
     <div>
         (Kuvaus paikasta, osoite, yhteystiedot, varausmahdollisuudet,...)
     </div>
-    <div>
-        <input type="text" id="comment-box" placeholder="Enter comment">
-        <button id="post">Post</button>
-        <ul id="unordered">
-        </ul>
+
+    <div id="container"></div>
+
     </div>
+    <div class="form">
+        <h5 class="ekaotsikko">Lisää kommentti</h5>
+        <div class="otsikkoBoksi">
+            <input type="text" id="name" placeholder="Nimesi"/> <br><br>
+        </div>
+        <div class="nimiBoksi">
+            <input type="text" id="otsikko" placeholder="Otsikko"/> <br><br>
+        </div>
+        <div class="kommenttiBoksi">
+            <textarea rows="5" col="30" id="bodyText" placeholder="Kommenttisi"></textarea><br><br>
+        </div>
+        <input type="button" id="addComment" value="Julkaise" />
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="kohteenTemplateScript.js" ></script>
 </body>
+
 </html>
+
+<!-- 
+<div>
+    <input type="text" id="comment-box" placeholder="Enter comment">
+    <button id="post">Post</button>
+    <ul id="unordered">
+    </ul>
+</div> -->
