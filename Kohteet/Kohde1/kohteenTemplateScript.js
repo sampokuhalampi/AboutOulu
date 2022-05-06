@@ -1,7 +1,9 @@
 function render(data) {
   var html =
-    "<div class='commentBox'><div class='leftPanelImg'></div><div class='rightPanel'><span>" +
+    "<div class='kommenttiBoksi'><div class='leftPanelImg'></div><div class='rightPanel'><span>" +
     data.name +
+    "</div><p>" +
+    data.title +
     "</div><p>" +
     data.body +
     "</p></div><div class='clear'></div></div>";
@@ -10,7 +12,9 @@ function render(data) {
 }
 
 $(document).ready(function () {
-  var comment = [{ name: "Testikäyttäjä", body: "Ihan hieno paikka" }];
+  var comment = [
+    { name: "Testikäyttäjä", title: "Suosittelen", body: "Ihan hieno paikka" },
+  ];
 
   for (var i = 0; i < comment.length; i++) {
     render(comment[i]);
@@ -19,12 +23,14 @@ $(document).ready(function () {
   $("#addComment").click(function () {
     var addObj = {
       name: $("#name").val(),
+      title: $("#title").val(),
       body: $("#bodyText").val(),
     };
 
     comment.push(addObj);
     render(addObj);
     $("#name").val("");
+    $("#title").val("");
     $("#bodyText").val("");
   });
 });
