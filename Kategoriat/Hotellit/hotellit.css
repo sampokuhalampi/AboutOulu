@@ -1,19 +1,4 @@
-.heading {
-    background-color: #f9f9f9;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: normal;
-    font-size: 100%;
-    padding: 10px;
-    background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
-}
-body {
-    background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
-}
-.information {
-    text-align: center;
-    font-family: sans-serif;
-}
+
 
 .takaisin {
 
@@ -180,19 +165,3 @@ img {
     position: relative;
 }
 
-#mainpic1 {
-    grid-column-start: 1;
-    grid-column-end: 3; 
-}
-
-#mainpic3 {
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-
-#mainpic4 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-  

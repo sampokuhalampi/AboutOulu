@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ravintolat</title>
+    <title>Hotellit</title>
     <link href="hotellit.css" rel="stylesheet">
     <script src="hotellit.js" defer></script>
 </head>
@@ -34,44 +34,46 @@
                 <h3>Rajaus</h3>
                 <div class="filterboksi">
                     <a href="#" class="btn active" data-filter="kaikki">Kaikki</a>
+                    <input type="checkbox" id="kaikkiCB" />
                     <a href="#" class="btn" data-filter="aikuisille">Vain aikuisille</a>
+                    <input type="checkbox" id="aikuisetCB" />
                     <a href="#" class="btn" data-filter="netti">Ilmainen nettiyhteys</a>
+                    <input type="checkbox" id="nettiCB" />
                     <a href="#" class="btn" data-filter="lapset">Lapsiystävällinen</a>
+                    <input type="checkbox" id="lapsetCB" />
+                    <br>
                     <a href="#" class="btn" data-filter="peruutus">Ilmainen peruutus</a>
+                    <input type="checkbox" id="peruutusCB" />
                     <a href="#" class="btn" data-filter="maksu">Maksa paikanpäällä</a>
+                    <input type="checkbox" id="maksuCB" />
                     <a href="#" class="btn" data-filter="aamupala">Aamiainen sisältyy</a>
+                    <input type="checkbox" id="aamupalaCB" />
                 </div>
             </div>
         </div>
         </nav>
     </div>
 
-    <main>
-        <div class="mainfeed"></div>
-        <div class="hotelli">
-            <section class="container" id="hotellit">
-                <div class="Scandic">
-                    <div class="hotelienTiedot">
-                        <img id="mainpic1" src="/Kuvat/Main_page/img.main_scandic.jpeg" alt="Scandic Oulu">
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <div class="Sokos">
-                    <div class="hotelienTiedot">
-                        <img id="mainpic3" src="/Kuvat/Main_page/img.main_sokoshotel.jpeg" alt="Sokos">
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <div class="Radisson">
-                    <div class="hotelienTiedot">
-                        <img id="mainpic4" src="/Kuvat/Main_page/img.main_radisson.jpeg" alt="Radisson blu">
-                        <a href="#"></a>
-                    </div>
-                </div>
-            </section>
+
+    <div class="mainfeed">
+        <div class="rivi">
+        <div class="scandic">
+            <img id="mainpic1" src="/Kuvat/Main_page/img.main_scandic.jpeg" alt="Scandic Oulu">
+            <a href="#"></a>
         </div>
+        <div class="sokos">
+            <img id="mainpic3" src="/Kuvat/Main_page/img.main_sokoshotel.jpeg" alt="Sokos">
+            <a href="#"></a>
         </div>
-    </main>
+    </div>
+        <div class="radisson">
+            <p>
+                <a href="/Kohde/Hotellit/Radisson Blu/radisson.html">
+                    <img id="mainpic4" src="/Kuvat/Main_page/img.main_radisson.jpeg" alt="Radisson blu">
+                </a>
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>

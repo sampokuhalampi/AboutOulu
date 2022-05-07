@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radisson Blu Oulu</title>
+    <link href="radisson.css" rel="stylesheet">
+    <script src="radisson.js" defer></script>
+</head>
+
+<body>
+    <div class="heading">
+        <h1 class="logo">AboutOulu</h1>
+    </div>
+    <div class="takaisinPainike">
+        <button onClick="takaisin()" style="height:40px; width:100px; border-radius: 8%;">Takaisin</button>
+    </div>
+    <div>
+        <h2 class="paikannimi">Radisson Blu</h2>
+    </div>
+    <div class="kohteenKuva">
+        <img src="/Kuvat/Main_page/img.main_radisson.jpeg" alt="Kohteen kuva">
+    </div>
+    <div class="Radissonkuvaus">
+        <div class style="padding: 10px">Radisson Blu Hotel, Oulu palkittiin Suomen parhaana ylellisenä kaupunkihotellina
+            World Luxury Hotel Awards -palkintojen vuosittaisessa äänestyksessä. Hotelli uudistettiin täysin vuoden 2020
+            loppupuolella, ja se tarjoaa sekä huomaavaista asiakaspalvelua että ensiluokkaiset puitteet. Tämä Oulun
+            keskustassa sijaitseva hotellimme on lähellä kaupungin suosituimpia nähtävyyksiä, ravintoloita ja
+            ostospaikkoja. Hotelliin on myös helppo päästä, sillä se sijaitsee vain 14 km:n päässä Oulun lentoasemalta
+            ja 10 minuutin kävelymatkan päässä Oulun rautatieasemalta. </div>
+
+        <div class style="padding: 10px">Hallituskatu 1, Oulu 90100, Suomi</div>
+        <div class>Yhteystiedot <br>puh: +358 10 7845 049 <br> Sähköposti: info.oulu@radissonblu.com</div>
+        
+    </div>
+
+    <div id="container"></div>
+
+
+    <div class="form">
+        <h5 class="ekaotsikko">Lisää kommentti</h5>
+        <div class="nimiBoksi">
+            <input type="text" id="name" placeholder="Nimi" /> <br><br>
+        </div>
+        <div class="otsikkoBoksi">
+            <input type="text" id="title" placeholder="Otsikko" /> <br><br>
+        </div>
+        <div class="kommenttiBoksi">
+            <textarea rows="5" col="30" id="bodyText" placeholder="Kommentti"></textarea><br><br>
+        </div>
+
+        <div>
+
+            <input type="checkbox" id="sahkopostiCheckbox" />
+            <input type="text" id="sahkoposti" disabled placeholder="Sähköposti" />
+
+            <input type="button" id="addComment" value="Julkaise" />
+        </div>
+
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="kohteenTemplateScript.js"></script>
+</body>
+
+</html>
