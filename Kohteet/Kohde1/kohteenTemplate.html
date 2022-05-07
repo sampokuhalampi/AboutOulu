@@ -29,25 +29,42 @@
 
     <div id="container"></div>
 
- 
+
     <div class="form">
-        <h5 class="ekaotsikko">Lisää kommentti</h5>
-        <div class="nimiBoksi">
-            <input type="text" id="name" placeholder="Nimi" /> <br><br>
-        </div>
-        <div class="otsikkoBoksi">
-            <input type="text" id="title" placeholder="Otsikko" /> <br><br>
-        </div>
-        <div class="kommenttiBoksi">
-            <textarea rows="5" col="30" id="bodyText" placeholder="Kommentti"></textarea><br><br>
+        <div class="kommenttiKentat">
+            <h5 class="ekaotsikko">Lisää kommentti</h5>
+            <div class="nimiBoksi">
+                <input type="text" id="name" placeholder="Nimi" /> <br><br>
+            </div>
+            <div class="otsikkoBoksi">
+                <input type="text" id="title" placeholder="Otsikko" /> <br><br>
+            </div>
+            <div class="kommenttiBoksi">
+                <textarea rows="5" col="30" id="bodyText" placeholder="Kommentti"></textarea><br><br>
+            </div>
+
         </div>
 
-        <div>
-           
-            <input type="checkbox" id="sahkopostiCheckbox" />
-            <input type="text" id="sahkoposti" disabled placeholder="Sähköposti" />
+        <div class="yhteydenottoBoksi">
 
-            <input type="button" id="addComment" value="Julkaise" />
+            <div class="yhtotTeksti">
+                Minuun saa ottaa yhteyttä
+            </div>
+            <div class="yhteydenotto">
+                <input type="checkbox" id="sahkopostiCheckbox" />
+                <input type="text" id="sahkoposti" disabled placeholder="Sähköposti" />
+                <div class="arvostelu">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                </div>
+            </div>
+        </div>
+        
+        <div class="julkaisuNappi">
+            <input type="button" id="lisaaKommentti" value="Julkaise" />
         </div>
 
 
@@ -59,3 +76,27 @@
 </body>
 
 </html>
+
+<!--  
+<div class="form">
+    <h5 class="ekaotsikko">Lisää kommentti</h5>
+    <div class="nimiBoksi">
+        <input type="text" id="name" placeholder="Nimi" /> <br><br>
+    </div>
+    <div class="otsikkoBoksi">
+        <input type="text" id="title" placeholder="Otsikko" /> <br><br>
+    </div>
+    <div class="kommenttiBoksi">
+        <textarea rows="5" col="30" id="bodyText" placeholder="Kommentti"></textarea><br><br>
+    </div>
+
+    <div>
+       
+        <input type="checkbox" id="sahkopostiCheckbox" />
+        <input type="text" id="sahkoposti" disabled placeholder="Sähköposti" />
+
+        <input type="button" id="addComment" value="Julkaise" />
+    </div>
+
+
+</div> -->

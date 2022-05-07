@@ -39,7 +39,7 @@ $(document).ready(function () {
     render(comment[i]);
   }
 
-  $("#addComment").click(function () {
+  $("#lisaaKommentti").click(function () {
     var addObj = {
       name: $("#name").val(),
       title: $("#title").val(),
