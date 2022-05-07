@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Main page</title>
+    <title>KohteenTemplate</title>
     <link href="KohteenTemplateStyle.css" rel="stylesheet">
     <script src="kohteenTemplateScript.js" defer></script>
 </head>
@@ -29,31 +29,33 @@
 
     <div id="container"></div>
 
-    </div>
+ 
     <div class="form">
         <h5 class="ekaotsikko">Lisää kommentti</h5>
         <div class="nimiBoksi">
-            <input type="text" id="name" placeholder="Nimesi"/> <br><br>
+            <input type="text" id="name" placeholder="Nimi" /> <br><br>
         </div>
         <div class="otsikkoBoksi">
-            <input type="text" id="title" placeholder="Otsikko"/> <br><br>
+            <input type="text" id="title" placeholder="Otsikko" /> <br><br>
         </div>
         <div class="kommenttiBoksi">
-            <textarea rows="5" col="30" id="bodyText" placeholder="Kommenttisi"></textarea><br><br>
+            <textarea rows="5" col="30" id="bodyText" placeholder="Kommentti"></textarea><br><br>
         </div>
-        <input type="button" id="addComment" value="Julkaise" />
+
+        <div>
+           
+            <input type="checkbox" id="sahkopostiCheckbox" />
+            <input type="text" id="sahkoposti" disabled placeholder="Sähköposti" />
+
+            <input type="button" id="addComment" value="Julkaise" />
+        </div>
+
+
     </div>
-    
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="kohteenTemplateScript.js" ></script>
+    <script src="kohteenTemplateScript.js"></script>
 </body>
 
 </html>
-
-<!-- 
-<div>
-    <input type="text" id="comment-box" placeholder="Enter comment">
-    <button id="post">Post</button>
-    <ul id="unordered">
-    </ul>
-</div> -->

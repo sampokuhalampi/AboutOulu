@@ -1,19 +1,38 @@
+document.getElementById("sahkopostiCheckbox").onchange = function () {
+  document.getElementById("sahkoposti").disabled = !this.checked;
+};
+
 function render(data) {
   var html =
-    "<div class='kommenttiBoksi'><div class='leftPanelImg'></div><div class='rightPanel'><span>" +
+    "<div class='kommentti'><div>" +
+    "<div class='nimiKommentti'>" +
     data.name +
-    "</div><p>" +
+    "</div>" +
+    "</div>" +
+    "<div class='otsikkoKommentti'>" +
     data.title +
-    "</div><p>" +
+    "</div>" +
+    "<br>" +
+    "<div class='kommenttiKommentti'>" +
     data.body +
-    "</p></div><div class='clear'></div></div>";
+    "</div>" +
+    "<br>" +
+    "<div class='sahkopostiKommentti'>" +
+    data.email +
+    "</div>" +
+    "</div></div>";
 
   $("#container").append(html);
 }
 
 $(document).ready(function () {
   var comment = [
-    { name: "Testikäyttäjä", title: "Suosittelen", body: "Ihan hieno paikka" },
+    {
+      name: "Testikäyttäjä",
+      title: "Suosittelen",
+      body: "Ihan hieno paikka",
+      email: "testi@testi.com",
+    },
   ];
 
   for (var i = 0; i < comment.length; i++) {
@@ -25,13 +44,15 @@ $(document).ready(function () {
       name: $("#name").val(),
       title: $("#title").val(),
       body: $("#bodyText").val(),
+      email: $("#sahkoposti").val(),
     };
 
-    comment.push(addObj);
+    //comment.push(addObj);
     render(addObj);
     $("#name").val("");
     $("#title").val("");
     $("#bodyText").val("");
+    $("#sahkoposti").val("");
   });
 });
 
@@ -40,3 +61,18 @@ function takaisin() {
 }
 
 button.onClick = takaisin()({});
+
+// if (document.getElementById("sahkopostiCheckbox").checked) {
+//   comment.push(addObj);
+//   render(addObj);
+//   $("#name").val("");
+//   $("#title").val("");
+//   $("#bodyText").val("");
+//   $("#sahkoposti").val("");
+// } else {
+//   comment.push(addObj);
+//   render(addObj);
+//   $("#name").val("");
+//   $("#title").val("");
+//   $("#bodyText").val("");
+// }

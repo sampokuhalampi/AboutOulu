@@ -20,7 +20,6 @@ h1 {
 }
 
 .takaisinPainike {
-
     position: absolute;
     left: 0;
     top: 8px;
@@ -58,18 +57,10 @@ h1 {
     
 }
 
-
 .form input[type="text"], .form textarea, .form input[type="date"]{
     border: 1px solid #000;
     padding: 2px;
     width: 300px;
-}
-
-.kommentti {
-    position: absolute;
-    left: 2;
-    
-    
 }
 
 .otsikko {
@@ -78,10 +69,14 @@ h1 {
   
 }
 
-.kommenttiBoksi {
+.kommentti {
+    padding: 1%;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #000;
+    background-color: #91a6ec;
+    margin-bottom: 10px;
     text-align: center;
-   border: 1px firebrick;
-   color: red;
 }
 
 .otsikkoBoksi {
@@ -98,3 +93,28 @@ h1 {
     height: 100%;
     border: #000;
 }
+
+.nimiKommentti {
+    color: red;
+    padding: 1%;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #000;
+    background-color: #91a6ec;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.otsikkoKommentti {
+    color: pink;
+}
+
+.kommenttiKommentti {
+    color: yellow;
+}
+
+.sahkopostiKommentti {
+    color: skyblue;
+}
+
+
