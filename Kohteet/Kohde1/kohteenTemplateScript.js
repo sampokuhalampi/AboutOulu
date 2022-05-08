@@ -36,8 +36,30 @@ document.getElementById("sahkopostiCheckbox").onchange = function () {
 };
 
 function render(data) {
-  if (data.email == undefined) {
+  console.log("arvosana: " + arvosana);
+  var arvosana = tarkistaRadiobutton();
+
+  if (data.email == undefined && arvosana == undefined) {
     console.log("email undefined");
+
+    var html =
+      "<div class='kommentti'><div>" +
+      "<div class='nimiKommentti'>" +
+      data.name +
+      "</div>" +
+      "</div>" +
+      "<div class='otsikkoKommentti'>" +
+      data.title +
+      "</div>" +
+      "<br>" +
+      "<div class='kommenttiKommentti'>" +
+      data.body +
+      "</div>" +
+      "</div></div>";
+  }
+  if (data.email != undefined && arvosana != undefined) {
+    console.log("email accepted");
+
     var html =
       "<div class='kommentti'><div>" +
       "<div class='nimiKommentti'>" +
@@ -52,8 +74,40 @@ function render(data) {
       data.body +
       "</div>" +
       "<br>" +
+      "<div class='sahkopostiKommentti'>" +
+      data.email +
+      "</div>" +
+      "<br>" +
+      "<div class='arvosanaKommentti'>" +
+      "Arvosana: " +
+      tarkistaRadiobutton() +
+      "</div>" +
       "</div></div>";
-  } else {
+  }
+  if (data.email == undefined && arvosana != undefined) {
+    console.log("email undefined");
+
+    var html =
+      "<div class='kommentti'><div>" +
+      "<div class='nimiKommentti'>" +
+      data.name +
+      "</div>" +
+      "</div>" +
+      "<div class='otsikkoKommentti'>" +
+      data.title +
+      "</div>" +
+      "<br>" +
+      "<div class='kommenttiKommentti'>" +
+      data.body +
+      "</div>" +
+      "<br>" +
+      "<div class='arvosanaKommentti'>" +
+      "Arvosana: " +
+      tarkistaRadiobutton() +
+      "</div>" +
+      "</div></div>";
+  }
+  if (data.email != undefined && arvosana == undefined) {
     console.log("email accepted");
 
     var html =
@@ -95,6 +149,7 @@ $(document).ready(function () {
 
   $("#addComment").click(function () {
     console.log("julkaise");
+    tarkistaRadiobutton();
 
     const cb = document.querySelector("#sahkopostiCheckbox");
 
@@ -134,3 +189,26 @@ function takaisin() {
 }
 
 //button.onClick = takaisin()({});
+
+function tarkistaRadiobutton() {
+  if (document.getElementById("t1").checked == true) {
+    console.log("1");
+    return 1;
+  }
+  if (document.getElementById("t2").checked == true) {
+    console.log("2");
+    return 2;
+  }
+  if (document.getElementById("t3").checked == true) {
+    console.log("3");
+    return 3;
+  }
+  if (document.getElementById("t4").checked == true) {
+    console.log("4");
+    return 4;
+  }
+  if (document.getElementById("t5").checked == true) {
+    console.log("5");
+    return 5;
+  }
+}
