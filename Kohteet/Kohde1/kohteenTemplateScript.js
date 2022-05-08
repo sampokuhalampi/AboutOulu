@@ -1,3 +1,36 @@
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
 document.getElementById("sahkopostiCheckbox").onchange = function () {
   document.getElementById("sahkoposti").disabled = !this.checked;
 };
@@ -28,10 +61,10 @@ function render(data) {
 $(document).ready(function () {
   var comment = [
     {
-      name: "Testikäyttäjä",
+      name: "Antte",
       title: "Suosittelen",
-      body: "Ihan hieno paikka",
-      email: "testi@testi.com",
+      body: "Viihdyimme perheeni kanssa hotellissa 4 yötä. Aamiainen sekä asiakaspalvelu olivat loistavia. Voin hyvällä mielin suositella hotellia kaikille!",
+      email: "antte.heatta@gmail.com",
     },
   ];
 
@@ -39,7 +72,7 @@ $(document).ready(function () {
     render(comment[i]);
   }
 
-  $("#lisaaKommentti").click(function () {
+  $("#addComment").click(function () {
     var addObj = {
       name: $("#name").val(),
       title: $("#title").val(),
@@ -61,18 +94,3 @@ function takaisin() {
 }
 
 button.onClick = takaisin()({});
-
-// if (document.getElementById("sahkopostiCheckbox").checked) {
-//   comment.push(addObj);
-//   render(addObj);
-//   $("#name").val("");
-//   $("#title").val("");
-//   $("#bodyText").val("");
-//   $("#sahkoposti").val("");
-// } else {
-//   comment.push(addObj);
-//   render(addObj);
-//   $("#name").val("");
-//   $("#title").val("");
-//   $("#bodyText").val("");
-// }
