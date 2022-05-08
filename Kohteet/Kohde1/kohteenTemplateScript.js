@@ -152,8 +152,11 @@ $(document).ready(function () {
     tarkistaRadiobutton();
 
     const cb = document.querySelector("#sahkopostiCheckbox");
+    const sahkopostiKentta = document.querySelector("#sahkoposti");
 
-    if (cb.checked == true) {
+    var nimi = getElementById("#name");
+
+    if (cb.checked == true && sahkopostiKentta.length != 0) {
       console.log("checkbox checked (addComment)");
       var addObj = {
         name: $("#name").val(),
