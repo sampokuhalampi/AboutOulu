@@ -36,24 +36,45 @@ document.getElementById("sahkopostiCheckbox").onchange = function () {
 };
 
 function render(data) {
-  var html =
-    "<div class='kommentti'><div>" +
-    "<div class='nimiKommentti'>" +
-    data.name +
-    "</div>" +
-    "</div>" +
-    "<div class='otsikkoKommentti'>" +
-    data.title +
-    "</div>" +
-    "<br>" +
-    "<div class='kommenttiKommentti'>" +
-    data.body +
-    "</div>" +
-    "<br>" +
-    "<div class='sahkopostiKommentti'>" +
-    data.email +
-    "</div>" +
-    "</div></div>";
+  if (data.email == undefined) {
+    console.log("email undefined");
+    var html =
+      "<div class='kommentti'><div>" +
+      "<div class='nimiKommentti'>" +
+      data.name +
+      "</div>" +
+      "</div>" +
+      "<div class='otsikkoKommentti'>" +
+      data.title +
+      "</div>" +
+      "<br>" +
+      "<div class='kommenttiKommentti'>" +
+      data.body +
+      "</div>" +
+      "<br>" +
+      "</div></div>";
+  } else {
+    console.log("email accepted");
+
+    var html =
+      "<div class='kommentti'><div>" +
+      "<div class='nimiKommentti'>" +
+      data.name +
+      "</div>" +
+      "</div>" +
+      "<div class='otsikkoKommentti'>" +
+      data.title +
+      "</div>" +
+      "<br>" +
+      "<div class='kommenttiKommentti'>" +
+      data.body +
+      "</div>" +
+      "<br>" +
+      "<div class='sahkopostiKommentti'>" +
+      data.email +
+      "</div>" +
+      "</div></div>";
+  }
 
   $("#container").append(html);
 }
@@ -73,19 +94,38 @@ $(document).ready(function () {
   }
 
   $("#addComment").click(function () {
-    var addObj = {
-      name: $("#name").val(),
-      title: $("#title").val(),
-      body: $("#bodyText").val(),
-      email: $("#sahkoposti").val(),
-    };
+    console.log("julkaise");
 
-    //comment.push(addObj);
-    render(addObj);
-    $("#name").val("");
-    $("#title").val("");
-    $("#bodyText").val("");
-    $("#sahkoposti").val("");
+    const cb = document.querySelector("#sahkopostiCheckbox");
+
+    if (cb.checked == true) {
+      console.log("checkbox checked (addComment)");
+      var addObj = {
+        name: $("#name").val(),
+        title: $("#title").val(),
+        body: $("#bodyText").val(),
+        email: $("#sahkoposti").val(),
+      };
+      //comment.push(addObj);
+      render(addObj);
+      $("#name").val("");
+      $("#title").val("");
+      $("#bodyText").val("");
+      $("#sahkoposti").val("");
+    } else {
+      console.log("checkbox unchecked (addComment)");
+      var addObj = {
+        name: $("#name").val(),
+        title: $("#title").val(),
+        body: $("#bodyText").val(),
+      };
+
+      //comment.push(addObj);
+      render(addObj);
+      $("#name").val("");
+      $("#title").val("");
+      $("#bodyText").val("");
+    }
   });
 });
 
@@ -93,4 +133,4 @@ function takaisin() {
   location.href = "/Main Screen/main.html";
 }
 
-button.onClick = takaisin()({});
+//button.onClick = takaisin()({});
