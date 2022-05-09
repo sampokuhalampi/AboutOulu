@@ -2,64 +2,63 @@ function takaisin() {
   location.href = "/Main Screen/main.html";
 }
 
-button.onClick = takaisin()({});
+//button.onClick = takaisin()({});
 
-function search() {
-  console.log("testi");
-  if (document.getElementById("aikuisetCB").checked == true) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "none";
-  }
-  if (document.getElementById("aikuisetCB").checked == false) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "";
-  }
+function search() {}
 
-  if (document.getElementById("aikuisetCB").checked == true) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "none";
-  }
-  if (document.getElementById("aikuisetCB").checked == false) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "";
-  }
+//   if (document.getElementById("aikuisetCB").checked == true) {
+//     console.log("aikuiset");
+//     document.getElementById("scandic").style.display = "none";
+//   }
+//   if (document.getElementById("aikuisetCB").checked == false) {
+//     console.log("aikuiset");
+//     document.getElementById("scandic").style.display = "";
+//   }
 
-  if (document.getElementById("aikuisetCB").checked == true) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "none";
-  }
-  if (document.getElementById("aikuisetCB").checked == false) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "";
-  }
+//   if (document.getElementById("nettiCB").checked == true) {
+//     console.log("netti");
+//     document.getElementById("").style.display = "none";
+//   }
+//   if (document.getElementById("nettiCB").checked == false) {
+//     console.log("netti");
+//     document.getElementById("").style.display = "";
+//   }
 
-  if (document.getElementById("aikuisetCB").checked == true) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "none";
-  }
-  if (document.getElementById("aikuisetCB").checked == false) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "";
-  }
+//   if (document.getElementById("lapsetCB").checked == true) {
+//     console.log("lapset");
+//     document.getElementById("").style.display = "none";
+//   }
+//   if (document.getElementById("lapsetCB").checked == false) {
+//     console.log("lapset");
+//     document.getElementById("").style.display = "";
+//   }
 
-  if (document.getElementById("aikuisetCB").checked == true) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "none";
-  }
-  if (document.getElementById("aikuisetCB").checked == false) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "";
-  }
+//   if (document.getElementById("peruutusCB").checked == true) {
+//     console.log("aikuiset");
+//     document.getElementById("").style.display = "none";
+//   }
+//   if (document.getElementById("peruutusCB").checked == false) {
+//     console.log("aikuiset");
+//     document.getElementById("").style.display = "";
+//   }
 
-  if (document.getElementById("aikuisetCB").checked == true) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "none";
-  }
-  if (document.getElementById("aikuisetCB").checked == false) {
-    console.log("aikuiset");
-    document.getElementById("scandic").style.display = "";
-  }
-}
+//   if (document.getElementById("aikuisetCB").checked == true) {
+//     console.log("aikuiset");
+//     document.getElementById("").style.display = "none";
+//   }
+//   if (document.getElementById("aikuisetCB").checked == false) {
+//     console.log("aikuiset");
+//     document.getElementById("").style.display = "";
+//   }
+
+//   if (document.getElementById("aikuisetCB").checked == true) {
+//     console.log("aikuiset");
+//     document.getElementById("").style.display = "none";
+//   }
+//   if (document.getElementById("aikuisetCB").checked == false) {
+//     console.log("aikuiset");
+//     document.getElementById("").style.display = "";
+//   }
 
 // const napit = document.querySelectorAll('.btn');
 // const hotellit = document.querySelectorAll('.hotellit h2');

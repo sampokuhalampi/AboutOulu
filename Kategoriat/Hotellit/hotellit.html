@@ -38,13 +38,13 @@
                     <!-- <a href="#" class="btn active" data-filter="kaikki">Kaikki</a>
                     <input type="checkbox" id="kaikkiCB" /> -->
 
-                    <a href="#" class="btn" data-filter="aikuisille" id="aikuiset">Vain aikuisille</a>
+                    <a href="#" class="btn" data-filter="aikuisille" id="f1">Vain aikuisille</a>
                     <input type="checkbox" id="aikuisetCB" />
 
-                    <a href="#" class="btn" data-filter="netti" id="netti">Ilmainen nettiyhteys</a>
+                    <a href="#" class="btn" data-filter="netti" id="f2">Ilmainen nettiyhteys</a>
                     <input type="checkbox" id="nettiCB" />
 
-                    <a href="#" class="btn" data-filter="lapset" id="lapset">Lapsiystävällinen</a>
+                    <a href="#" class="btn" data-filter="lapset" id="f3">Lapsiystävällinen</a>
                     <input type="checkbox" id="lapsetCB" />
 
                     <a href="#" class="btn" data-filter="peruutus" id="peruutus">Ilmainen peruutus</a>
@@ -55,9 +55,14 @@
 
                     <a href="#" class="btn" data-filter="aamupala" id="aamupala">Aamiainen sisältyy</a>
                     <input type="checkbox" id="aamupalaCB" />
-                </div>
-                <br>
-                <input onclick="search()" type="button" value="Hae"> 
+
+                    <div class="hintaSlider">
+                        <input type="range" min="1" max="3" value="2" class="slider" id="hintaSlider">
+                      </div>
+                      $............$$........$$$
+                      <input onclick="search()" type="button" value="Hae"> 
+                    </div>
+                    
             </div>
         </div>
         </nav>
