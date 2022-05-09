@@ -92,7 +92,7 @@ h1 {
 }
 
 .nimiKommentti {
-    color: red;
+    color: black;
     padding: 1%;
     width: 50%;
     margin: auto;
@@ -103,15 +103,15 @@ h1 {
 }
 
 .otsikkoKommentti {
-    color: pink;
+    color: black;
 }
 
 .kommenttiKommentti {
-    color: yellow;
+    color: black;
 }
 
 .sahkopostiKommentti {
-    color: skyblue;
+    color: black;
 }
 .Radissonkuvaus {
     padding: 10px;
@@ -120,3 +120,66 @@ h1 {
 }
 
 
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+:placeholder-shown {
+    text-align: center;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    border: #000;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}

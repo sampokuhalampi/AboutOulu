@@ -14,10 +14,158 @@
     <div class="heading">
         <h1 class="header1">AboutOulu</h1>
         <h3>Ravintolat</h3>
-    <div class="takaisin">
-            <button onClick="takaisin()" style="height:40px; width:100px; border-radius: 8%; background-color: rgb(190, 200, 229);">Takaisin</button>     
+        <div class="takaisin">
+            <button onclick="takaisin()"
+                style="height:40px; width:100px; border-radius: 8%; background-color: rgb(190, 200, 229);">Takaisin</button>
+        </div>
+        <div class="hakuboksi">
+            <!-- <form action="" onsubmit="return false"> -->
+                <input type="text" id="tekstikentta" onkeyup="textSearch()" placeholder="Hae ravintolaa">
+            <!-- </form> -->
+        </div>
     </div>
-    </div>
+
     
+
+    <div class="dropdown">
+        <nav></nav>
+
+        <label for="touch"><span>Rajaus</span></label>
+        <input type="checkbox" id="touch">
+        <div class="dropdown-content" style="list-style-type:none;">
+            <div class="container">
+                <h3>Rajaus</h3>
+                <div class="filterboksi">
+                    <!-- <a href="#" class="btn active" data-filter="kaikki">Kaikki</a>
+                    <input type="checkbox" id="kaikkiCB" /> -->
+
+                    <a href="#" class="btn" data-filter="Romanttinen" id="f1">Romanttinen</a>
+                    <input type="checkbox" id="romanttinenCB" />
+
+                    <a href="#" class="btn" data-filter="Pikaruoka" id="f2">Pikaruoka</a>
+                    <input type="checkbox" id="pikaruokaCB" />
+
+                    <a href="#" class="btn" data-filter="lapset" id="f3">Lapsiystävällinen</a>
+                    <input type="checkbox" id="lapsetCB" />
+
+                    <a href="#" class="btn" data-filter="poytavaraukset" id="peruutus">Mahdollisuus pöytävarauksiin</a>
+                    <input type="checkbox" id="poytavaraus" />
+
+                    <a href="#" class="btn" data-filter="Lounas" id="Lounas">Lounas</a>
+                    <input type="checkbox" id="lounasCB" />
+
+                    <a href="#" class="btn" data-filter="aamupala" id="aamupala">Aamiainen</a>
+                    <input type="checkbox" id="aamupalaCB" />
+
+                    <a href="#" class="btn" data-filter="paivallinen" id="paivallinne">Päivällinen</a>
+                    <input type="checkbox" id="paivallinenCB" />
+
+                    <a href="#" class="btn" data-filter="kiinalainen" id="kiinalainen">Kiinalainen</a>
+                    <input type="checkbox" id="kiinalainenCB" />
+
+                    <a href="#" class="btn" data-filter="Burger" id="Burger">Hampurilaisia</a>
+                    <input type="checkbox" id="burgerCB" />
+
+                    <a href="#" class="btn" data-filter="vegan" id="vegan">Vegaaninen</a>
+                    <input type="checkbox" id="veganCB" />
+
+                    <div class="hintaSlider">
+                        <input type="range" min="1" max="3" value="2" class="slider" id="hintaSlider">
+                    </div>
+                    $............$$........$$$
+                    <input onclick="search()" type="button" value="Hae">
+                </div>
+
+            </div>
+        </div>
+        </nav>
+    </div>
+
+
+    <div class="mainfeed">
+
+        <ul id="listaKohteista">
+            <li>
+                <div class="amarillo" id="amarillo">
+                    <a href="/Kohde/Ravintolat/Amarillo/amarillo.html" >
+                        <img id="mainpic1" src="/Kuvat/RavintolaKuvat/Amarillo/img.main_amarillo.jpeg" alt="Amarillo">
+                        <div id="amarilloTeksti">
+                            Amarillo
+                        </div>
+                    </a>
+                </div>
+
+            </li>
+            <li>
+
+                <div class="classic" id="classic">
+                    <a href="/Kohde/Ravintolat/Classic Pizza/classicpizza.html">
+                        <img id="mainpic2" src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg" alt="Classic">
+                        <div id="classicTeksti">
+                            ClassicPizza
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+
+                <div class="picnic" id="picnic">
+                    <a href="/Kohde/Ravintolat/Picnic/picnic.html">
+                        <img id="mainpic3" src="/Kuvat/RavintolaKuvat/Picnic/img.main_picnic.jpeg" alt="Picnic">
+                        <div id="picnicTeksti">
+                            Picnic
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+
+                <div class="fafas" id="fafas">
+                    <a href="/Kohde/Ravintolat/Fafa's/fafas.html">
+                        <img id="mainpic4" src="/Kuvat/RavintolaKuvat/Fafas/img.main_fafas.jpeg" alt="fafas">
+                        <div id="fafasTeksti">
+                            Fafas
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+
+                <div class="frans" id="frans">
+                    <a href="/Kohde/Ravintolat/Frans & Camille/franscamille.html">
+                        <img id="mainpic5" src="/Kuvat/RavintolaKuvat/Frans&Camille/Frans&camille.jpeg" alt="frans">
+                        <div id="fransTeksti">
+                            Frans & Camille
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+
+                <div class="puistola" id="puistola">
+                    <a href="/Kohde/Ravintolat/Puistola/puistola.html">
+                        <img id="mainpic6" src="/Kuvat/RavintolaKuvat/Puistola/img.puistola_main.jpeg" alt="Puistola">
+                        <div id="puistolaTeksti">
+                            Puistola
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+
+                <div class="woks" id="woks">
+                    <a href="/Kohde/Ravintolat/Wok's/wok.html">
+                        <img id="mainpic7" src="/Kuvat/RavintolaKuvat/Woks/Woks.jpeg" alt="Woks">
+                        <div id="woksTeksti">
+                            Wok's
+                        </div>
+                    </a>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
 </body>
+
 </html>

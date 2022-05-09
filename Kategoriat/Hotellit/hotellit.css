@@ -180,3 +180,9 @@ img {
 #listaKohteista {
     list-style: none;
 }
+
+.hakuboksi {
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
