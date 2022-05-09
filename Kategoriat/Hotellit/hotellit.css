@@ -165,3 +165,18 @@ img {
     position: relative;
 }
 
+#scandicTeksti {
+    opacity: 0;
+}
+
+#sokosTeksti {
+    opacity: 0;
+}
+
+#radissonTeksti {
+    opacity: 0;
+}
+
+#listaKohteista {
+    list-style: none;
+}

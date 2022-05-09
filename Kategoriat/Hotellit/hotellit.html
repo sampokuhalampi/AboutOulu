@@ -20,11 +20,11 @@
         </div>
     </div>
 
-    <!-- <div class="hakuboksi">
-        <form action="" onsubmit="return false">
-            <input type="text" id="haku" placeholder="Hae hotellia">
-        </form>
-    </div> -->
+    <div class="hakuboksi">
+        <!-- <form action="" onsubmit="return false"> -->
+            <input type="text" id="tekstikentta" onkeyup="textSearch()" placeholder="Hae hotellia">
+        <!-- </form> -->
+    </div>
 
     <div class="dropdown">
         <nav></nav>
@@ -58,11 +58,11 @@
 
                     <div class="hintaSlider">
                         <input type="range" min="1" max="3" value="2" class="slider" id="hintaSlider">
-                      </div>
-                      $............$$........$$$
-                      <input onclick="search()" type="button" value="Hae"> 
                     </div>
-                    
+                    $............$$........$$$
+                    <input onclick="search()" type="button" value="Hae">
+                </div>
+
             </div>
         </div>
         </nav>
@@ -70,23 +70,44 @@
 
 
     <div class="mainfeed">
-        <div class="scandic" id="scandic">
-            <a href="/Kohde/Hotellit/Scandic/scandic.html">
-                <img id="mainpic1" src="/Kuvat/Main_page/img.main_scandic.jpeg" alt="Scandic Oulu">
-            </a>
-        </div>
-        <div class="sokos">
-            <a href="/Kohde/Hotellit/Sokoshotel/sokos.html">
-                <img id="mainpic3" src="/Kuvat/Main_page/img.main_sokoshotel.jpeg" alt="Sokos">
-            </a>
-        </div>
-        <div class="radisson">
-            <p>
-                <a href="/Kohde/Hotellit/Radisson Blu/radisson.html">
-                    <img id="mainpic4" src="/Kuvat/Main_page/img.main_radisson.jpeg" alt="Radisson blu">
-                </a>
-            </p>
-        </div>
+
+        <ul id="listaKohteista">
+            <li>
+                <div class="scandic" id="scandic">
+                    <a href="/Kohde/Hotellit/Scandic/scandic.html" >
+                        <img id="mainpic" src="/Kuvat/Main_page/img.main_scandic.jpeg" alt="Scandic Oulu">
+                        <div id="scandicTeksti">
+                            scandic
+                        </div>
+                    </a>
+                </div>
+
+            </li>
+            <li>
+
+                <div class="sokos" id="sokos">
+                    <a href="/Kohde/Hotellit/Sokoshotel/sokos.html">
+                        <img id="mainpic" src="/Kuvat/Main_page/img.main_sokoshotel.jpeg" alt="Sokos">
+                        <div id="sokosTeksti">
+                            sokos hotel
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+
+                <div class="radisson" id="radisson">
+                    <a href="/Kohde/Hotellit/Radisson Blu/radisson.html">
+                        <img id="mainpic" src="/Kuvat/Main_page/img.main_radisson.jpeg" alt="Radisson blu">
+                        <div id="radissonTeksti">
+                            radisson blu
+                        </div>
+                    </a>
+                </div>
+            </li>
+
+        </ul>
+
     </div>
 </body>
 
