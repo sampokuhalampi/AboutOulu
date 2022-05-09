@@ -19,11 +19,13 @@
                 style="height:40px; width:100px; border-radius: 8%; background-color: rgb(190, 200, 229);">Takaisin</button>
         </div>
     </div>
-    <div class="hakuboksi">
+
+    <!-- <div class="hakuboksi">
         <form action="" onsubmit="return false">
             <input type="text" id="haku" placeholder="Hae hotellia">
         </form>
-    </div>
+    </div> -->
+
     <div class="dropdown">
         <nav></nav>
 
@@ -33,22 +35,29 @@
             <div class="container">
                 <h3>Rajaus</h3>
                 <div class="filterboksi">
-                    <a href="#" class="btn active" data-filter="kaikki">Kaikki</a>
-                    <input type="checkbox" id="kaikkiCB" />
-                    <a href="#" class="btn" data-filter="aikuisille">Vain aikuisille</a>
+                    <!-- <a href="#" class="btn active" data-filter="kaikki">Kaikki</a>
+                    <input type="checkbox" id="kaikkiCB" /> -->
+
+                    <a href="#" class="btn" data-filter="aikuisille" id="aikuiset">Vain aikuisille</a>
                     <input type="checkbox" id="aikuisetCB" />
-                    <a href="#" class="btn" data-filter="netti">Ilmainen nettiyhteys</a>
+
+                    <a href="#" class="btn" data-filter="netti" id="netti">Ilmainen nettiyhteys</a>
                     <input type="checkbox" id="nettiCB" />
-                    <a href="#" class="btn" data-filter="lapset">Lapsiystävällinen</a>
+
+                    <a href="#" class="btn" data-filter="lapset" id="lapset">Lapsiystävällinen</a>
                     <input type="checkbox" id="lapsetCB" />
-                    <br>
-                    <a href="#" class="btn" data-filter="peruutus">Ilmainen peruutus</a>
+
+                    <a href="#" class="btn" data-filter="peruutus" id="peruutus">Ilmainen peruutus</a>
                     <input type="checkbox" id="peruutusCB" />
-                    <a href="#" class="btn" data-filter="maksu">Maksa paikanpäällä</a>
+
+                    <a href="#" class="btn" data-filter="maksu" id="maksu">Maksa paikanpäällä</a>
                     <input type="checkbox" id="maksuCB" />
-                    <a href="#" class="btn" data-filter="aamupala">Aamiainen sisältyy</a>
+
+                    <a href="#" class="btn" data-filter="aamupala" id="aamupala">Aamiainen sisältyy</a>
                     <input type="checkbox" id="aamupalaCB" />
                 </div>
+                <br>
+                <input onclick="search()" type="button" value="Hae"> 
             </div>
         </div>
         </nav>
@@ -56,16 +65,16 @@
 
 
     <div class="mainfeed">
-        <div class="rivi">
-        <div class="scandic">
-            <img id="mainpic1" src="/Kuvat/Main_page/img.main_scandic.jpeg" alt="Scandic Oulu">
-            <a href="#"></a>
+        <div class="scandic" id="scandic">
+            <a href="/Kohde/Hotellit/Scandic/scandic.html">
+                <img id="mainpic1" src="/Kuvat/Main_page/img.main_scandic.jpeg" alt="Scandic Oulu">
+            </a>
         </div>
         <div class="sokos">
-            <img id="mainpic3" src="/Kuvat/Main_page/img.main_sokoshotel.jpeg" alt="Sokos">
-            <a href="#"></a>
+            <a href="/Kohde/Hotellit/Sokoshotel/sokos.html">
+                <img id="mainpic3" src="/Kuvat/Main_page/img.main_sokoshotel.jpeg" alt="Sokos">
+            </a>
         </div>
-    </div>
         <div class="radisson">
             <p>
                 <a href="/Kohde/Hotellit/Radisson Blu/radisson.html">
