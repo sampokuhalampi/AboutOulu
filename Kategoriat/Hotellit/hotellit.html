@@ -20,12 +20,12 @@
         </div>
         <div class="searchBox">
             <!-- <form action="" onsubmit="return false"> -->
-                <input type="text" id="searchBox" onkeyup="textSearch()" placeholder="Hae hotellia">
+            <input type="text" id="searchBox" onkeyup="textSearch()" placeholder="Hae hotellia">
             <!-- </form> -->
         </div>
     </div>
 
-    
+
 
     <div class="dropdown">
         <nav></nav>
@@ -39,22 +39,22 @@
                     <!-- <a href="#" class="btn active" data-filter="kaikki">Kaikki</a>
                     <input type="checkbox" id="kaikkiCB" /> -->
 
-                    <a href="#" class="btn"  id="adult">Vain aikuisille</a>
+                    <a href="#" class="btn" id="adult">Vain aikuisille</a>
                     <input type="checkbox" id="adultCB" />
 
-                    <a href="#" class="btn"  id="wifi">Ilmainen nettiyhteys</a>
+                    <a href="#" class="btn" id="wifi">Ilmainen nettiyhteys</a>
                     <input type="checkbox" id="wifiCB" />
 
-                    <a href="#" class="btn"  id="children">Lapsiystävällinen</a>
+                    <a href="#" class="btn" id="children">Lapsiystävällinen</a>
                     <input type="checkbox" id="childrenCB" />
 
-                    <a href="#" class="btn"  id="cancel">Ilmainen peruutus</a>
+                    <a href="#" class="btn" id="cancel">Ilmainen peruutus</a>
                     <input type="checkbox" id="cancelCB" />
 
-                    <a href="#" class="btn"  id="payment">Maksa paikanpäällä</a>
+                    <a href="#" class="btn" id="payment">Maksa paikanpäällä</a>
                     <input type="checkbox" id="paymentCB" />
 
-                    <a href="#" class="btn"  id="breakfast">Aamiainen sisältyy</a>
+                    <a href="#" class="btn" id="breakfast">Aamiainen sisältyy</a>
                     <input type="checkbox" id="breakfastCB" />
 
                     <div class="priceSlider">
@@ -71,36 +71,41 @@
 
 
     <div class="mainfeed">
-        <!-- <ul id="listOfDestinations">
-        </ul> -->
-                <div class="hotel" class="wifi" class="children" >
-                    <a href="/Kohde/Hotellit/Scandic/scandic.html" >
+        <ul id="listOfDestinations">
+            <li>
+                <div class="hotel wifi children" id="destination1" >
+                    <a href="/Kohde/Hotellit/Scandic/scandic.html">
                         <!-- <img id="mainpic" src="/Kuvat/HotelliKuvat/Scandic/img.main_scandic.jpeg" alt="Scandic Oulu"> -->
                         <div id="scandicText">
                             scandic
                         </div>
                     </a>
                 </div>
-
-
-                <div class="hotel" class="wifi">
+            </li>
+            <li>
+                <div class="hotel wifi" id="destination2">
                     <a href="/Kohde/Hotellit/Sokoshotel/sokos.html">
                         <!-- <img id="mainpic" src="/Kuvat/HotelliKuvat/SokosHotels/img.main_sokoshotel.jpeg" alt="Sokos"> -->
-                        <div id="sokosText" id="wifi1">
+                        <div id="sokosText" id="wifi">
                             sokos hotel
                         </div>
                     </a>
                 </div>
+            </li> 
 
-                <div class="hotel" class="adult">
+            <li> 
+                <div class="hotel adult" id="destination3">
                     <a href="/Kohde/Hotellit/Radisson Blu/radisson.html">
                         <!-- <img id="mainpic" src="/Kuvat/HotelliKuvat/Radisson/img.main_radisson.jpeg" alt="Radisson blu"> -->
                         <div id="radissonText">
                             radisson blu
                         </div>
                     </a>
+
                 </div>
 
+            </li>
+        </ul>
 
     </div>
 </body>

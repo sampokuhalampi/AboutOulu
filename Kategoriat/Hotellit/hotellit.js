@@ -7,6 +7,10 @@ function search() {
 
   var selected = checkSelected();
 
+  document.getElementById("destination1").style.display = "none";
+  document.getElementById("destination2").style.display = "none";
+  document.getElementById("destination3").style.display = "none";
+
   const items = document.querySelectorAll(".hotel");
 
   console.log("valittu: " + selected);
@@ -15,11 +19,11 @@ function search() {
 
   for (var i = 0; i < selected.length; i++) {
     console.log("Selection " + [i] + " " + selected[i]);
+
     for (var j = 0; j < items.length; j++) {
       console.log(items[j]);
-      if (selected[i] == items[j]) {
-        console.log("nice");
-      }
+
+      document.getElementsByClassName(selected[i])[i].style.display = "";
     }
   }
 }
