@@ -1,58 +1,60 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let imageIndex = 1;
+showImage(imageIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+//Changes the image
+function changeImage(n) {
+  showImage((imageIndex += n));
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+//Shows the current image
+function currentImage(n) {
+  showImage((imageIndex = n));
 }
 
-function showSlides(n) {
+//Shows the image according to the parameter n
+function showImage(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let images = document.getElementsByClassName("img");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
+  if (n > images.length) {
+    imageIndex = 1;
   }
   if (n < 1) {
-    slideIndex = slides.length;
+    imageIndex = images.length;
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  images[imageIndex - 1].style.display = "block";
+  dots[imageIndex - 1].className += " active";
 }
 
-document.getElementById("sahkopostiCheckbox").onchange = function () {
-  document.getElementById("sahkoposti").disabled = !this.checked;
+document.getElementById("emailCheckbox").onchange = function () {
+  document.getElementById("email").disabled = !this.checked;
 };
 
+//Creates html-string that is rendered to the page
 function render(data) {
   console.log("arvosana: " + arvosana);
-  var arvosana = tarkistaRadiobutton();
+  var arvosana = checkRadiobutton();
 
   if (data.email == undefined && arvosana == undefined) {
     console.log("email undefined");
 
     var html =
-      "<div class='kommentti'><div>" +
-      "<div class='nimiKommentti'>" +
+      "<div class='comment'><div>" +
+      "<div class='nameComment'>" +
       data.name +
       "</div>" +
       "</div>" +
-      "<div class='otsikkoKommentti'>" +
+      "<div class='titleComment'>" +
       data.title +
       "</div>" +
       "<br>" +
-      "<div class='kommenttiKommentti'>" +
+      "<div class='commentComment'>" +
       data.body +
       "</div>" +
       "</div></div>";
@@ -61,26 +63,26 @@ function render(data) {
     console.log("email accepted");
 
     var html =
-      "<div class='kommentti'><div>" +
-      "<div class='nimiKommentti'>" +
+      "<div class='comment'><div>" +
+      "<div class='nameComment'>" +
       data.name +
       "</div>" +
       "</div>" +
-      "<div class='otsikkoKommentti'>" +
+      "<div class='titleComment'>" +
       data.title +
       "</div>" +
       "<br>" +
-      "<div class='kommenttiKommentti'>" +
+      "<div class='commentComment'>" +
       data.body +
       "</div>" +
       "<br>" +
-      "<div class='sahkopostiKommentti'>" +
+      "<div class='emailComment'>" +
       data.email +
       "</div>" +
       "<br>" +
       "<div class='arvosanaKommentti'>" +
       "Arvosana: " +
-      tarkistaRadiobutton() +
+      checkRadiobutton() +
       "</div>" +
       "</div></div>";
   }
@@ -88,22 +90,22 @@ function render(data) {
     console.log("email undefined");
 
     var html =
-      "<div class='kommentti'><div>" +
-      "<div class='nimiKommentti'>" +
+      "<div class='comment'><div>" +
+      "<div class='nameComment'>" +
       data.name +
       "</div>" +
       "</div>" +
-      "<div class='otsikkoKommentti'>" +
+      "<div class='titleComment'>" +
       data.title +
       "</div>" +
       "<br>" +
-      "<div class='kommenttiKommentti'>" +
+      "<div class='commentComment'>" +
       data.body +
       "</div>" +
       "<br>" +
       "<div class='arvosanaKommentti'>" +
       "Arvosana: " +
-      tarkistaRadiobutton() +
+      checkRadiobutton() +
       "</div>" +
       "</div></div>";
   }
@@ -111,20 +113,20 @@ function render(data) {
     console.log("email accepted");
 
     var html =
-      "<div class='kommentti'><div>" +
-      "<div class='nimiKommentti'>" +
+      "<div class='comment'><div>" +
+      "<div class='nameComment'>" +
       data.name +
       "</div>" +
       "</div>" +
-      "<div class='otsikkoKommentti'>" +
+      "<div class='titleComment'>" +
       data.title +
       "</div>" +
       "<br>" +
-      "<div class='kommenttiKommentti'>" +
+      "<div class='commentComment'>" +
       data.body +
       "</div>" +
       "<br>" +
-      "<div class='sahkopostiKommentti'>" +
+      "<div class='emailComment'>" +
       data.email +
       "</div>" +
       "</div></div>";
@@ -133,6 +135,7 @@ function render(data) {
   $("#container").append(html);
 }
 
+//Adds the comment to the comment section
 $(document).ready(function () {
   var comment = [
     {
@@ -149,27 +152,24 @@ $(document).ready(function () {
 
   $("#addComment").click(function () {
     console.log("julkaise");
-    tarkistaRadiobutton();
 
-    const cb = document.querySelector("#sahkopostiCheckbox");
-    const sahkopostiKentta = document.querySelector("#sahkoposti");
+    const cb = document.querySelector("#emailCheckbox");
+    const emailField = document.querySelector("#email");
 
-    var nimi = getElementById("#name");
-
-    if (cb.checked == true && sahkopostiKentta.length != 0) {
+    if (cb.checked == true && emailField.length != 0) {
       console.log("checkbox checked (addComment)");
       var addObj = {
         name: $("#name").val(),
         title: $("#title").val(),
         body: $("#bodyText").val(),
-        email: $("#sahkoposti").val(),
+        email: $("#email").val(),
       };
-      //comment.push(addObj);
+
       render(addObj);
       $("#name").val("");
       $("#title").val("");
       $("#bodyText").val("");
-      $("#sahkoposti").val("");
+      $("#email").val("");
     } else {
       console.log("checkbox unchecked (addComment)");
       var addObj = {
@@ -178,7 +178,6 @@ $(document).ready(function () {
         body: $("#bodyText").val(),
       };
 
-      //comment.push(addObj);
       render(addObj);
       $("#name").val("");
       $("#title").val("");
@@ -187,13 +186,13 @@ $(document).ready(function () {
   });
 });
 
-function takaisin() {
+//Returns the user to the category page
+function returnButton() {
   location.href = "/Main Screen/main.html";
 }
 
-//button.onClick = takaisin()({});
-
-function tarkistaRadiobutton() {
+//Checks which radiobutton is selected
+function checkRadiobutton() {
   if (document.getElementById("t1").checked == true) {
     console.log("1");
     return 1;

@@ -165,7 +165,7 @@ img {
     position: relative;
 }
 
-#scandicTeksti {
+/* #scandicTeksti {
     opacity: 0;
 }
 
@@ -175,10 +175,11 @@ img {
 
 #radissonTeksti {
     opacity: 0;
-}
+} */
 
 #listaKohteista {
     list-style: none;
+    padding: 100px;
 }
 
 .hakuboksi {

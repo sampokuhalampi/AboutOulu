@@ -4,7 +4,21 @@ function takaisin() {
 
 //button.onClick = takaisin()({});
 
-function search() {}
+function search() {
+  var valitut = [];
+
+  console.log("hae painettu");
+  if (document.getElementById("aikuisetCB").checked == true) {
+    console.log("aikuiset valittu");
+    valitut.push("aikuiset");
+  }
+  if (document.getElementById("nettiCB").checked == true) {
+    console.log("netti valittu");
+    valitut.push("netti");
+  }
+
+  console.log(valitut);
+}
 
 function textSearch() {
   // Declare variables

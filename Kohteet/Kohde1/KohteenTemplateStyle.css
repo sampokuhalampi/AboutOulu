@@ -20,7 +20,7 @@ h1 {
     display: inline-block;
 }
 
-.takaisinPainike {
+.returnButton {
     position: absolute;
     left: 0;
     top: 8px;
@@ -30,7 +30,7 @@ h1 {
     display: inline-block;
 }
 
-.paikannimi {
+.destinationName {
     font-weight: normal;
     font-family: sans-serif;
     text-align: center;
@@ -60,13 +60,9 @@ h1 {
     width: 300px;
 }
 
-.otsikko {
-    position: absolute;
-    left: 2;
-  
-}
 
-.kommentti {
+
+.comment {
     padding: 1%;
     width: 50%;
     margin: auto;
@@ -76,7 +72,7 @@ h1 {
     text-align: center;
 }
 
-.otsikkoBoksi {
+.TitleBox {
     text-align: center;
     display: inline-block;
 }
@@ -91,7 +87,7 @@ h1 {
     border: #000;
 }
 
-.nimiKommentti {
+.nameComment {
     color: red;
     padding: 1%;
     width: 50%;
@@ -102,40 +98,39 @@ h1 {
     text-align: center;
 }
 
-.otsikkoKommentti {
+.titleComment {
     color: pink;
 }
 
-.kommenttiKommentti {
+.commentComment {
     color: yellow;
 }
 
-.sahkopostiKommentti {
+.emailComment {
     color: skyblue;
 }
-.kuvaus {
-    padding: 10px;
-    padding-left: 200px;
-    padding-right: 200px;
-}
+
 
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
+.image-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
+.img {
   display: none;
 }
 
-/* Next & previous buttons */
-.prev, .next {
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+.previousImage, .nextImage {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -150,18 +145,20 @@ h1 {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next {
+.nextImage {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.previousImage {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previousImage:hover, .nextImage:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
 .text {
   color: black;
   font-size: 50px;
@@ -172,8 +169,7 @@ h1 {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
+.numbering {
   color: black;
   font-size: 50px;
   padding: 8px 12px;
@@ -181,7 +177,6 @@ h1 {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -197,11 +192,6 @@ h1 {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
 @keyframes fade {
   from {opacity: .4}
