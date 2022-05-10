@@ -1,6 +1,6 @@
 
 
-.takaisin {
+.returnToMainPage {
 
     position: absolute;
     left: 0;
@@ -12,10 +12,7 @@ h3 {
     font-weight: normal;
 }
 
-.hotellit h2 {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
+
 
 h1 {
     margin: 0;
@@ -151,7 +148,7 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 200px;
     text-align: center;
     position: relative;
 }
@@ -165,24 +162,24 @@ img {
     position: relative;
 }
 
-/* #scandicTeksti {
+/* #scandicText {
     opacity: 0;
 }
 
-#sokosTeksti {
+#sokosText {
     opacity: 0;
 }
 
-#radissonTeksti {
+#radissonText {
     opacity: 0;
 } */
 
-#listaKohteista {
+#listOfDestinations {
     list-style: none;
     padding: 100px;
 }
 
-.hakuboksi {
+.searchBox {
     position: absolute;
     right: 0;
     top: 8px;

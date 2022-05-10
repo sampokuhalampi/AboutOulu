@@ -1,31 +1,54 @@
-function takaisin() {
+function returnToMainPage() {
   location.href = "/Main Screen/main.html";
 }
 
-//button.onClick = takaisin()({});
-
 function search() {
-  var valitut = [];
-
   console.log("hae painettu");
-  if (document.getElementById("aikuisetCB").checked == true) {
-    console.log("aikuiset valittu");
-    valitut.push("aikuiset");
+
+  var selected = checkSelected();
+
+  const items = document.querySelectorAll(".hotel");
+
+  console.log("valittu: " + selected);
+  console.log("Montako valittua: " + selected.length);
+  console.log("Items: " + items);
+
+  for (var i = 0; i < selected.length; i++) {
+    console.log("Selection " + [i] + " " + selected[i]);
+    for (var j = 0; j < items.length; j++) {
+      console.log(items[j]);
+      if (selected[i] == items[j]) {
+        console.log("nice");
+      }
+    }
   }
-  if (document.getElementById("nettiCB").checked == true) {
+}
+
+function checkSelected() {
+  var chosen = [];
+
+  if (document.getElementById("adultCB").checked == true) {
+    console.log("aikuiset valittu");
+    chosen.push("adult");
+  }
+  if (document.getElementById("wifiCB").checked == true) {
     console.log("netti valittu");
-    valitut.push("netti");
+    chosen.push("wifi");
+  }
+  if (document.getElementById("childrenCB").checked == true) {
+    console.log("lapset valittu");
+    chosen.push("children");
   }
 
-  console.log(valitut);
+  return chosen;
 }
 
 function textSearch() {
   // Declare variables
   var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById("tekstikentta");
+  input = document.getElementById("searchBox");
   filter = input.value.toUpperCase();
-  ul = document.getElementById("listaKohteista");
+  ul = document.getElementById("listOfDestinations");
   li = ul.getElementsByTagName("li");
 
   // Loop through all list items, and hide those who don't match the search query
