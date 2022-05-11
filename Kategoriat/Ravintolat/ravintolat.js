@@ -6,6 +6,15 @@ function takaisin() {
 
 function search() {}
 
+function checkSelected() {
+  var chosen = [];
+
+  if (document.getElementById("adultCB").checked == true) {
+    console.log("aikuiset valittu");
+    chosen.push("adult");
+  }
+}
+
 function checkPriceRange() {
   return document.getElementById("priceSlider").value;
 }
