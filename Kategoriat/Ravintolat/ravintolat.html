@@ -19,11 +19,11 @@
                 style="height:40px; width:100px; border-radius: 8%; background-color: rgb(190, 200, 229);">Takaisin</button>
         </div>
         <div class="hakuboksi">
-                <input type="text" id="searchBox" onkeyup="textSearch()" placeholder="Hae ravintolaa">
+            <input type="text" id="searchBox" onkeyup="textSearch()" placeholder="Hae ravintolaa">
         </div>
     </div>
 
-    
+
 
     <div class="dropdown">
         <nav></nav>
@@ -35,34 +35,34 @@
                 <h3>Rajaus</h3>
                 <div class="filterBox">
 
-                    <a  class="btn"  id="f1">Romanttinen</a>
-                    <input type="checkbox" id="romanttinenCB" />
+                    <a class="btn" id="romantic">Romanttinen</a>
+                    <input type="checkbox" id="romanticCB" />
 
-                    <a  class="btn"  id="f2">Pikaruoka</a>
-                    <input type="checkbox" id="pikaruokaCB" />
+                    <a class="btn" id="fastfood">Pikaruoka</a>
+                    <input type="checkbox" id="fastfoodCB" />
 
-                    <a  class="btn"  id="f3">Lapsiystävällinen</a>
-                    <input type="checkbox" id="lapsetCB" />
+                    <a class="btn" id="children">Lapsiystävällinen</a>
+                    <input type="checkbox" id="childrenCB" />
 
-                    <a  class="btn"  id="peruutus">Mahdollisuus pöytävarauksiin</a>
-                    <input type="checkbox" id="poytavaraus" />
+                    <a class="btn" id="reservation">Mahdollisuus pöytävarauksiin</a>
+                    <input type="checkbox" id="reservationCB" />
 
-                    <a  class="btn"  id="Lounas">Lounas</a>
-                    <input type="checkbox" id="lounasCB" />
+                    <a class="btn" id="lunch">Lounas</a>
+                    <input type="checkbox" id="lunchCB" />
 
-                    <a  class="btn"  id="aamupala">Aamiainen</a>
-                    <input type="checkbox" id="aamupalaCB" />
+                    <a class="btn" id="breakfast">Aamiainen</a>
+                    <input type="checkbox" id="breakfastCB" />
 
-                    <a  class="btn" data-filter="paivallinen" id="paivallinne">Päivällinen</a>
-                    <input type="checkbox" id="paivallinenCB" />
+                    <a class="btn"  id="dinner">Päivällinen</a>
+                    <input type="checkbox" id="dinnerCB" />
 
-                    <a  class="btn" data-filter="kiinalainen" id="kiinalainen">Kiinalainen</a>
-                    <input type="checkbox" id="kiinalainenCB" />
+                    <a class="btn"  id="chinese">Kiinalainen</a>
+                    <input type="checkbox" id="chineseCB" />
 
-                    <a  class="btn" data-filter="Burger" id="Burger">Hampurilaisia</a>
+                    <a class="btn"  id="burger">Hampurilaisia</a>
                     <input type="checkbox" id="burgerCB" />
 
-                    <a  class="btn" data-filter="vegan" id="vegan">Vegaaninen</a>
+                    <a class="btn"  id="vegan">Vegaaninen</a>
                     <input type="checkbox" id="veganCB" />
 
                     <div class="priceSlider">
@@ -83,9 +83,9 @@
 
         <ul id="listaKohteista">
             <li>
-                <div class="amarillo" id="amarillo">
-                    <a href="/Kohde/Ravintolat/Amarillo/amarillo.html" >
-                        <img id="mainpic1" src="/Kuvat/RavintolaKuvat/Amarillo/img.main_amarillo.jpeg" alt="Amarillo">
+                <div class="pr2">
+                    <a href="/Kohde/Ravintolat/Amarillo/amarillo.html">
+                        <img id="dinner" src="/Kuvat/RavintolaKuvat/Amarillo/img.main_amarillo.jpeg" alt="Amarillo">
                         <div id="destinationText">
                             Amarillo
                         </div>
@@ -95,9 +95,10 @@
             </li>
             <li>
 
-                <div class="classic" id="classic">
+                <div class="pr1" >
                     <a href="/Kohde/Ravintolat/Classic Pizza/classicpizza.html">
-                        <img id="mainpic2" src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg" alt="Classic">
+                        <img id="lunch" src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg"
+                            alt="Classic">
                         <div id="destinationText">
                             ClassicPizza
                         </div>
@@ -106,9 +107,9 @@
             </li>
             <li>
 
-                <div class="picnic" id="picnic">
+                <div class="pr2" >
                     <a href="/Kohde/Ravintolat/Picnic/picnic.html">
-                        <img id="mainpic3" src="/Kuvat/RavintolaKuvat/Picnic/img.main_picnic.jpeg" alt="Picnic">
+                        <img id="breakfast" src="/Kuvat/RavintolaKuvat/Picnic/img.main_picnic.jpeg" alt="Picnic">
                         <div id="destinationText">
                             Picnic
                         </div>
@@ -117,9 +118,9 @@
             </li>
             <li>
 
-                <div class="fafas" id="fafas">
+                <div class="pr1" >
                     <a href="/Kohde/Ravintolat/Fafa's/fafas.html">
-                        <img id="mainpic4" src="/Kuvat/RavintolaKuvat/Fafas/img.main_fafas.jpeg" alt="fafas">
+                        <img id="children" src="/Kuvat/RavintolaKuvat/Fafas/img.main_fafas.jpeg" alt="fafas">
                         <div id="destinationText">
                             Fafas
                         </div>
@@ -128,9 +129,9 @@
             </li>
             <li>
 
-                <div class="frans" id="frans">
+                <div class="pr3" >
                     <a href="/Kohde/Ravintolat/Frans & Camille/franscamille.html">
-                        <img id="mainpic5" src="/Kuvat/RavintolaKuvat/Frans&Camille/Frans&camille.jpeg" alt="frans">
+                        <img id="romantic" src="/Kuvat/RavintolaKuvat/Frans&Camille/Frans&camille.jpeg" alt="frans">
                         <div id="destinationText">
                             Frans & Camille
                         </div>
@@ -139,9 +140,9 @@
             </li>
             <li>
 
-                <div class="puistola" id="puistola">
+                <div class="pr3" >
                     <a href="/Kohde/Ravintolat/Puistola/puistola.html">
-                        <img id="mainpic6" src="/Kuvat/RavintolaKuvat/Puistola/img.puistola_main.jpeg" alt="Puistola">
+                        <img id="reservation" src="/Kuvat/RavintolaKuvat/Puistola/img.puistola_main.jpeg" alt="Puistola">
                         <div id="destinationText">
                             Puistola
                         </div>
@@ -150,9 +151,9 @@
             </li>
             <li>
 
-                <div class="woks" id="woks">
+                <div class="pr2" >
                     <a href="/Kohde/Ravintolat/Wok's/wok.html">
-                        <img id="mainpic7" src="/Kuvat/RavintolaKuvat/Woks/Woks.jpeg" alt="Woks">
+                        <img id="vegan" src="/Kuvat/RavintolaKuvat/Woks/Woks.jpeg" alt="Woks">
                         <div id="destinationText">
                             Wok's
                         </div>

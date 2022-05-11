@@ -4,15 +4,63 @@ function takaisin() {
 
 //button.onClick = takaisin()({});
 
-function search() {}
+function search() {
+  console.log("hae painettu");
+  // document.getElementById("").style.display = "none";
+  // document.getElementById("").style.display = "none";
+  // document.getElementById("").style.display = "none";
+  var selected = checkSelected();
+
+  var priceRange = checkPriceRange();
+
+  console.log("hinta: " + priceRange);
+}
 
 function checkSelected() {
   var chosen = [];
 
-  if (document.getElementById("adultCB").checked == true) {
-    console.log("aikuiset valittu");
-    chosen.push("adult");
+  if (document.getElementById("romanticCB").checked == true) {
+    console.log("romanttinen valittu");
+    chosen.push("romantic");
   }
+  if (document.getElementById("fastfoodCB").checked == true) {
+    console.log("pikaruoka valittu");
+    chosen.push("fastfood");
+  }
+  if (document.getElementById("childrenCB").checked == true) {
+    console.log("lapset valittu");
+    chosen.push("children");
+  }
+  if (document.getElementById("reservationCB").checked == true) {
+    console.log("varaus valittu");
+    chosen.push("reservation");
+  }
+  if (document.getElementById("lunchCB").checked == true) {
+    console.log("lounas valittu");
+    chosen.push("lunch");
+  }
+  if (document.getElementById("breakfastCB").checked == true) {
+    console.log("romanttinen valittu");
+    chosen.push("breakfast");
+  }
+  if (document.getElementById("dinnerCB").checked == true) {
+    console.log("päivällinen valittu");
+    chosen.push("dinner");
+  }
+  if (document.getElementById("chineseCB").checked == true) {
+    console.log("kiinalainen valittu");
+    chosen.push("chinese");
+  }
+  if (document.getElementById("burgerCB").checked == true) {
+    console.log("hampurilainen valittu");
+    chosen.push("burger");
+  }
+  if (document.getElementById("veganCB").checked == true) {
+    console.log("vegaaninen valittu");
+    chosen.push("vegan");
+  }
+
+  return chosen;
 }
 
 function checkPriceRange() {
