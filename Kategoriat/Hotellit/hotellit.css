@@ -153,8 +153,6 @@ button {
 }
 
 img {
-    /* width: 35%;
-    height: 35%; */
     height: auto;
     width: auto;
     border-radius: 5px;
@@ -163,7 +161,7 @@ img {
     position: relative;
 }
 
- #destinationText {
+#destinationText {
     opacity: 0;
 }
 
@@ -177,4 +175,3 @@ img {
     right: 0;
     top: 8px;
 }
-
