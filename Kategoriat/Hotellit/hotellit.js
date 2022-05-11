@@ -7,24 +7,26 @@ function search() {
 
   var selected = checkSelected();
 
-  document.getElementById("destination1").style.display = "none";
-  document.getElementById("destination2").style.display = "none";
-  document.getElementById("destination3").style.display = "none";
+  if (selected.length != 0) {
+    // for (var x = 0; x < items.length; x++) {
+    //   document.getElementsByClassName("wifi")[x].style.display = "";
+    //   document.getElementsByClassName("children")[x].style.display = "";
+    //   document.getElementsByClassName("adult")[x].style.display = "";
+    // }
 
-  const items = document.querySelectorAll(".hotel");
-
-  console.log("valittu: " + selected);
-  console.log("Montako valittua: " + selected.length);
-  console.log("Items: " + items);
-
-  for (var i = 0; i < selected.length; i++) {
-    console.log("Selection " + [i] + " " + selected[i]);
-
-    for (var j = 0; j < items.length; j++) {
-      console.log(items[j]);
-
-      document.getElementsByClassName(selected[i])[i].style.display = "";
+    document.getElementById("wifi").style.display = "none";
+    document.getElementById("breakfast").style.display = "none";
+    document.getElementById("children").style.display = "none";
+    var list = document.getElementById("listOfDestinations");
+    for (var i = 0; i < selected.length; i++) {
+      for (var j = 0; j < list.length; j++) {
+        document.getElementById(selected[i]).style.display = "";
+      }
     }
+  } else {
+    document.getElementById("wifi").style.display = "";
+    document.getElementById("breakfast").style.display = "";
+    document.getElementById("children").style.display = "";
   }
 }
 
@@ -42,6 +44,18 @@ function checkSelected() {
   if (document.getElementById("childrenCB").checked == true) {
     console.log("lapset valittu");
     chosen.push("children");
+  }
+  if (document.getElementById("cancelCB").checked == true) {
+    console.log("cancel valittu");
+    chosen.push("cancel");
+  }
+  if (document.getElementById("paymentCB").checked == true) {
+    console.log("maksu valittu");
+    chosen.push("payment");
+  }
+  if (document.getElementById("breakfastCB").checked == true) {
+    console.log("aamupala valittu");
+    chosen.push("breakfast");
   }
 
   return chosen;
@@ -162,4 +176,13 @@ function textSearch() {
 //             product.parentElement.parentElement.style.display = "none"
 //         }
 //     })
+// }
+
+// for (var i = 0; i < selected.length; i++) {
+//   console.log("Selection " + [i] + " " + selected[i]);
+
+//   for (var j = 0; j < items.length; j++) {
+//     console.log("items");
+//     console.log(items[j]);
+//   }
 // }
