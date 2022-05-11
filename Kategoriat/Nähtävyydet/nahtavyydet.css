@@ -140,6 +140,10 @@ button {
 #touch:checked + .dropdown-content {
     height: 125px;   
 } 
+#rajausteksti {
+    font-weight: bold;
+    padding: 10px;
+}
 
 .mainfeed {
     display: block;

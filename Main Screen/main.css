@@ -11,6 +11,7 @@
 body {
     background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
     position: relative;
+    text-align: center;
 }
 
 .information {
