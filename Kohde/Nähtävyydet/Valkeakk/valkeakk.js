@@ -139,9 +139,9 @@ function render(data) {
 $(document).ready(function () {
   var comment = [
     {
-      name: "Antte",
-      title: "Suosittelen",
-      body: "Viihdyimme perheeni kanssa hotellissa 4 yötä. Aamiainen sekä asiakaspalvelu olivat loistavia. Voin hyvällä mielin suositella hotellia kaikille!",
+      name: "Antte Heatta",
+      title: "Viihtyisä",
+      body: "Valkean kesäkatu on mahtava tapaamispaikka Oulun keskustassa. Auki myös ympäri vuorokauden. Kuitenkin öisin kesäkadulla liikkuu huomattavan epämääräistä porukkaa.",
       email: "antte.heatta@gmail.com",
     },
   ];

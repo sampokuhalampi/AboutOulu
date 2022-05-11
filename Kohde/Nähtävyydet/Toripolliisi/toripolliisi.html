@@ -1,110 +1,110 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Toripoliisi</title>
-    <link href="toripolliisi.css" rel="stylesheet">
-    <script src="toripolliisi.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Toripoliisi</title>
+  <link href="toripolliisi.css" rel="stylesheet">
+  <script src="toripolliisi.js" defer></script>
 </head>
 
 <body>
-    <div class="heading">
-      <h1 class="logo">AboutOulu</h1>
-    </div>
-    <div class="returnButton">
-      <button
-        onClick="returnButton()"
-        style="height: 40px; width: 100px; border-radius: 8%"
-      >
-        Takaisin
-      </button>
-    </div>
-    <div>
-        <h2 class="destinationName">Toripoliisi</h2>
+  <div class="heading">
+    <h1 class="logo">AboutOulu</h1>
+  </div>
+  <div class="returnButton">
+    <button onClick="returnButton()" style="height: 40px; width: 100px; border-radius: 8%">
+      Takaisin
+    </button>
+  </div>
+  <div>
+    <h2 class="destinationName">Toripolliisi</h2>
+  </div>
+
+  <div class="image-container">
+    <div class="img fade">
+
+      <img src="/Kuvat/NähtävyydetKuvat/Toripoliisi/toripoliisi.jpeg" />
+
     </div>
 
-    <div class="image-container">
-      <div class="img fade">
-        
-        <img src="/Kuvat/NähtävyydetKuvat/Toripoliisi/toripoliisi.jpeg" />
-        
-      </div>
+    <div class="img fade">
 
-      <div class="img fade">
-        
-        <img src="/Kuvat/NähtävyydetKuvat/Kauppahalli/kauppahalli2.jpeg" />
-      </div>
+      <img src="/Kuvat/NähtävyydetKuvat/Kauppahalli/kauppahalli2.jpeg" />
+    </div>
 
+
+    <a class="previousImage" onclick="changeImage(-1)">&#10094;</a>
+    <a class="nextImage" onclick="changeImage(1)">&#10095;</a>
+  </div>
+  <br />
+
+  <div style="text-align: center">
+    <span class="dot" onclick="currentImage(1)"></span>
+    <span class="dot" onclick="currentImage(2)"></span>
+    <span class="dot" onclick="currentImage(3)"></span>
+  </div>
+
+  <div class="description">
+    <div class style="padding: 10px">Toripolliisi on Oulun kauppatorilla seisova pronssinen patsas.
+
+      Patsaan on valmistanut kuvanveistäjä Kaarlo Mikkonen vuonna 1987. Nimensä
+      patsas on saanut torilla vuosina 1934–1979 toimineista kolmesta toripoliisista, jotka valvoivat alueen
+      järjestystä. Toripolliisi rahoitettiin vuonna 1985 aloitetulla kansalaiskeräyksellä, jonka lisäksi myytiin
+      postikortteja, pieniä kipsiveistoksia ja Antellin patsasaiheisia piparkakkuja. Patsas paljastettiin syyskuussa
+      1987. Mikkosen toinen julkinen veistos, vuonna 2001 paljastettu Uusi aika sijaitsee Kajaanissa.
+
+      Esikuvana Toripolliisi-patsaan hahmolle on ollut Kaarlo Mikkosen ensimmäisen puolison, kuvanveistäjä Raili
+      Mikkosen isä, Paimion nimismies Pekka Repo.</div>
+
+    <div class style="padding: 10px">Kauppatori, Oulu 90100, Suomi</div>
     
-      <a class="previousImage" onclick="changeImage(-1)">&#10094;</a>
-      <a class="nextImage" onclick="changeImage(1)">&#10095;</a>
+
+  </div>
+
+  <div id="container"></div>
+
+  <div class="form">
+    <h5 class="addCommenttext">Lisää kommentti</h5>
+    <div class="nameBox">
+      <input type="text" id="name" placeholder="Nimi" /> <br /><br />
     </div>
-    <br />
-
-    <div style="text-align: center">
-      <span class="dot" onclick="currentImage(1)"></span>
-      <span class="dot" onclick="currentImage(2)"></span>
-      <span class="dot" onclick="currentImage(3)"></span>
+    <div class="TitleBox">
+      <input type="text" id="title" placeholder="Otsikko" /> <br /><br />
     </div>
-
-    <div class="description">
-        <div class style="padding: 10px">Muuta</div>
-
-        <div class style="padding: 10px">Muuta</div>
-        <div class>Yhteystiedot <br>puh: muuta <br> Sähköposti: muuta</div>
-        
+    <div class="CommentBox">
+      <textarea rows="5" col="30" id="bodyText" placeholder="Kommentti"></textarea><br /><br />
     </div>
 
-    <div id="container"></div>
+    <div class="contact">Minuun saa ottaa yhteyttä palautteesta</div>
 
-    <div class="form">
-      <h5 class="addCommenttext">Lisää kommentti</h5>
-      <div class="nameBox">
-        <input type="text" id="name" placeholder="Nimi" /> <br /><br />
-      </div>
-      <div class="TitleBox">
-        <input type="text" id="title" placeholder="Otsikko" /> <br /><br />
-      </div>
-      <div class="CommentBox">
-        <textarea
-          rows="5"
-          col="30"
-          id="bodyText"
-          placeholder="Kommentti"
-        ></textarea
-        ><br /><br />
-      </div>
+    <div>
+      <label for="emailCheckbox">
+        <input type="checkbox" id="emailCheckbox" name="emailCheckbox" />
+      </label>
+      <input type="text" id="email" disabled placeholder="Sähköposti" />
 
-      <div class="contact">Minuun saa ottaa yhteyttä palautteesta</div>
-
-      <div>
-        <label for="emailCheckbox">
-          <input type="checkbox" id="emailCheckbox" name="emailCheckbox" />
-        </label>
-        <input type="text" id="email" disabled placeholder="Sähköposti" />
-
-        <input type="button" id="addComment" value="Julkaise" />
-      </div>
-
-      <div class="arvosanaRadiobutton">
-        <input type="radio" name="star" value="t1" id="t1" />
-        <label for="t1">1</label>
-        <input type="radio" name="star" value="t2" id="t2" />
-        <label for="t2">2</label>
-        <input type="radio" name="star" value="t3" id="t3" />
-        <label for="t3">3</label>
-        <input type="radio" name="star" value="t4" id="t4" />
-        <label for="t4">4</label>
-        <input type="radio" name="star" value="t5" id="t5" />
-        <label for="t5">5</label>
-      </div>
+      <input type="button" id="addComment" value="Julkaise" />
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="kohteenTemplateScript.js"></script>
-  </body>
+    <div class="arvosanaRadiobutton">
+      <input type="radio" name="star" value="t1" id="t1" />
+      <label for="t1">1</label>
+      <input type="radio" name="star" value="t2" id="t2" />
+      <label for="t2">2</label>
+      <input type="radio" name="star" value="t3" id="t3" />
+      <label for="t3">3</label>
+      <input type="radio" name="star" value="t4" id="t4" />
+      <label for="t4">4</label>
+      <input type="radio" name="star" value="t5" id="t5" />
+      <label for="t5">5</label>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="kohteenTemplateScript.js"></script>
+</body>
+
 </html>

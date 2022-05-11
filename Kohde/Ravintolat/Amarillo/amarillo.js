@@ -139,10 +139,10 @@ function render(data) {
 $(document).ready(function () {
   var comment = [
     {
-      name: "Antte",
+      name: "Sampo",
       title: "Suosittelen",
-      body: "Viihdyimme perheeni kanssa hotellissa 4 yötä. Aamiainen sekä asiakaspalvelu olivat loistavia. Voin hyvällä mielin suositella hotellia kaikille!",
-      email: "antte.heatta@gmail.com",
+      body: "Yksi Oulun viihtyisimmistä ravintoloista! Ruoka ja tarjoilu aina priimaa. Suosittelen käymään ravintolassa, jos haluaa nauttia tunnelmasta niin perjantai tai lauantai iltoina. Arkisin rauhallisempaa.",
+      email: "sampo.kuhalampi@gmail.com",
     },
   ];
 

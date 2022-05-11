@@ -141,7 +141,7 @@ $(document).ready(function () {
     {
       name: "Antte",
       title: "Suosittelen",
-      body: "Viihdyimme perheeni kanssa hotellissa 4 yötä. Aamiainen sekä asiakaspalvelu olivat loistavia. Voin hyvällä mielin suositella hotellia kaikille!",
+      body: "Picnic on loistava paikka nopeaa lounasta varten. Viihtyisät tilat ja asiakaspalvelu on erittäin miellyttävää!",
       email: "antte.heatta@gmail.com",
     },
   ];

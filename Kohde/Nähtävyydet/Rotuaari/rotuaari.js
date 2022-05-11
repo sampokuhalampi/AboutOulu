@@ -139,10 +139,10 @@ function render(data) {
 $(document).ready(function () {
   var comment = [
     {
-      name: "Antte",
-      title: "Suosittelen",
-      body: "Viihdyimme perheeni kanssa hotellissa 4 yötä. Aamiainen sekä asiakaspalvelu olivat loistavia. Voin hyvällä mielin suositella hotellia kaikille!",
-      email: "antte.heatta@gmail.com",
+      name: "Emilia",
+      title: "Katu kaiken keskellä",
+      body: "Rotuaari on yksi Oulun tunnetuimmista ellei tunnetuin katu. Rotuaarilla pääsee näkemään Oulua parhaimmillaan. Suosittelen vahvasti käymään tutustumaan rotuaariin mikäli vierailet Oulussa!",
+      email: "emppu@gmail.com",
     },
   ];
 

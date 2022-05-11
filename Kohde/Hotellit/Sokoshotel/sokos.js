@@ -139,10 +139,10 @@ function render(data) {
 $(document).ready(function () {
   var comment = [
     {
-      name: "Antte",
-      title: "Suosittelen",
-      body: "Viihdyimme perheeni kanssa hotellissa 4 yötä. Aamiainen sekä asiakaspalvelu olivat loistavia. Voin hyvällä mielin suositella hotellia kaikille!",
-      email: "antte.heatta@gmail.com",
+      name: "Perheenisä Matti",
+      title: "Remontoitu",
+      body: "Olemme vierailleet kahdesti nelihenkisen perheen voimin. Pidimme jo ensimmäisellä kerralla hotellista mutta oli silti kiva yllätys, kun hotelli oli täysin remontoitu!",
+      email: "matti.mallikas@gmail.com",
     },
   ];
 

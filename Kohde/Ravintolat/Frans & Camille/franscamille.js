@@ -139,10 +139,10 @@ function render(data) {
 $(document).ready(function () {
   var comment = [
     {
-      name: "Antte",
+      name: "Sampo",
       title: "Suosittelen",
-      body: "Viihdyimme perheeni kanssa hotellissa 4 yötä. Aamiainen sekä asiakaspalvelu olivat loistavia. Voin hyvällä mielin suositella hotellia kaikille!",
-      email: "antte.heatta@gmail.com",
+      body: "Sopii loistavasti pariskunnille, jotka haluavat luoda arkeensa ripauksen romantiikkaa!",
+      email: "sampo.kuhalampi@gmail.com",
     },
   ];
 

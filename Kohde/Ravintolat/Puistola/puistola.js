@@ -141,7 +141,7 @@ $(document).ready(function () {
     {
       name: "Antte",
       title: "Suosittelen",
-      body: "Viihdyimme perheeni kanssa hotellissa 4 yötä. Aamiainen sekä asiakaspalvelu olivat loistavia. Voin hyvällä mielin suositella hotellia kaikille!",
+      body: "Oululainen ravintola! Mahtavaa ruokaa, maukkaita viinejä sekä sopii mihin vain tilanteeseen!",
       email: "antte.heatta@gmail.com",
     },
   ];

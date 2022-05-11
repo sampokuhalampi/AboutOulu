@@ -140,8 +140,8 @@ $(document).ready(function () {
   var comment = [
     {
       name: "Antte",
-      title: "Suosittelen",
-      body: "Viihdyimme perheeni kanssa hotellissa 4 yötä. Aamiainen sekä asiakaspalvelu olivat loistavia. Voin hyvällä mielin suositella hotellia kaikille!",
+      title: "Legendaarinen Toripolliisi",
+      body: "Legendaarinen Oulun Toripolliisi. Jokaisen Oulussa vierailevan kannattaa laittaa se bucketlistalle reissua varten. ",
       email: "antte.heatta@gmail.com",
     },
   ];

@@ -139,10 +139,10 @@ function render(data) {
 $(document).ready(function () {
   var comment = [
     {
-      name: "Antte",
-      title: "Suosittelen",
-      body: "Viihdyimme perheeni kanssa hotellissa 4 yötä. Aamiainen sekä asiakaspalvelu olivat loistavia. Voin hyvällä mielin suositella hotellia kaikille!",
-      email: "antte.heatta@gmail.com",
+      name: "Sampo",
+      title: "Hieno maamerkki",
+      body: "Yksi koko Oulun viihtyisimmistä paikoista vierailla. Tarjolla kaikkea mukavaa pientä ostettavaa!",
+      email: "sampo.kuhalampi@gmail.com",
     },
   ];
 
