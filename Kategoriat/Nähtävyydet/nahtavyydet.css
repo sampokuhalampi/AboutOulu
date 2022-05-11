@@ -43,10 +43,6 @@ h1 {
     background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
 }
 
-body {
-    background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
-    position: relative;
-}
 
 .information {
     text-align: center;
@@ -185,4 +181,11 @@ img {
     position: absolute;
     right: 0;
     top: 8px;
+}
+
+
+
+body {
+    background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
+    text-align: center;
 }
