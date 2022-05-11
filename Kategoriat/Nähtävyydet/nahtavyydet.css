@@ -1,5 +1,3 @@
-
-
 .takaisin {
 
     position: absolute;
@@ -147,18 +145,26 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     position: relative;
 }
 
 img { 
-    width: 35%;
-    height: 35%;
-    border-radius: 5px;
+    width: 95%;
+    height: 95%;
+    border-radius: 0px;
     align-items: center;
     object-fit: cover;
     position: relative;
+   
+    padding-right: 100%;
+}
+
+#listaKohteista {
+    columns: 2;
+    column-gap: 0%;
+    list-style: none;
 }
 
 #scandicTeksti {
@@ -173,9 +179,7 @@ img {
     opacity: 0;
 }
 
-#listaKohteista {
-    list-style: none;
-}
+
 
 .hakuboksi {
     position: absolute;
@@ -188,4 +192,11 @@ img {
 body {
     background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
     text-align: center;
+    position: relative;
+    
 }
+
+#teksti {
+    opacity: 0;
+}
+

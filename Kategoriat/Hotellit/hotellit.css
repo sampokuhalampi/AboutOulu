@@ -148,20 +148,28 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 0px;
     text-align: center;
     position: relative;
 }
 
-img {
-    /* width: 35%;
-    height: 35%; */
-    height: auto;
-    width: auto;
-    border-radius: 5px;
+img { 
+    width: 95%;
+    height: 95%;
+    border-radius: 0px;
     align-items: center;
     object-fit: cover;
     position: relative;
+   
+    padding-right: 100%;
 }
+
+#listOfDestination {
+    columns: 2;
+    column-gap: 0%;
+    list-style: none;
+}
+
 
  #destinationText {
     opacity: 0;

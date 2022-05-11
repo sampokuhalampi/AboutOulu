@@ -1,5 +1,3 @@
-
-
 .takaisin {
 
     position: absolute;
@@ -79,17 +77,17 @@ h1 {
     display: inline-block;
 }
 
-.dropdown {  
-    width : 100%; 
-    margin : 20px auto; 
+.dropdown {
+    width: 100%;
+    margin: 20px auto;
     position: relative;
     z-index: 20;
-    display: inline-block;  
+    display: inline-block;
     text-align: center;
-}  
+}
 
-.dropdown-content {  
-    clear:both;
+.dropdown-content {
+    clear: both;
     width: 100%;
     height: 150px;
     overflow: hidden;
@@ -101,29 +99,29 @@ h1 {
 }
 
 #dropdown-content li button {
-    text-decoration : none; 
-    color : #2d2f31;
+    text-decoration: none;
+    color: #2d2f31;
     display: block;
     border: none;
 }
 
 .dropdown-content li {
-    padding : 10px;
+    padding: 10px;
     list-style: none;
     text-align: center;
 }
 
-  span {
-    padding : 15px;
-    background : #2d2f31; 
-    color : white;
-    font-size : 1.2em;
-    font-variant : small-caps;
-    cursor : pointer;
+span {
+    padding: 15px;
+    background: #2d2f31;
+    color: white;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    cursor: pointer;
     display: block;
 }
-  
-  span::after {
+
+span::after {
     float: right;
     right: 10%;
 }
@@ -140,12 +138,15 @@ button {
 }
 
 #touch {
-    position: absolute; opacity: 0; height: 0px;
-}    
-  
-#touch:checked + .dropdown-content {
-    height: 125px;   
-} 
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch:checked+.dropdown-content {
+    height: 125px;
+}
+
 .mainfeed {
     display: block;
     margin-left: auto;
@@ -155,9 +156,9 @@ button {
     position: relative;
 }
 
-img { 
-    width: 35%;
-    height: 35%;
+img {
+    height: auto;
+    width: auto;
     border-radius: 5px;
     align-items: center;
     object-fit: cover;
@@ -166,7 +167,7 @@ img {
 
 #mainpic1 {
     grid-column-start: 1;
-    grid-column-end: 3; 
+    grid-column-end: 3;
 }
 
 #mainpic3 {
@@ -199,4 +200,25 @@ img {
     position: absolute;
     right: 0;
     top: 8px;
+}
+
+#destinationText {
+    opacity: 0;
+}
+
+img { 
+    width: 95%;
+    height: 95%;
+    border-radius: 0px;
+    align-items: center;
+    object-fit: cover;
+    position: relative;
+   
+    padding-right: 100%;
+}
+
+#listaKohteista {
+    columns: 2;
+    column-gap: 0%;
+    list-style: none;
 }
