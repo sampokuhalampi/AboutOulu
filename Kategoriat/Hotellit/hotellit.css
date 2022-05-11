@@ -148,35 +148,28 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 200px;
     text-align: center;
     position: relative;
 }
 
 img {
-    width: 35%;
-    height: 35%;
+    /* width: 35%;
+    height: 35%; */
+    height: auto;
+    width: auto;
     border-radius: 5px;
     align-items: center;
     object-fit: cover;
     position: relative;
 }
 
-/* #scandicText {
+ #destinationText {
     opacity: 0;
 }
 
-#sokosText {
-    opacity: 0;
-}
-
-#radissonText {
-    opacity: 0;
-} */
 
 #listOfDestinations {
     list-style: none;
-    padding: 100px;
 }
 
 .searchBox {

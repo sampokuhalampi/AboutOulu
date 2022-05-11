@@ -4,29 +4,39 @@ function returnToMainPage() {
 
 function search() {
   console.log("hae painettu");
-
+  document.getElementById("wifi").style.display = "none";
+  document.getElementById("breakfast").style.display = "none";
+  document.getElementById("children").style.display = "none";
   var selected = checkSelected();
 
-  if (selected.length != 0) {
-    // for (var x = 0; x < items.length; x++) {
-    //   document.getElementsByClassName("wifi")[x].style.display = "";
-    //   document.getElementsByClassName("children")[x].style.display = "";
-    //   document.getElementsByClassName("adult")[x].style.display = "";
-    // }
+  var priceRange = checkPriceRange();
 
-    document.getElementById("wifi").style.display = "none";
-    document.getElementById("breakfast").style.display = "none";
-    document.getElementById("children").style.display = "none";
-    var list = document.getElementById("listOfDestinations");
-    for (var i = 0; i < selected.length; i++) {
-      for (var j = 0; j < list.length; j++) {
-        document.getElementById(selected[i]).style.display = "";
+  console.log("hinta: " + priceRange);
+
+  if (priceRange == 1) {
+    //No hotels at price range 1
+  }
+  if (priceRange == 2) {
+    if (selected.length != 0) {
+      for (var i = 0; i < selected.length; i++) {
+        if (selected[i] != "children") {
+          document.getElementById(selected[i]).style.display = "";
+        }
       }
+    } else {
+      document.getElementById("wifi").style.display = "";
+      document.getElementById("breakfast").style.display = "";
     }
-  } else {
-    document.getElementById("wifi").style.display = "";
-    document.getElementById("breakfast").style.display = "";
-    document.getElementById("children").style.display = "";
+  }
+  if (priceRange == 3) {
+    if (selected.length != 0) {
+      for (var i = 0; i < selected.length; i++) {
+        if (selected[i] != "wifi" && selected[i] != "breakfast")
+          document.getElementById(selected[i]).style.display = "";
+      }
+    } else {
+      document.getElementById("children").style.display = "";
+    }
   }
 }
 
@@ -59,6 +69,10 @@ function checkSelected() {
   }
 
   return chosen;
+}
+
+function checkPriceRange() {
+  return document.getElementById("priceSlider").value;
 }
 
 function textSearch() {
