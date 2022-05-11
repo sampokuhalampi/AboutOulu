@@ -14,56 +14,171 @@
     <div class="heading">
         <h1 class="header1">AboutOulu</h1>
         <h3>Tervetuloa Ouluun!</h3>
-    <div class="info">
-        <button id="info-nappain" onClick="infoNappi()" style="height:40px; width:100px; border-radius: 10%; background-color: rgb(190, 200, 229);">Info</button>
-    </div>
-    <div class="hakuboksi">
-        <!-- <form action="" onsubmit="return false"> -->
-            <input type="text" id="tekstikentta" onkeyup="textSearch()" placeholder="Hae Kohdetta">
-        <!-- </form> -->
-    </div>
+        <div class="info">
+            <button id="info-nappain" onClick="infoNappi()"
+                style="height:40px; width:100px; border-radius: 10%; background-color: rgb(190, 200, 229);">Info</button>
+        </div>
+        <div class="searchBox">
+            <!-- <form action="" onsubmit="return false"> -->
+            <input type="text" id="searchBox" onkeyup="textSearch()" placeholder="Hae Kohdetta">
+            <!-- </form> -->
+        </div>
     </div>
     <div class="information">
         <p>Oulu on Suomen 5. suurin kaupunki<br>
             jossa on tekemistä kaiken ikäisille!<br>
             Ota varaslähtö reissullesi ja tutki<br>
             kaupunkia meidän avulla!</p>
-            <div class="dropdown">  
-                <nav></nav>
+        <div class="dropdown">
+            <nav></nav>
 
-                    <label for="touch"><span>Valitse kategoria</span></label>               
-                    <input type="checkbox" id="touch">     
-                    <div class="dropdown-content" style="list-style-type:none;">
-                        <li><button id="ravintolat" onClick="ravintolat()"> Ravintolat </button></li> 
-                        <li><button id="nahtavyydet" onClick="nahtavyydet()"> Nähtävyydet </button></li>
-                        <li><button id="hotellit" onClick="hotellit()"> Hotellit </button></li>
-                        
-                    </div>
-                </nav>
-                </div>  
-                </div> 
+            <label for="touch"><span>Valitse kategoria</span></label>
+            <input type="checkbox" id="touch">
+            <div class="dropdown-content" style="list-style-type:none;">
+                <li><button id="ravintolat" onClick="ravintolat()"> Ravintolat </button></li>
+                <li><button id="nahtavyydet" onClick="nahtavyydet()"> Nähtävyydet </button></li>
+                <li><button id="hotellit" onClick="hotellit()"> Hotellit </button></li>
+
+            </div>
+            </nav>
+        </div>
+    </div>
     </div>
 
     <div class="mainfeed">
 
         <ul id="listOfDestinations">
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic1" src="/Kuvat/NähtävyydetKuvat/ValkeaKK/img.main_valkeakk.jpeg"
+                            alt="Valkean kesäkatu">
+                        <div id="destinationText">valkean kavelykatu</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic2" src="/Kuvat/NähtävyydetKuvat/Kauppahalli/img.main_kauppahalli.jpeg"
+                            alt="Oulun kauppahalli">
+                        <div id="destinationText">kauppahalli</div>
 
-        <img id="mainpic1" src="/Kuvat/NähtävyydetKuvat/ValkeaKK/img.main_valkeakk.jpeg" alt="Valkean kesäkatu">
-        <img id="mainpic2" src="/Kuvat/NähtävyydetKuvat/Kauppahalli/img.main_kauppahalli.jpeg" alt="Oulun kauppahalli">
-        <img id="mainpic3" src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg" alt="Classic Pizza">
-        <img id="mainpic4" src="/Kuvat/RavintolaKuvat/Puistola/img.puistola_main.jpeg" alt="Ravintola Puistola">
-        <img id="mainpic5" src="/Kuvat/RavintolaKuvat/Fafas/img.main_fafas.jpeg" alt="Fafa's">
-        <img id="mainpic6" src="/Kuvat/RavintolaKuvat/Picnic/img.main_picnic.jpeg" alt="Picnic">
-        <img id="mainpic7" src="/Kuvat/HotelliKuvat/SokosHotels/img.main_sokoshotel.jpeg" alt="Sokos">
-        <img id="mainpic8" src="/Kuvat/HotelliKuvat/Scandic/img.main_scandic.jpeg" alt="Scandic Oulu">
-        <img id="mainpic9" src="/Kuvat/HotelliKuvat/Radisson/img.main_radisson.jpeg" alt="Radisson blu">
-        <img id="mainpic10" src="/Kuvat/RavintolaKuvat/Amarillo/img.main_amarillo.jpeg" alt="Amarillo">
-        <img id="mainpic11" src="/Kuvat/NähtävyydetKuvat/Rotuaari/Rotuaari1.jpeg" alt="Rotuaari">
-        <img id="mainpic12" src="/Kuvat/NähtävyydetKuvat/Toripoliisi/toripoliisi.jpeg" alt="Toripoliisi">
-        <img id="mainpic13" src="/Kuvat/NähtävyydetKuvat/Rotuaari/Rotuaari1.jpeg" alt="Rotuaari">
-        <img id="mainpic14" src="/Kuvat/RavintolaKuvat/Frans&Camille/Frans&camille.jpeg" alt="Franscamille">
-        <img id="mainpic15" src="/Kuvat/RavintolaKuvat/Woks/Woks.jpeg" alt="Woks">
-    </ul>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic3" src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg"
+                            alt="Classic Pizza">
+                        <div id="destinationText">classic pizza</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic4" src="/Kuvat/RavintolaKuvat/Puistola/img.puistola_main.jpeg"
+                            alt="Ravintola Puistola">
+                        <div id="destinationText">puistola</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic5" src="/Kuvat/RavintolaKuvat/Fafas/img.main_fafas.jpeg" alt="Fafa's">
+                        <div id="destinationText">fafas</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic6" src="/Kuvat/RavintolaKuvat/Picnic/img.main_picnic.jpeg" alt="Picnic">
+                        <div id="destinationText">picnic</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic7" src="/Kuvat/HotelliKuvat/SokosHotels/img.main_sokoshotel.jpeg" alt="Sokos">
+                        <div id="destinationText">sokos hotels</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic8" src="/Kuvat/HotelliKuvat/Scandic/img.main_scandic.jpeg" alt="Scandic Oulu">
+                        <div id="destinationText">scandic</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic9" src="/Kuvat/HotelliKuvat/Radisson/img.main_radisson.jpeg" alt="Radisson blu">
+                        <div id="destinationText">radisson</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic10" src="/Kuvat/RavintolaKuvat/Amarillo/img.main_amarillo.jpeg" alt="Amarillo">
+                        <div id="destinationText">amarillo</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic11" src="/Kuvat/NähtävyydetKuvat/Rotuaari/Rotuaari1.jpeg" alt="Rotuaari">
+                        <div id="destinationText">rotuaari</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic12" src="/Kuvat/NähtävyydetKuvat/Toripoliisi/toripoliisi.jpeg"
+                            alt="Toripoliisi">
+                        <div id="destinationText">toripolliisi</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic13" src="/Kuvat/NähtävyydetKuvat/Rotuaari/Rotuaari2.jpeg" alt="Rotuaari">
+                        <div id="destinationText">rotuaari</div>
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic14" src="/Kuvat/RavintolaKuvat/Frans&Camille/Frans&camille.jpeg"
+                            alt="Franscamille">
+                        <div id="destinationText">frans camille</div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img id="mainpic15" src="/Kuvat/RavintolaKuvat/Woks/Woks.jpeg" alt="Woks">
+                        <div id="destinationText">woks</div>
+                    </a>
+                </div>
+            </li>
+
+        </ul>
     </div>
 </body>
+
 </html>

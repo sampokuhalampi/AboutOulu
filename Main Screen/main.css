@@ -24,7 +24,7 @@ body {
     top: 8px;
 }
 
-.hakuboksi {
+.searchBox {
     position: absolute;
     right: 0;
     top: 8px;
@@ -150,6 +150,12 @@ img {
     grid-column-end: 4;
 }
 
+#listOfDestinations {
+    list-style: none;
+    padding: 10px;
+}
 
-
+#destinationText {
+    opacity: 0;
+}
   
