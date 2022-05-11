@@ -153,10 +153,17 @@ button {
     position: relative;
 }
 
+<<<<<<< HEAD
 img { 
     width: 95%;
     height: 95%;
     border-radius: 0px;
+=======
+img {
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+>>>>>>> f18fbb5248ef3bf3fec58496bd72dc4affe0d788
     align-items: center;
     object-fit: cover;
     position: relative;
@@ -164,6 +171,7 @@ img {
     padding-right: 100%;
 }
 
+<<<<<<< HEAD
 #listOfDestination {
     columns: 2;
     column-gap: 0%;
@@ -172,6 +180,9 @@ img {
 
 
  #destinationText {
+=======
+#destinationText {
+>>>>>>> f18fbb5248ef3bf3fec58496bd72dc4affe0d788
     opacity: 0;
 }
 
@@ -185,4 +196,3 @@ img {
     right: 0;
     top: 8px;
 }
-

@@ -204,6 +204,7 @@ img {
 
 #destinationText {
     opacity: 0;
+<<<<<<< HEAD
 }
 
 img { 
@@ -221,4 +222,6 @@ img {
     columns: 2;
     column-gap: 0%;
     list-style: none;
+=======
+>>>>>>> f18fbb5248ef3bf3fec58496bd72dc4affe0d788
 }
