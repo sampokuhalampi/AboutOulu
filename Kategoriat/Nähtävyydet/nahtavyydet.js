@@ -2,8 +2,6 @@ function returnToMain() {
   location.href = "/Main Screen/main.html";
 }
 
-//button.onClick = takaisin()({});
-
 function search() {
   console.log("haku painettu");
   var allDestinations = ["everyone", "tourist", "center", "disabled"];
