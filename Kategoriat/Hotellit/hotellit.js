@@ -4,10 +4,10 @@ function returnToMain() {
 
 function search() {
   console.log("hae painettu");
-  document.getElementById("wifi").style.display = "none";
-  document.getElementById("breakfast").style.display = "none";
-  document.getElementById("children").style.display = "none";
   document.getElementById("scandic").style.display = "none";
+  document.getElementById("scandic2").style.display = "none";
+  document.getElementById("sryhma").style.display = "none";
+  document.getElementById("radisson").style.display = "none";
   var selected = checkSelected();
 
   var priceRange = checkPriceRange();
@@ -20,13 +20,13 @@ function search() {
   if (priceRange == 2) {
     if (selected.length != 0) {
       for (var i = 0; i < selected.length; i++) {
-        if (selected[i] != "children") {
+        if (selected[i] != "radisson") {
           document.getElementById(selected[i]).style.display = "";
         }
       }
     } else {
-      document.getElementById("wifi").style.display = "";
-      document.getElementById("breakfast").style.display = "";
+      document.getElementById("scandic").style.display = "";
+      document.getElementById("sryhma").style.display = "";
     }
   }
   if (priceRange == 3) {
@@ -35,10 +35,10 @@ function search() {
         document.getElementById(selected[i]).style.display = "";
       }
     } else {
-      document.getElementById("wifi").style.display = "";
-      document.getElementById("breakfast").style.display = "";
-      document.getElementById("children").style.display = "";
       document.getElementById("scandic").style.display = "";
+      document.getElementById("sryhma").style.display = "";
+      document.getElementById("radisson").style.display = "";
+      document.getElementById("scandic2").style.display = "";
     }
   }
 }
@@ -46,29 +46,21 @@ function search() {
 function checkSelected() {
   var chosen = [];
 
-  if (document.getElementById("adultCB").checked == true) {
-    console.log("aikuiset valittu");
-    chosen.push("adult");
+  if (document.getElementById("sryhmaCB").checked == true) {
+    console.log("s-ryhmä valittu");
+    chosen.push("sryhma");
   }
-  if (document.getElementById("wifiCB").checked == true) {
-    console.log("netti valittu");
-    chosen.push("wifi");
+  if (document.getElementById("scandicCB").checked == true) {
+    console.log("scandic valittu");
+    chosen.push("scandic");
   }
-  if (document.getElementById("childrenCB").checked == true) {
-    console.log("lapset valittu");
-    chosen.push("children");
+  if (document.getElementById("radissonCB").checked == true) {
+    console.log("radisson valittu");
+    chosen.push("radisson");
   }
-  if (document.getElementById("cancelCB").checked == true) {
-    console.log("cancel valittu");
-    chosen.push("cancel");
-  }
-  if (document.getElementById("paymentCB").checked == true) {
-    console.log("maksu valittu");
-    chosen.push("payment");
-  }
-  if (document.getElementById("breakfastCB").checked == true) {
-    console.log("aamupala valittu");
-    chosen.push("breakfast");
+  if (document.getElementById("laplandCB").checked == true) {
+    console.log("lapland valittu");
+    chosen.push("lapland");
   }
 
   return chosen;
@@ -94,4 +86,12 @@ function textSearch() {
       li[i].style.display = "none";
     }
   }
+}
+
+function clearCB() {
+  console.log("haku cleared");
+  document.getElementById("sryhmaCB").checked = false;
+  document.getElementById("scandicCB").checked = false;
+  document.getElementById("radissonCB").checked = false;
+  document.getElementById("laplandCB").checked = false;
 }

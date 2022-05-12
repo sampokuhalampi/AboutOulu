@@ -32,26 +32,22 @@
         <input type="checkbox" id="touch">
         <div class="dropdown-content" style="list-style-type:none;">
             <div class="container">
-                <div id="rajausteksti">Valitse haluamasi hakuehdot</div>
+                <div id="rajausteksti">Valitse haluamasi hotelliketju</div>
                 <div class="filterBox">
 
-                    <a class="btn" id="adultOpt">Vain aikuisille</a>
-                    <input type="checkbox" id="adultCB" />
+                    <a class="btn" id="sryhmaOpt">S-Ryhmä</a>
+                    <input type="checkbox" id="sryhmaCB" />
 
-                    <a class="btn" id="wifiOpt">Ilmainen nettiyhteys</a>
-                    <input type="checkbox" id="wifiCB" />
+                    <a class="btn" id="scandicOpt">Scandic</a>
+                    <input type="checkbox" id="scandicCB" />
 
-                    <a class="btn" id="childrenOpt">Lapsiystävällinen</a>
-                    <input type="checkbox" id="childrenCB" />
+                    <a class="btn" id="radissonOpt">Radisson Blu</a>
+                    <input type="checkbox" id="radissonCB" />
 
-                    <a  class="btn" id="cancelOpt">Ilmainen peruutus</a>
-                    <input type="checkbox" id="cancelCB" />
+                    <a class="btn" id="laplandOpt">Lapland Hotels</a>
+                    <input type="checkbox" id="laplandCB" />
 
-                    <a  class="btn" id="paymentOpt">Maksa paikanpäällä</a>
-                    <input type="checkbox" id="paymentCB" />
-
-                    <a  class="btn" id="breakfastOpt">Aamiainen sisältyy</a>
-                    <input type="checkbox" id="breakfastCB" />
+                    <input onclick="clearCB()" type="button" value="Tyhjennä haku">
 
                     <div class="priceSlider">
                         <input type="range" min="1" max="3" value="2" class="slider" id="priceSlider">
@@ -66,56 +62,56 @@
         </nav>
     </div>
 
-<main>
-    <div class="mainfeed">
-        <ul id="listOfDestinations">
-            <li>
-               
+    <main>
+        <div class="mainfeed">
+            <ul id="listOfDestinations">
+                <li>
+
                     <a href="/Kohde/Hotellit/Scandic/scandic.html" id="pr2">
-                        <img id="wifi" src="/Kuvat/HotelliKuvat/Scandic/img.main_scandic.jpeg" alt="Scandic Oulu">
+                        <img id="scandic" src="/Kuvat/HotelliKuvat/Scandic/img.main_scandic.jpeg" alt="Scandic Oulu">
                         <div id="destinationText">
                             scandic
                         </div>
                     </a>
-                
-            </li>
-            <li>
-               
+
+                </li>
+                <li>
+
                     <a href="/Kohde/Hotellit/Sokoshotel/sokos.html" id="pr2">
-                        <img id="breakfast" src="/Kuvat/HotelliKuvat/SokosHotels/img.main_sokoshotel.jpeg" alt="Sokos">
+                        <img id="sryhma" src="/Kuvat/HotelliKuvat/SokosHotels/img.main_sokoshotel.jpeg" alt="Sokos">
                         <div id="destinationText">
                             sokos hotel
                         </div>
                     </a>
-                
-            </li> 
 
-            <li> 
-  
-                    <a href="/Kohde/Hotellit/Radisson Blu/radisson.html" pr="3">
-                        <img id="children" src="/Kuvat/HotelliKuvat/Radisson/img.main_radisson.jpeg" alt="Radisson blu">
+                </li>
+
+                <li>
+
+                    <a href="/Kohde/Hotellit/Radisson Blu/radisson.html" id="pr3">
+                        <img id="radisson" src="/Kuvat/HotelliKuvat/Radisson/img.main_radisson.jpeg" alt="Radisson blu">
                         <div id="destinationText">
                             radisson blu
                         </div>
                     </a>
 
 
-            </li>
+                </li>
 
-            <li>
-               
-                <a href="/Kohde/Hotellit/Scandic/scandic.html">
-                    <img id="scandic" src="/Kuvat/HotelliKuvat/Scandic/scandic3.jpeg" alt="Scandic Oulu">
-                    <div id="destinationText">
-                        scandic
-                    </div>
-                </a>
-            
-        </li>
-        </ul>
+                <li>
 
-    </div>
-</main>
+                    <a href="/Kohde/Hotellit/Scandic/scandic.html">
+                        <img id="scandic2" src="/Kuvat/HotelliKuvat/Scandic/scandic3.jpeg" alt="Scandic Oulu">
+                        <div id="destinationText">
+                            scandic
+                        </div>
+                    </a>
+
+                </li>
+            </ul>
+
+        </div>
+    </main>
 </body>
 
 </html>
