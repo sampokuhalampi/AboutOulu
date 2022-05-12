@@ -19,9 +19,7 @@
                 style="height:40px; width:100px; border-radius: 8%; background-color: rgb(190, 200, 229);">Takaisin</button>
         </div>
         <div class="hakuboksi">
-            <!-- <form action="" onsubmit="return false"> -->
                 <input type="text" id="tekstikentta" onkeyup="textSearch()" placeholder="Hae Nähtävyyttä">
-            <!-- </form> -->
         </div>
     </div>
 
@@ -34,37 +32,26 @@
         <input type="checkbox" id="touch">
         <div class="dropdown-content" style="list-style-type:none;">
             <div class="container">
-                <div id="rajausteksti">Rajaus</div>
-                <div class="filterboksi">
-                    <!-- <a href="#" class="btn active" data-filter="kaikki">Kaikki</a>
-                    <input type="checkbox" id="kaikkiCB" /> -->
+                <div id="filterText">Lisää hakuehtoja</div>
+                <div class="filterBox">
 
-                    <a href="#" class="btn" data-filter="Ilmainen" id="f1">Ilmainen</a>
-                    <input type="checkbox" id="ilmainenCB" />
+                    <a class="btn" id="centerOpt">Keskustassa</a>
+                    <input type="checkbox" id="centerCB" />
 
-                    <a href="#" class="btn" data-filter="lapset" id="f2">Lapsille</a>
-                    <input type="checkbox" id="lapsilleCB" />
+                    <a class="btn" id="touristOpt">Turisteille</a>
+                    <input type="checkbox" id="touristCB" />
 
-                    <a href="#" class="btn" data-filter="turisti" id="f3">Turistien suosikki</a>
-                    <input type="checkbox" id="turistitCB" />
+                    <a class="btn" id="everyoneOpt">Kaikenikäisille</a>
+                    <input type="checkbox" id="everyoneCB" />
 
-                    <a href="#" class="btn" data-filter="Puisto" id="puisto">Puistot</a>
-                    <input type="checkbox" id="puistotCB" />
+                    <a class="btn" id="disabledOpt">Liikuntarajoitteisille</a>
+                    <input type="checkbox" id="disabledCB" />
 
-                    <a href="#" class="btn" data-filter="vesi" id="vesi">Lähellä vettä</a>
-                    <input type="checkbox" id="vesiCB" />
+                    <input onclick="clearCB()" type="button" value="Tyhjennä haku">
 
-                    <a href="#" class="btn" data-filter="keskusta" id="keskusta">Keskustassa</a>
-                    <input type="checkbox" id="keskustaCB" />
-
-                    <div class="hintaSlider">
-                        <input type="range" min="1" max="3" value="2" class="slider" id="hintaSlider">
-                    </div>
-                    $............$$........$$$
                     <br>
                     <input onclick="search()" type="button" value="Hae">
                 </div>
-
             </div>
         </div>
         </nav>
@@ -80,7 +67,7 @@
 
                 
                     <a href="/Kohde/Nähtävyydet/Rotuaari/rotuaari.html" >
-                        <img id="mainpic1" src="/Kuvat/NähtävyydetKuvat/Rotuaari/Rotuaari.jpeg" alt="Rotuaari">
+                        <img id="everyone" src="/Kuvat/NähtävyydetKuvat/Rotuaari/Rotuaari.jpeg" alt="Rotuaari">
                         <div id="teksti">
                             Rotuaari
                         </div>
@@ -91,7 +78,7 @@
 
                 
                     <a href="/Kohde/Nähtävyydet/Toripolliisi/toripolliisi.html">
-                        <img id="mainpic2" src="/Kuvat/NähtävyydetKuvat/Toripoliisi/toripoliisi.jpeg" alt="Toripoliisi">
+                        <img id="tourist" src="/Kuvat/NähtävyydetKuvat/Toripoliisi/toripoliisi.jpeg" alt="Toripoliisi">
                         <div id="teksti">
                             Toripoliisi
                         </div>
@@ -101,7 +88,7 @@
             <li>
 
                     <a href="/Kohde/Nähtävyydet/Valkeakk/valkeakk.html">
-                        <img id="mainpic3" src="/Kuvat/NähtävyydetKuvat/ValkeaKK/img.main_valkeakk.jpeg" alt="ValkeaKK">
+                        <img id="center" src="/Kuvat/NähtävyydetKuvat/ValkeaKK/img.main_valkeakk.jpeg" alt="ValkeaKK">
                         <div id="teksti">
                             Valkea Kesäkatu
                         </div>
@@ -111,7 +98,7 @@
             <li>
 
                     <a href="/Kohde/Nähtävyydet/Kauppahalli/kauppahalli.html">
-                        <img id="mainpic4" src="/Kuvat/NähtävyydetKuvat/Kauppahalli/img.main_kauppahalli.jpeg" alt="Kauppahalli">
+                        <img id="disabled" src="/Kuvat/NähtävyydetKuvat/Kauppahalli/img.main_kauppahalli.jpeg" alt="Kauppahalli">
                         <div id="teksti">
                             Kauppahalli
                         </div>

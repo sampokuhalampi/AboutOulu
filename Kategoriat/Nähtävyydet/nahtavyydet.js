@@ -2,9 +2,48 @@ function returnToMain() {
   location.href = "/Main Screen/main.html";
 }
 
-//button.onClick = takaisin()({});
+function search() {
+  console.log("haku painettu");
+  var allDestinations = ["everyone", "tourist", "center", "disabled"];
+  for (var i = 0; i < allDestinations.length; i++) {
+    document.getElementById(allDestinations[i]).style.display = "none";
+  }
 
-function search() {}
+  var selected = checkSelected();
+
+  if (selected.length != 0) {
+    for (var j = 0; j < selected.length; j++) {
+      document.getElementById(selected[j]).style.display = "";
+    }
+  } else {
+    for (var k = 0; k < allDestinations.length; k++) {
+      document.getElementById(allDestinations[k]).style.display = "";
+    }
+  }
+}
+
+function checkSelected() {
+  var chosen = [];
+
+  if (document.getElementById("centerCB").checked == true) {
+    console.log("keskusta valittu");
+    chosen.push("center");
+  }
+  if (document.getElementById("touristCB").checked == true) {
+    console.log("turisti valittu");
+    chosen.push("tourist");
+  }
+  if (document.getElementById("everyoneCB").checked == true) {
+    console.log("kaikenikäisille valittu");
+    chosen.push("everyone");
+  }
+  if (document.getElementById("disabledCB").checked == true) {
+    console.log("liikuntarajoitteiset valittu");
+    chosen.push("disabled");
+  }
+
+  return chosen;
+}
 
 function textSearch() {
   // Declare variables
@@ -26,99 +65,10 @@ function textSearch() {
   }
 }
 
-//   if (document.getElementById("aikuisetCB").checked == true) {
-//     console.log("aikuiset");
-//     document.getElementById("scandic").style.display = "none";
-//   }
-//   if (document.getElementById("aikuisetCB").checked == false) {
-//     console.log("aikuiset");
-//     document.getElementById("scandic").style.display = "";
-//   }
-
-//   if (document.getElementById("nettiCB").checked == true) {
-//     console.log("netti");
-//     document.getElementById("").style.display = "none";
-//   }
-//   if (document.getElementById("nettiCB").checked == false) {
-//     console.log("netti");
-//     document.getElementById("").style.display = "";
-//   }
-
-//   if (document.getElementById("lapsetCB").checked == true) {
-//     console.log("lapset");
-//     document.getElementById("").style.display = "none";
-//   }
-//   if (document.getElementById("lapsetCB").checked == false) {
-//     console.log("lapset");
-//     document.getElementById("").style.display = "";
-//   }
-
-//   if (document.getElementById("peruutusCB").checked == true) {
-//     console.log("aikuiset");
-//     document.getElementById("").style.display = "none";
-//   }
-//   if (document.getElementById("peruutusCB").checked == false) {
-//     console.log("aikuiset");
-//     document.getElementById("").style.display = "";
-//   }
-
-//   if (document.getElementById("aikuisetCB").checked == true) {
-//     console.log("aikuiset");
-//     document.getElementById("").style.display = "none";
-//   }
-//   if (document.getElementById("aikuisetCB").checked == false) {
-//     console.log("aikuiset");
-//     document.getElementById("").style.display = "";
-//   }
-
-//   if (document.getElementById("aikuisetCB").checked == true) {
-//     console.log("aikuiset");
-//     document.getElementById("").style.display = "none";
-//   }
-//   if (document.getElementById("aikuisetCB").checked == false) {
-//     console.log("aikuiset");
-//     document.getElementById("").style.display = "";
-//   }
-
-// const napit = document.querySelectorAll('.btn');
-// const hotellit = document.querySelectorAll('.hotellit h2');
-
-// for (i = 0; i < napit.length; i++) {
-
-//     napit[i].addEventListener('click', (e) => {
-//         e.preventDefault()
-
-//         const filter = e.target.dataset.filter;
-//         console.log(filter);
-
-//         storeProducts.forEach((product)=> {
-//             if (filter === 'all'){
-//                 product.style.display = 'block'
-//             } else {
-//                 if (product.classList.contains(filter)){
-//                     product.style.display = 'block'
-//                 } else {
-//                     product.style.display = 'none'
-//                 }
-//             }
-//         });
-//     });
-// };
-
-// const haku = document.getElementById("haku");
-// const hotellientTiedot = document.querySelectorAll(".hotellienTiedot");
-
-// search.addEventListener("keyup", filterProducts);
-
-// function filterProducts(e) {
-//     const text = e.target.value.toLowerCase();
-//     // console.log(productName[0]);
-//     hotellientTiedot.forEach(function(product) {
-//         const item = product.firstChild.textContent;
-//         if (item.toLowerCase().indexOf(text) != -1) {
-//             product.parentElement.parentElement.style.display = "block"
-//         } else {
-//             product.parentElement.parentElement.style.display = "none"
-//         }
-//     })
-// }
+function clearCB() {
+  console.log("haku cleared");
+  document.getElementById("centerCB").checked = false;
+  document.getElementById("touristCB").checked = false;
+  document.getElementById("everyoneCB").checked = false;
+  document.getElementById("disabledCB").checked = false;
+}
