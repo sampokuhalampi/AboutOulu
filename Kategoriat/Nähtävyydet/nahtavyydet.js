@@ -67,8 +67,8 @@ function textSearch() {
 
 function clearCB() {
   console.log("haku cleared");
-  document.getElementById("centerCB").checked = false;
-  document.getElementById("touristCB").checked = false;
-  document.getElementById("everyoneCB").checked = false;
-  document.getElementById("disabledCB").checked = false;
+  var allDestinations = ["everyoneCB", "touristCB", "centerCB", "disabledCB"];
+  for (var i = 0; i < allDestinations.length; i++) {
+    document.getElementById(allDestinations[i]).checked = false;
+  }
 }

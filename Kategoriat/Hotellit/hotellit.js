@@ -4,10 +4,12 @@ function returnToMain() {
 
 function search() {
   console.log("hae painettu");
-  document.getElementById("scandic").style.display = "none";
-  document.getElementById("scandic2").style.display = "none";
-  document.getElementById("sryhma").style.display = "none";
-  document.getElementById("radisson").style.display = "none";
+  var allDestinations = ["scandic", "scandic2", "sryhma", "radisson"];
+
+  for (var i = 0; i < allDestinations.length; i++) {
+    document.getElementById(allDestinations[i]).style.display = "none";
+  }
+
   var selected = checkSelected();
 
   var priceRange = checkPriceRange();
@@ -90,8 +92,10 @@ function textSearch() {
 
 function clearCB() {
   console.log("haku cleared");
-  document.getElementById("sryhmaCB").checked = false;
-  document.getElementById("scandicCB").checked = false;
-  document.getElementById("radissonCB").checked = false;
-  document.getElementById("laplandCB").checked = false;
+
+  var allDestinations = ["scandicCB", "sryhmaCB", "radissonCB", "laplandCB"];
+
+  for (var i = 0; i < allDestinations.length; i++) {
+    document.getElementById(allDestinations[i]).checked = false;
+  }
 }
