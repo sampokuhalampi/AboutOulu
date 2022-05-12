@@ -186,9 +186,8 @@ $(document).ready(function () {
   });
 });
 
-//Returns the user to the category page
-function returnButton() {
-  location.href = "/Main Screen/main.html";
+function goBack() {
+  history.back();
 }
 
 //Checks which radiobutton is selected

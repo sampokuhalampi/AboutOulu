@@ -21,10 +21,10 @@ h1 {
     display: inline-block;
 }
 
-.returnButton {
-    position: absolute;
-    left: 0;
-    top: 8px;
+.goBack {
+  position: absolute;
+  left: 0;
+  top: 8px;
 }
 
 .logo {

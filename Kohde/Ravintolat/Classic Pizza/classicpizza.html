@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Classic Pizza Oulu</title>
-    <link href="classicpizza.css" rel="stylesheet">
+    <link href="classicpizza.css" rel="stylesheet" />
     <script src="classicpizza.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="heading">
       <h1 class="logo">AboutOulu</h1>
     </div>
-    <div class="returnButton">
+    <div class="goBack">
       <button
-        onClick="returnButton()"
+        onclick="goBack()"
         style="height: 40px; width: 100px; border-radius: 8%"
       >
         Takaisin
       </button>
     </div>
     <div>
-        <h2 class="destinationName">Classic Pizza</h2>
+      <h2 class="destinationName">Classic Pizza</h2>
     </div>
 
     <div class="image-container">
       <div class="img fade">
-        
         <img src="/Kuvat/RavintolaKuvat/ClassicPizza/ClassicPizza.jpeg" />
-        
       </div>
 
       <div class="img fade">
-        
         <img src="/Kuvat/RavintolaKuvat/ClassicPizza/Classicpizza1.jpeg" />
       </div>
 
       <div class="img fade">
-       
         <img src="/Kuvat/RavintolaKuvat/ClassicPizza/classicpizza2.jpeg" />
       </div>
 
       <div class="img fade">
-       
-        <img src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg" />
+        <img
+          src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg"
+        />
       </div>
 
-      
       <a class="previousImage" onclick="changeImage(-1)">&#10094;</a>
       <a class="nextImage" onclick="changeImage(1)">&#10095;</a>
     </div>
@@ -61,13 +56,17 @@
     </div>
 
     <div class="description">
-        <div class style="padding: 10px">Classic Pizza Restaurant on perinteisiin luottava, jatkuvasti uudistuva pizzaravintola. Tarjoamme vieraillemme kokonaiselämyksen: Viihtyisän ympäristön, ystävällisen vastaanoton, tyylikkään tarjoilun ja herkullisen ruoka- ja juomaelämyksen. 
+      <div class style="padding: 10px">
+        Classic Pizza Restaurant on perinteisiin luottava, jatkuvasti uudistuva
+        pizzaravintola. Tarjoamme vieraillemme kokonaiselämyksen: Viihtyisän
+        ympäristön, ystävällisen vastaanoton, tyylikkään tarjoilun ja
+        herkullisen ruoka- ja juomaelämyksen. Lupauksemme on alusta asti olla se
+        parempi pizzaravintola, johon vieraamme palaavat aina uudestaan syömään
+        ja hengähtämään arjen keskellä.
+      </div>
 
-          Lupauksemme on alusta asti olla se parempi pizzaravintola, johon vieraamme palaavat aina uudestaan syömään ja hengähtämään arjen keskellä.</div>
-
-        <div class style="padding: 10px">Isokatu 25, 90100 Oulu, Suomi</div>
-        <div class>Yhteystiedot <br>puh: +358 447 337 093</div>
-        
+      <div class style="padding: 10px">Isokatu 25, 90100 Oulu, Suomi</div>
+      <div class>Yhteystiedot <br />puh: +358 447 337 093</div>
     </div>
 
     <div id="container"></div>
