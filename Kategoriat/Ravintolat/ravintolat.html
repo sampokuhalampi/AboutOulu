@@ -18,8 +18,9 @@
             <button onclick="returnToMain()"
                 style="height:40px; width:100px; border-radius: 8%; background-color: rgb(190, 200, 229);">Takaisin</button>
         </div>
-        <div class="hakuboksi">
-        </div>
+        <div class="searchBox">
+            <input type="text" id="tekstikentta" onkeyup="textSearch()" placeholder="Hae Nähtävyyttä">
+    </div>
     </div>
 
 
@@ -34,14 +35,26 @@
                 <div id="filterText">Valitse mieluisia hakuehtoja</div>
                 <div class="filterBox">
 
-                    <a class="btn" id="lunchOpt">Lounas</a>
-                    <input type="checkbox" id="lunchCB" />
-
                     <a class="btn" id="snackOpt">Pientä purtavaa</a>
                     <input type="checkbox" id="snackCB" />
 
-                    <a class="btn" id="sryhmaOpt">S-Ryhmä</a>
-                    <input type="checkbox" id="sryhmaCB" />
+                    <a class="btn" id="vegetarianOpt">Kasvisruokaa</a>
+                    <input type="checkbox" id="vegetarianCB" />
+
+                    <a class="btn" id="everyoneOpt">Kaikenikäisille</a>
+                    <input type="checkbox" id="everyoneCB" />
+
+                    <a class="btn" id="comfyOpt">Viihtyisä</a>
+                    <input type="checkbox" id="comfyCB" />
+
+                    <a class="btn" id="disabledOpt">Liikuntarajoitteisille</a>
+                    <input type="checkbox" id="disabledCB" />
+                    
+                    <a class="btn" id="groupOpt">Ryhmille</a>
+                    <input type="checkbox" id="groupCB" />
+
+                    <a class="btn" id="diverseOpt">Monipuolinen</a>
+                    <input type="checkbox" id="diverseCB" />
 
                     <div class="priceSlider">
                         <input type="range" min="1" max="3" value="2" class="slider" id="priceSlider">
