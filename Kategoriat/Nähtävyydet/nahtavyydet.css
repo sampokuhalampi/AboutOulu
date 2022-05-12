@@ -140,7 +140,7 @@ button {
 #touch:checked + .dropdown-content {
     height: 125px;   
 } 
-#rajausteksti {
+#filterText {
     font-weight: bold;
     padding: 10px;
 }
