@@ -145,22 +145,13 @@ button {
     padding: 10px;
 }
 
-.mainfeed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-    text-align: center;
-    position: relative;
-}
+
 
 img { 
     width: 95%;
     height: 95%;
     border-radius: 0px;
-    align-items: center;
-    object-fit: cover;
-    position: relative;
+ 
    
 }
 
@@ -205,4 +196,3 @@ body {
 #destinationText {
     opacity: 0;
 }
-

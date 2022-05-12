@@ -8,6 +8,21 @@
 body {
     background-image: linear-gradient(to right, rgb(223, 234, 255), rgb(81, 120, 238));
     text-align: center;
+    position: relative;
+}
+button {
+  border: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 10%;
+  background-color: rgb(190, 200, 229);
 }
 
 .information {

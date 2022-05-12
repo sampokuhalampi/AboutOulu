@@ -162,7 +162,7 @@ button {
 img { 
     width: 95%;
     height: 95%;
-    border-radius: 0px;
+    border-radius: 5px;
 
     align-items: center;
     object-fit: cover;
