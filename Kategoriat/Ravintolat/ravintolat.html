@@ -19,7 +19,7 @@
                 style="height:40px; width:100px; border-radius: 8%; background-color: rgb(190, 200, 229);">Takaisin</button>
         </div>
         <div class="hakuboksi">
-       </div>
+        </div>
     </div>
 
 
@@ -27,43 +27,22 @@
     <div class="dropdown">
         <nav></nav>
 
-        <label for="touch"><span>Rajaus</span></label>
+        <label for="touch"><span>Lisää hakuehtoja</span></label>
         <input type="checkbox" id="touch">
         <div class="dropdown-content" style="list-style-type:none;">
             <div class="container">
-                <div id="rajausteksti">Rajaus</div>
+                <div id="filterText">Valitse mieluisia hakuehtoja</div>
 
                 <div class="filterboksi">
 
-                    <a class="btn" id="romantic">Romanttinen</a>
-                    <input type="checkbox" id="romanticCB" />
-
-                    <a class="btn" id="fastfood">Pikaruoka</a>
-                    <input type="checkbox" id="fastfoodCB" />
-
-                    <a class="btn" id="children">Lapsiystävällinen</a>
-                    <input type="checkbox" id="childrenCB" />
-
-                    <a class="btn" id="reservation">Mahdollisuus pöytävarauksiin</a>
-                    <input type="checkbox" id="reservationCB" />
-
-                    <a class="btn" id="lunch">Lounas</a>
+                    <a class="btn" id="lunchOpt">Lounas</a>
                     <input type="checkbox" id="lunchCB" />
 
-                    <a class="btn" id="breakfast">Aamiainen</a>
-                    <input type="checkbox" id="breakfastCB" />
+                    <a class="btn" id="snackOpt">Pientä purtavaa</a>
+                    <input type="checkbox" id="snackCB" />
 
-                    <a class="btn"  id="dinner">Päivällinen</a>
-                    <input type="checkbox" id="dinnerCB" />
-
-                    <a class="btn"  id="chinese">Kiinalainen</a>
-                    <input type="checkbox" id="chineseCB" />
-
-                    <a class="btn"  id="burger">Hampurilaisia</a>
-                    <input type="checkbox" id="burgerCB" />
-
-                    <a class="btn"  id="vegan">Vegaaninen</a>
-                    <input type="checkbox" id="veganCB" />
+                    <a class="btn" id="sryhmaOpt">S-Ryhmä</a>
+                    <input type="checkbox" id="sryhmaCB" />
 
                     <div class="priceSlider">
                         <input type="range" min="1" max="3" value="2" class="slider" id="priceSlider">
@@ -84,26 +63,20 @@
         <ul id="listaKohteista">
             <li>
 
-                <div class="pr2">
+                <div class="pr3">
                     <a href="/Kohde/Ravintolat/Amarillo/amarillo.html">
-                        <img id="dinner" src="/Kuvat/RavintolaKuvat/Amarillo/img.main_amarillo.jpeg" alt="Amarillo">
-
+                        <img id="sryhma" src="/Kuvat/RavintolaKuvat/Amarillo/img.main_amarillo.jpeg" alt="Amarillo">
                         <div id="destinationText">
                             Amarillo
                         </div>
                     </a>
                 </div>
-
             </li>
             <li>
-
-                <div class="pr1" >
+                <div class="pr1">
                     <a href="/Kohde/Ravintolat/Classic Pizza/classicpizza.html">
-
-
                         <img id="lunch" src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg"
                             alt="Classic">
-
                         <div id="destinationText">
                             ClassicPizza
                         </div>
@@ -111,13 +84,9 @@
                 </div>
             </li>
             <li>
-
-                <div class="pr2" >
+                <div class="pr2">
                     <a href="/Kohde/Ravintolat/Picnic/picnic.html">
-
-
-                        <img id="breakfast" src="/Kuvat/RavintolaKuvat/Picnic/img.main_picnic.jpeg" alt="Picnic">
-
+                        <img id="snack" src="/Kuvat/RavintolaKuvat/Picnic/img.main_picnic.jpeg" alt="Picnic">
                         <div id="destinationText">
                             Picnic
                         </div>
@@ -125,13 +94,9 @@
                 </div>
             </li>
             <li>
-
-                <div class="pr1" >
+                <div class="pr1">
                     <a href="/Kohde/Ravintolat/Fafa's/fafas.html">
-
-
-                        <img id="children" src="/Kuvat/RavintolaKuvat/Fafas/img.main_fafas.jpeg" alt="fafas">
-
+                        <img id="lunch" src="/Kuvat/RavintolaKuvat/Fafas/img.main_fafas.jpeg" alt="fafas">
                         <div id="destinationText">
                             Fafas
                         </div>
@@ -139,13 +104,9 @@
                 </div>
             </li>
             <li>
-
-                <div class="pr3" >
+                <div class="pr3">
                     <a href="/Kohde/Ravintolat/Frans & Camille/franscamille.html">
-
-
-                        <img id="romantic" src="/Kuvat/RavintolaKuvat/Frans&Camille/Frans&camille.jpeg" alt="frans">
-
+                        <img id="sryhma" src="/Kuvat/RavintolaKuvat/Frans&Camille/Frans&camille.jpeg" alt="frans">
                         <div id="destinationText">
                             Frans & Camille
                         </div>
@@ -153,14 +114,9 @@
                 </div>
             </li>
             <li>
-
-                <div class="pr3" >
+                <div class="pr2">
                     <a href="/Kohde/Ravintolat/Puistola/puistola.html">
-
-                     
-
-                        <img id="reservation" src="/Kuvat/RavintolaKuvat/Puistola/img.puistola_main.jpeg" alt="Puistola">
-
+                        <img id="snack" src="/Kuvat/RavintolaKuvat/Puistola/img.puistola_main.jpeg" alt="Puistola">
                         <div id="destinationText">
                             Puistola
                         </div>
@@ -168,12 +124,9 @@
                 </div>
             </li>
             <li>
-
-                <div class="pr2" >
+                <div class="pr2">
                     <a href="/Kohde/Ravintolat/Wok's/wok.html">
-
-                        <img id="vegan" src="/Kuvat/RavintolaKuvat/Woks/Woks.jpeg" alt="Woks">
-
+                        <img id="lunch" src="/Kuvat/RavintolaKuvat/Woks/Woks.jpeg" alt="Woks">
                         <div id="destinationText">
                             Wok's
                         </div>
@@ -181,21 +134,17 @@
                 </div>
             </li>
             <li>
-
-                <div class="pr2">
+                <div class="pr3">
                     <a href="/Kohde/Ravintolat/Amarillo/amarillo.html">
-                        <img id="dinner" src="/Kuvat/RavintolaKuvat/Amarillo/Amarillo2.jpeg" alt="Amarillo">
+                        <img id="sryhma2" src="/Kuvat/RavintolaKuvat/Amarillo/Amarillo2.jpeg" alt="Amarillo">
 
                         <div id="destinationText">
                             Amarillo
                         </div>
                     </a>
                 </div>
-
             </li>
-
         </ul>
-
     </div>
 </body>
 

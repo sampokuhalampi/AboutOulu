@@ -6,9 +6,14 @@ function returnToMain() {
 
 function search() {
   console.log("hae painettu");
-  // document.getElementById("").style.display = "none";
-  // document.getElementById("").style.display = "none";
-  // document.getElementById("").style.display = "none";
+  //document.getElementById("sryhma").style.display = "none";
+  // document.getElementById("sryhma2").style.display = "none";
+  // document.getElementById("lunch").style.display = "none";
+  // document.getElementById("snack").style.display = "none";
+  document.querySelectorAll(".pr1").style.display = "none";
+  document.querySelectorAll(".pr2").style.display = "none";
+  document.querySelectorAll(".pr3").style.display = "none";
+
   var selected = checkSelected();
 
   var priceRange = checkPriceRange();
@@ -19,45 +24,17 @@ function search() {
 function checkSelected() {
   var chosen = [];
 
-  if (document.getElementById("romanticCB").checked == true) {
-    console.log("romanttinen valittu");
-    chosen.push("romantic");
-  }
-  if (document.getElementById("fastfoodCB").checked == true) {
-    console.log("pikaruoka valittu");
-    chosen.push("fastfood");
-  }
-  if (document.getElementById("childrenCB").checked == true) {
-    console.log("lapset valittu");
-    chosen.push("children");
-  }
-  if (document.getElementById("reservationCB").checked == true) {
-    console.log("varaus valittu");
-    chosen.push("reservation");
-  }
   if (document.getElementById("lunchCB").checked == true) {
     console.log("lounas valittu");
     chosen.push("lunch");
   }
-  if (document.getElementById("breakfastCB").checked == true) {
-    console.log("romanttinen valittu");
-    chosen.push("breakfast");
+  if (document.getElementById("snackCB").checked == true) {
+    console.log("pientä purtavaa valittu");
+    chosen.push("snack");
   }
-  if (document.getElementById("dinnerCB").checked == true) {
-    console.log("päivällinen valittu");
-    chosen.push("dinner");
-  }
-  if (document.getElementById("chineseCB").checked == true) {
-    console.log("kiinalainen valittu");
-    chosen.push("chinese");
-  }
-  if (document.getElementById("burgerCB").checked == true) {
-    console.log("hampurilainen valittu");
-    chosen.push("burger");
-  }
-  if (document.getElementById("veganCB").checked == true) {
-    console.log("vegaaninen valittu");
-    chosen.push("vegan");
+  if (document.getElementById("sryhmaCB").checked == true) {
+    console.log("s-ryhmä valittu");
+    chosen.push("sryhma");
   }
 
   return chosen;
