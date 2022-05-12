@@ -1,5 +1,5 @@
-function returnToMainPage() {
-  location.href = "/Main Screen/main.html";
+function goBack() {
+  history.back();
 }
 
 function search() {
@@ -7,6 +7,7 @@ function search() {
   document.getElementById("wifi").style.display = "none";
   document.getElementById("breakfast").style.display = "none";
   document.getElementById("children").style.display = "none";
+  document.getElementById("scandic").style.display = "none";
   var selected = checkSelected();
 
   var priceRange = checkPriceRange();
@@ -31,11 +32,13 @@ function search() {
   if (priceRange == 3) {
     if (selected.length != 0) {
       for (var i = 0; i < selected.length; i++) {
-        if (selected[i] != "wifi" && selected[i] != "breakfast")
-          document.getElementById(selected[i]).style.display = "";
+        document.getElementById(selected[i]).style.display = "";
       }
     } else {
+      document.getElementById("wifi").style.display = "";
+      document.getElementById("breakfast").style.display = "";
       document.getElementById("children").style.display = "";
+      document.getElementById("scandic").style.display = "";
     }
   }
 }

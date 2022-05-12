@@ -1,4 +1,4 @@
-.returnToMainPage {
+.goBack {
 
     position: absolute;
     left: 0;
@@ -172,7 +172,7 @@ img {
 }
 
 
-#listOfDestination {
+#listOfDestinations {
     columns: 2;
     column-gap: 0%;
     list-style: none;

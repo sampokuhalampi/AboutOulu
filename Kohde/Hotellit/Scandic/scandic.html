@@ -1,122 +1,129 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Scandic Oulu</title>
+    <link href="scandic.css" rel="stylesheet" />
+    <script src="scandic.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Scandic Oulu</title>
-  <link href="scandic.css" rel="stylesheet">
-  <script src="scandic.js" defer></script>
-</head>
-
-<body>
-  <div class="heading">
-    <h1 class="logo">AboutOulu</h1>
-  </div>
-  <div class="returnButton">
-    <button onClick="returnButton()" style="height: 40px; width: 100px; border-radius: 8%">
-      Takaisin
-    </button>
-  </div>
-  <div>
-    <h2 class="destinationName">Scandic Oulu</h2>
-  </div>
-
-  <div class="image-container">
-    <div class="img fade">
-
-      <img src="/Kuvat/Hotellikuvat/Scandic/img.main_scandic.jpeg" />
-
+  <body>
+    <div class="heading">
+      <h1 class="logo">AboutOulu</h1>
     </div>
-
-    <div class="img fade">
-
-      <img src="/Kuvat/HotelliKuvat/Scandic/scandic.jpeg" />
+    <div class="returnButton">
+      <button
+        onClick="returnButton()"
+        style="height: 40px; width: 100px; border-radius: 8%"
+      >
+        Takaisin
+      </button>
     </div>
-
-    <div class="img fade">
-
-      <img src="/Kuvat/HotelliKuvat/Scandic/scandic3.jpeg" />
-    </div>
-
-    <div class="img fade">
-
-      <img src="/Kuvat/HotelliKuvat/Scandic/scandic1.jpeg" />
-    </div>
-
-
-    <a class="previousImage" onclick="changeImage(-1)">&#10094;</a>
-    <a class="nextImage" onclick="changeImage(1)">&#10095;</a>
-  </div>
-  <br />
-
-  <div style="text-align: center">
-    <span class="dot" onclick="currentImage(1)"></span>
-    <span class="dot" onclick="currentImage(2)"></span>
-    <span class="dot" onclick="currentImage(3)"></span>
-  </div>
-
-  <div class="description">
-    <div class style="padding: 10px">Tässä pohjoismaiseen tyyliin sisustetussa keskustahotellissa on helppo viihtyä.
-      Ostoskadut löytyvät läheltä. Hotellin Torilla-ravintola kabinetteineen palvelee sekä hotelliasukkaita että
-      paikallisia.
-      Hotellissa voit rentoutua saunassa, treenata kuntosalilla tai lainata kävelysauvat vastaanotosta ja tutustua Oulun
-      keskustaan. Hotellin Torilla-ravintola kabinetteineen palvelee sekä hotellin asukkaita että kaupunkilaisia.
-      Listalta löytyy maukkaita annoksia. Hotellissa on myös 10 kokoushuonetta, pysäköintihalli ja langaton
-      internetyhteys kaikissa tiloissa.
-
-      Hotelli sijaitsee aivan Oulun keskustassa, Rotuaarin ostoskatujen välittömässä läheisyydessä. Keskeisen
-      sijaintinsa ansiosta hotelli on erinomainen lähtöpiste kun vierailet Oulussa. Lähellä hotellia ovat tori
-      kauppahalleineen ja toripoliiseineen, Ainolan puisto sekä kaunis Pikisaaren alue. Hotellin viereisessä
-      rakennuksessa on elokuvateatteri.</div>
-
-    <div class style="padding: 10px">Saaristonkatu 4, Oulu 90100, Suomi</div>
-    <div class>Yhteystiedot <br>puh: +358 300308464 <br> Sähköposti: oulucity@scandichotels.com</div>
-
-  </div>
-
-  <div id="container"></div>
-
-  <div class="form">
-    <h5 class="addCommenttext">Lisää kommentti</h5>
-    <div class="nameBox">
-      <input type="text" id="name" placeholder="Nimi" /> <br /><br />
-    </div>
-    <div class="TitleBox">
-      <input type="text" id="title" placeholder="Otsikko" /> <br /><br />
-    </div>
-    <div class="CommentBox">
-      <textarea rows="5" col="30" id="bodyText" placeholder="Kommentti"></textarea><br /><br />
-    </div>
-
-    <div class="contact">Minuun saa ottaa yhteyttä palautteesta</div>
-
     <div>
-      <label for="emailCheckbox">
-        <input type="checkbox" id="emailCheckbox" name="emailCheckbox" />
-      </label>
-      <input type="text" id="email" disabled placeholder="Sähköposti" />
-
-      <input type="button" id="addComment" value="Julkaise" />
+      <h2 class="destinationName">Scandic Oulu</h2>
     </div>
 
-    <div class="arvosanaRadiobutton">
-      <input type="radio" name="star" value="t1" id="t1" />
-      <label for="t1">1</label>
-      <input type="radio" name="star" value="t2" id="t2" />
-      <label for="t2">2</label>
-      <input type="radio" name="star" value="t3" id="t3" />
-      <label for="t3">3</label>
-      <input type="radio" name="star" value="t4" id="t4" />
-      <label for="t4">4</label>
-      <input type="radio" name="star" value="t5" id="t5" />
-      <label for="t5">5</label>
+    <div class="image-container">
+      <div class="img fade">
+        <img src="/Kuvat/Hotellikuvat/Scandic/img.main_scandic.jpeg" />
+      </div>
+
+      <div class="img fade">
+        <img src="/Kuvat/HotelliKuvat/Scandic/scandic.jpeg" />
+      </div>
+
+      <div class="img fade">
+        <img src="/Kuvat/HotelliKuvat/Scandic/scandic3.jpeg" />
+      </div>
+
+      <div class="img fade">
+        <img src="/Kuvat/HotelliKuvat/Scandic/scandic1.jpeg" />
+      </div>
+
+      <a class="previousImage" onclick="changeImage(-1)">&#10094;</a>
+      <a class="nextImage" onclick="changeImage(1)">&#10095;</a>
     </div>
-  </div>
+    <br />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script src="kohteenTemplateScript.js"></script>
-</body>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentImage(1)"></span>
+      <span class="dot" onclick="currentImage(2)"></span>
+      <span class="dot" onclick="currentImage(3)"></span>
+    </div>
 
+    <div class="description">
+      <div class style="padding: 10px">
+        Tässä pohjoismaiseen tyyliin sisustetussa keskustahotellissa on helppo
+        viihtyä. Ostoskadut löytyvät läheltä. Hotellin Torilla-ravintola
+        kabinetteineen palvelee sekä hotelliasukkaita että paikallisia.
+        Hotellissa voit rentoutua saunassa, treenata kuntosalilla tai lainata
+        kävelysauvat vastaanotosta ja tutustua Oulun keskustaan. Hotellin
+        Torilla-ravintola kabinetteineen palvelee sekä hotellin asukkaita että
+        kaupunkilaisia. Listalta löytyy maukkaita annoksia. Hotellissa on myös
+        10 kokoushuonetta, pysäköintihalli ja langaton internetyhteys kaikissa
+        tiloissa. Hotelli sijaitsee aivan Oulun keskustassa, Rotuaarin
+        ostoskatujen välittömässä läheisyydessä. Keskeisen sijaintinsa ansiosta
+        hotelli on erinomainen lähtöpiste kun vierailet Oulussa. Lähellä
+        hotellia ovat tori kauppahalleineen ja toripoliiseineen, Ainolan puisto
+        sekä kaunis Pikisaaren alue. Hotellin viereisessä rakennuksessa on
+        elokuvateatteri.
+      </div>
+      Hintaluokka: €€
+      <div class style="padding: 10px">Saaristonkatu 4, Oulu 90100, Suomi</div>
+      <div class>
+        Yhteystiedot <br />puh: +358 300308464 <br />
+        Sähköposti: oulucity@scandichotels.com
+      </div>
+    </div>
+
+    <div id="container"></div>
+
+    <div class="form">
+      <h5 class="addCommenttext">Lisää kommentti</h5>
+      <div class="nameBox">
+        <input type="text" id="name" placeholder="Nimi" /> <br /><br />
+      </div>
+      <div class="TitleBox">
+        <input type="text" id="title" placeholder="Otsikko" /> <br /><br />
+      </div>
+      <div class="CommentBox">
+        <textarea
+          rows="5"
+          col="30"
+          id="bodyText"
+          placeholder="Kommentti"
+        ></textarea
+        ><br /><br />
+      </div>
+
+      <div class="contact">Minuun saa ottaa yhteyttä palautteesta</div>
+
+      <div>
+        <label for="emailCheckbox">
+          <input type="checkbox" id="emailCheckbox" name="emailCheckbox" />
+        </label>
+        <input type="text" id="email" disabled placeholder="Sähköposti" />
+
+        <input type="button" id="addComment" value="Julkaise" />
+      </div>
+
+      <div class="arvosanaRadiobutton">
+        <input type="radio" name="star" value="t1" id="t1" />
+        <label for="t1">1</label>
+        <input type="radio" name="star" value="t2" id="t2" />
+        <label for="t2">2</label>
+        <input type="radio" name="star" value="t3" id="t3" />
+        <label for="t3">3</label>
+        <input type="radio" name="star" value="t4" id="t4" />
+        <label for="t4">4</label>
+        <input type="radio" name="star" value="t5" id="t5" />
+        <label for="t5">5</label>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="kohteenTemplateScript.js"></script>
+  </body>
 </html>
