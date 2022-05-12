@@ -1,4 +1,4 @@
-function takaisin() {
+function returnToMain() {
   location.href = "/Main Screen/main.html";
 }
 

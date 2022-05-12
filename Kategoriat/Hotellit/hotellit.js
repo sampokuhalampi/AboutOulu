@@ -1,5 +1,5 @@
-function goBack() {
-  history.back();
+function returnToMain() {
+  location.href = "/Main Screen/main.html";
 }
 
 function search() {
