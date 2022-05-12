@@ -162,14 +162,16 @@ img {
     object-fit: cover;
     position: relative;
    
-    padding-right: 100%;
 }
 
 #listaKohteista {
-    columns: 2;
-    column-gap: 0%;
-    list-style: none;
-}
+    
+        padding-left: 0;
+        list-style: none;
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+    }
 
 #scandicTeksti {
     opacity: 0;
