@@ -14,32 +14,8 @@ function search() {
 
   console.log("hinta: " + priceRange);
 
-  if (priceRange == 1) {
-    //No hotels at price range 1
-  }
-  if (priceRange == 2) {
-    if (selected.length != 0) {
-      for (var i = 0; i < selected.length; i++) {
-        if (selected[i] != "children") {
-          document.getElementById(selected[i]).style.display = "";
-        }
-      }
-    } else {
-      document.getElementById("wifi").style.display = "";
-      document.getElementById("breakfast").style.display = "";
-    }
-  }
-  if (priceRange == 3) {
-    if (selected.length != 0) {
-      for (var i = 0; i < selected.length; i++) {
-        document.getElementById(selected[i]).style.display = "";
-      }
-    } else {
-      document.getElementById("wifi").style.display = "";
-      document.getElementById("breakfast").style.display = "";
-      document.getElementById("children").style.display = "";
-      document.getElementById("scandic").style.display = "";
-    }
+  for (var i = 0; i < selected.length; i++) {
+    document.getElementById(selected[i]).style.display = "";
   }
 }
 
