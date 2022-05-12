@@ -6,35 +6,88 @@ function returnToMain() {
 
 function search() {
   console.log("hae painettu");
-  //document.getElementById("sryhma").style.display = "none";
-  // document.getElementById("sryhma2").style.display = "none";
-  // document.getElementById("lunch").style.display = "none";
-  // document.getElementById("snack").style.display = "none";
-  document.querySelectorAll(".pr1").style.display = "none";
-  document.querySelectorAll(".pr2").style.display = "none";
-  document.querySelectorAll(".pr3").style.display = "none";
+  var allDestinations = [
+    "snack",
+    "vegetarian",
+    "everyone",
+    "comfy",
+    "disabled",
+    "group",
+    "diverse",
+  ];
+
+  for (var i = 0; i < allDestinations.length; i++) {
+    document.getElementById(allDestinations[i]).style.display = "none";
+  }
 
   var selected = checkSelected();
 
   var priceRange = checkPriceRange();
 
   console.log("hinta: " + priceRange);
+
+  var imgDestination = document.querySelectorAll("img");
+  // console.log(pr1Destination);
+  // console.log(pr1Destination.getElementById("disabled"));
+
+  if (selected.length != 0) {
+    if (priceRange == 1) {
+      for (var i = 0; i < selected.length; i++) {
+        if (pr1.classList.contains(selected[i])) {
+          document.getElementById(selected[i]).style.display = "";
+        }
+      }
+    }
+
+    if (priceRange == 2) {
+      for (var i = 0; i < selected.length; i++) {
+        if (selected[i] != "comfy" && selected[i] != "diverse") {
+          document.getElementById(selected[i]).style.display = "";
+        }
+      }
+    }
+    if (priceRange == 3) {
+      for (var i = 0; i < selected.length; i++) {
+        document.getElementById(selected[i]).style.display = "";
+      }
+    }
+  } else {
+    for (var i = 0; i < allDestinations.length; i++) {
+      document.getElementById(allDestinations[i]).style.display = "";
+    }
+  }
 }
 
 function checkSelected() {
   var chosen = [];
 
-  if (document.getElementById("lunchCB").checked == true) {
-    console.log("lounas valittu");
-    chosen.push("lunch");
-  }
   if (document.getElementById("snackCB").checked == true) {
     console.log("pientä purtavaa valittu");
     chosen.push("snack");
   }
-  if (document.getElementById("sryhmaCB").checked == true) {
-    console.log("s-ryhmä valittu");
-    chosen.push("sryhma");
+  if (document.getElementById("vegetarianCB").checked == true) {
+    console.log("kasvisruoka valittu");
+    chosen.push("vegetarian");
+  }
+  if (document.getElementById("everyoneCB").checked == true) {
+    console.log("kaikenikäisille valittu");
+    chosen.push("everyone");
+  }
+  if (document.getElementById("comfyCB").checked == true) {
+    console.log("viihtyisä valittu");
+    chosen.push("comfy");
+  }
+  if (document.getElementById("disabledCB").checked == true) {
+    console.log("liikuntarajoitteisille valittu");
+    chosen.push("disabled");
+  }
+  if (document.getElementById("groupCB").checked == true) {
+    console.log("ryhmille valittu");
+    chosen.push("group");
+  }
+  if (document.getElementById("diverseCB").checked == true) {
+    console.log("monipuolinen valittu");
+    chosen.push("diverse");
   }
 
   return chosen;
@@ -66,8 +119,18 @@ function textSearch() {
 
 function clearCB() {
   console.log("haku cleared");
-  document.getElementById("centerCB").checked = false;
-  document.getElementById("touristCB").checked = false;
-  document.getElementById("everyoneCB").checked = false;
-  document.getElementById("disabledCB").checked = false;
+
+  var allDestinations = [
+    "snackCB",
+    "vegetarianCB",
+    "everyoneCB",
+    "comfyCB",
+    "disabledCB",
+    "groupCB",
+    "diverseCB",
+  ];
+
+  for (var i = 0; i < allDestinations.length; i++) {
+    document.getElementById(allDestinations[i]).checked = false;
+  }
 }
