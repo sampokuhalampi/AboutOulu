@@ -133,4 +133,5 @@ function clearCB() {
   for (var i = 0; i < allDestinations.length; i++) {
     document.getElementById(allDestinations[i]).checked = false;
   }
+  search();
 }
