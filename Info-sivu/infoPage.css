@@ -15,7 +15,12 @@ body {
 
 h1 {
     margin: 0;
+    font-weight: normal;
     display: inline-block;
+}
+
+h2 {
+    font-weight: normal;
 }
 
 button {
