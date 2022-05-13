@@ -2,8 +2,6 @@ function returnToMain() {
   location.href = "/index.html";
 }
 
-//button.onClick = takaisin()({});
-
 function search() {
   console.log("hae painettu");
   var allDestinations = [

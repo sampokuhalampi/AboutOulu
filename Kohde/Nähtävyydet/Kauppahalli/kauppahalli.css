@@ -59,9 +59,9 @@ top: 8px;
 
 .description {
   padding: 10px;
-  padding-left: 200px;
-  padding-right: 200px;
-  font-size: 1.4vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.6vw;
 }
 
 #comment-box, #post {
