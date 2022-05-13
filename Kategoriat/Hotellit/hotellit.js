@@ -4,7 +4,7 @@ function returnToMain() {
 
 function search() {
   console.log("hae painettu");
-  var allDestinations = ["scandic", "scandic2", "sryhma", "radisson"];
+  var allDestinations = ["scandic", "sryhma", "radisson"];
 
   for (var i = 0; i < allDestinations.length; i++) {
     document.getElementById(allDestinations[i]).style.display = "none";
@@ -21,26 +21,38 @@ function search() {
   }
   if (priceRange == 2) {
     if (selected.length != 0) {
+      var pr2Selected = [];
       for (var i = 0; i < selected.length; i++) {
         if (selected[i] != "radisson") {
           document.getElementById(selected[i]).style.display = "";
+          pr2Selected[i] = selected[i];
         }
       }
+      filteringShow(pr2Selected);
     } else {
-      document.getElementById("scandic").style.display = "";
-      document.getElementById("sryhma").style.display = "";
+      var pr2Destinations = ["scandic", "sryhma"];
+      filteringShow(pr2Destinations);
+
+      for (var i = 0; i < pr2Destinations.length; i++) {
+        document.getElementById(pr2Destinations[i]).style.display = "";
+      }
     }
   }
   if (priceRange == 3) {
+    var pr3Selected = [];
     if (selected.length != 0) {
       for (var i = 0; i < selected.length; i++) {
         document.getElementById(selected[i]).style.display = "";
+        pr3Selected[i] = selected[i];
       }
+      filteringShow(pr3Selected);
     } else {
-      document.getElementById("scandic").style.display = "";
-      document.getElementById("sryhma").style.display = "";
-      document.getElementById("radisson").style.display = "";
-      document.getElementById("scandic2").style.display = "";
+      var pr3Destinations = ["scandic", "sryhma", "radisson"];
+      filteringShow(pr3Destinations);
+
+      for (var i = 0; i < pr3Destinations.length; i++) {
+        document.getElementById(pr3Destinations[i]).style.display = "";
+      }
     }
   }
 }
@@ -87,6 +99,34 @@ function textSearch() {
     } else {
       li[i].style.display = "none";
     }
+  }
+}
+
+function filteringShow(filter) {
+  ul = document.getElementById("listOfDestinations");
+  li = ul.getElementsByTagName("li");
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    li[i].style.display = "none";
+  }
+
+  console.log(filter);
+  if (filter.includes("scandic") == true) {
+    console.log("filtering scandic");
+    li[0].style.display = "";
+  }
+  if (filter.includes("sryhma") == true) {
+    console.log("filtering S-ryhmä");
+    li[1].style.display = "";
+  }
+  if (filter.includes("radisson") == true) {
+    console.log("filtering liikuntarajoitteisille");
+    li[2].style.display = "";
+  }
+  if (filter.includes("lapland") == true) {
+    console.log("filtering lapland");
+    li[3].style.display = "";
   }
 }
 
