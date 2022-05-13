@@ -1,2 +1,2 @@
 # AboutOulu
-Tarkoituksena on luoda webapplikaatio ohjelmointi kurssia varten, jossa käyttäjä pääsee tutustumaan Ouluun nettisivun muodossa.
+Tarkoituksena on luoda webapplikaatio ohjelmointikurssia varten, jossa käyttäjä pääsee tutustumaan Ouluun nettisivun muodossa.
