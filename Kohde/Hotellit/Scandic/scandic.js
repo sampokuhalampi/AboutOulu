@@ -213,3 +213,7 @@ function checkRadiobutton() {
     return 5;
   }
 }
+
+function returnToMain() {
+  location.href = "/Main Screen/main.html";
+}

@@ -38,6 +38,11 @@ h1 {
   font-weight: normal;
 }
 
+.header1 {
+  display: inline-block;
+}
+
+
 .goBack {
 position: absolute;
 left: 0;

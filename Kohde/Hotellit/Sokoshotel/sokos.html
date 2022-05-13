@@ -11,12 +11,17 @@
 
   <body>
     <div class="heading">
-      <h1 class="logo">AboutOulu</h1>
+      <h1 class="logo"><button onclick="returnToMain()">AboutOulu</button></h1>
     </div>
     <div class="goBack">
       <button
         onclick="goBack()"
-        style="height:40px; width:100px; border-radius: 10%; background-color: rgb(190, 200, 229);"
+        style="
+          height: 40px;
+          width: 100px;
+          border-radius: 10%;
+          background-color: rgb(190, 200, 229);
+        "
       >
         Takaisin
       </button>
@@ -120,6 +125,5 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="kohteenTemplateScript.js"></script>
   </body>
 </html>
