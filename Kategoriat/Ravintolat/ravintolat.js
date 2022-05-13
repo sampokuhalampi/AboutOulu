@@ -26,34 +26,69 @@ function search() {
 
   console.log("hinta: " + priceRange);
 
-  var imgDestination = document.querySelectorAll("img");
-  // console.log(pr1Destination);
-  // console.log(pr1Destination.getElementById("disabled"));
-
-  if (selected.length != 0) {
-    if (priceRange == 1) {
+  if (priceRange == 1) {
+    if (selected.length != 0) {
       for (var i = 0; i < selected.length; i++) {
-        if (pr1.classList.contains(selected[i])) {
+        if (
+          selected[i] != "diverse" &&
+          selected[i] != "comfy" &&
+          selected[i] != "snack" &&
+          selected[i] != "everyone" &&
+          selected[i] != "vegetarian"
+        ) {
           document.getElementById(selected[i]).style.display = "";
         }
       }
+    } else {
+      var pr1Destinations = ["group", "disabled", "comfy"];
+      for (var i = 0; i < pr1Destinations.length; i++) {
+        document.getElementById(pr1Destinations[i]).style.display = "";
+      }
     }
+  }
 
-    if (priceRange == 2) {
+  if (priceRange == 2) {
+    if (selected.length != 0) {
       for (var i = 0; i < selected.length; i++) {
-        if (selected[i] != "comfy" && selected[i] != "diverse") {
+        if (selected[i] != "diverse" && selected[i] != "comfy") {
           document.getElementById(selected[i]).style.display = "";
         }
       }
+    } else {
+      var pr2Destinations = [
+        "group",
+        "disabled",
+        "snack",
+        "everyone",
+        "vegetarian",
+      ];
+
+      for (var i = 0; i < pr2Destinations.length; i++) {
+        document.getElementById(pr2Destinations[i]).style.display = "";
+      }
     }
-    if (priceRange == 3) {
+  }
+
+  if (priceRange == 3) {
+    if (selected.length != 0) {
       for (var i = 0; i < selected.length; i++) {
         document.getElementById(selected[i]).style.display = "";
       }
-    }
-  } else {
-    for (var i = 0; i < allDestinations.length; i++) {
-      document.getElementById(allDestinations[i]).style.display = "";
+    } else {
+      var pr3Destinations = [
+        "group",
+        "disabled",
+        "diverse",
+        "comfy",
+        "snack",
+        "everyone",
+        "comfy",
+        "vegetarian",
+      ];
+
+      for (var i = 0; i < pr3Destinations.length; i++) {
+        document.getElementById(pr3Destinations[i]).style.display = "";
+      }
     }
   }
 }
@@ -98,14 +133,12 @@ function checkPriceRange() {
 }
 
 function textSearch() {
-  // Declare variables
   var input, filter, ul, li, a, i, txtValue;
   input = document.getElementById("tekstikentta");
   filter = input.value.toUpperCase();
   ul = document.getElementById("listaKohteista");
   li = ul.getElementsByTagName("li");
 
-  // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
