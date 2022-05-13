@@ -33,7 +33,7 @@ background-color: rgb(190, 200, 229);
 
 h1 {
   margin: 0;
-  font-size: 3.0vw;
+  font-size: 3em;
   display: inline-block;
   font-weight: normal;
 }
@@ -49,8 +49,10 @@ left: 0;
 top: 8px;
 }
 
-.logo {
-  display: inline-block;
+#logo {
+  cursor: pointer;
+  font-size: 3vw;
+  background-color: none;
 }
 
 .destinationName {
