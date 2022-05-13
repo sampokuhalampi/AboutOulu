@@ -1,5 +1,5 @@
 function returnToMain() {
-  location.href = "/Main Screen/index.html";
+  location.href = "/index.html";
 }
 
 //button.onClick = takaisin()({});
