@@ -7,6 +7,7 @@ function search() {
   var allDestinations = ["everyone", "tourist", "center", "disabled"];
   for (var i = 0; i < allDestinations.length; i++) {
     document.getElementById(allDestinations[i]).style.display = "none";
+    
   }
 
   var selected = checkSelected();
