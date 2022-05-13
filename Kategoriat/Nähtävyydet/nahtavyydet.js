@@ -15,8 +15,8 @@ function search() {
   if (selected.length != 0) {
     for (var j = 0; j < selected.length; j++) {
       document.getElementById(selected[j]).style.display = "";
-      filteringShow(selected[j]);
     }
+    filteringShow(selected);
   } else {
     for (var k = 0; k < allDestinations.length; k++) {
       document.getElementById(allDestinations[k]).style.display = "";
@@ -72,25 +72,29 @@ function checkSelected() {
 // }
 
 function filteringShow(filter) {
-  var allDestinations = ["everyone", "tourist", "center", "disabled"];
   ul = document.getElementById("listOfDestinations");
   li = ul.getElementsByTagName("li");
 
-  for (var i = 0; i < allDestinations; i++) {
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
     li[i].style.display = "none";
   }
-
-  if (filter == "everyone") {
-    console.log("filtering kaikille");
+  console.log(filter);
+  if (filter.includes("everyone") == true) {
+    console.log("filtering kaikenikäisille");
     li[0].style.display = "";
   }
-  if ((filter = "tourist")) {
+  if (filter.includes("tourist") == true) {
+    console.log("filtering turisti");
     li[1].style.display = "";
   }
-  if ((filter = "center")) {
+  if (filter.includes("center") == true) {
+    console.log("filtering keskusta");
     li[2].style.display = "";
   }
-  if ((filter = "disabled")) {
+  if (filter.includes("disabled") == true) {
+    console.log("filtering liikuntarajoitteiset");
     li[3].style.display = "";
   }
 }
