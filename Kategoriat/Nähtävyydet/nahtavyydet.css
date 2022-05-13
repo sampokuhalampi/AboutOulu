@@ -54,6 +54,7 @@ h1 {
 }
 
 h3 {
+    font-size: 2.0vw;
     font-weight: normal;
 }
 
@@ -80,7 +81,7 @@ h1 {
     z-index: 20;
     display: inline-block;  
     text-align: center;
-  
+    font-size: 1em;
 }  
 
 .dropdown-content {  
