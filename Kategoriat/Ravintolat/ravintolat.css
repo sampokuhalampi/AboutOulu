@@ -162,42 +162,16 @@ button {
 }
 
 img {
-    height: auto;
-    width: auto;
-    border-radius: 5px;
-    align-items: center;
-    object-fit: cover;
-    position: relative;
+    width: 95%;
+    height: 95%;
+    border-radius: 0px;
 }
 
-#mainpic1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+img {
+    width: 95%;
+    height: 95%;
+    border-radius: 0px;
 }
-
-#mainpic3 {
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-
-#mainpic4 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-#scandicTeksti {
-    opacity: 0;
-}
-
-#sokosTeksti {
-    opacity: 0;
-}
-
-#radissonTeksti {
-    opacity: 0;
-}
-
-
 
 .searchBox {
     position: absolute;
@@ -210,21 +184,11 @@ img {
 
 }
 
-img { 
-    width: 95%;
-    height: 95%;
-    border-radius: 0px;
-    align-items: center;
-    object-fit: cover;
-    position: relative;
-   
-   
-}
+#listOfDestinations {
 
-#listaKohteista {
     padding-left: 0;
-        list-style: none;
-        justify-content: center;
-        display: flex;
-        flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
 }

@@ -19,7 +19,7 @@
                 style="height:40px; width:100px; border-radius: 8%; background-color: rgb(190, 200, 229);">Takaisin</button>
         </div>
         <div class="searchBox">
-            <input type="text" id="tekstikentta" onkeyup="textSearch()" placeholder="Hae Nähtävyyttä">
+            <input type="text" id="searchBox" onkeyup="textSearch()" placeholder="Hae Nähtävyyttä">
     </div>
     </div>
 
@@ -53,7 +53,8 @@
                     <a class="btn" id="groupOpt">Ryhmille</a>
                     <input type="checkbox" id="groupCB" />
 
-                   
+                    <a class="btn" id="diverseOpt">Monipuolinen</a>
+                    <input type="checkbox" id="diverseCB" />
 
                     <input onclick="clearCB()" type="button" value="Tyhjennä haku">
 
@@ -73,25 +74,15 @@
 
     <div class="mainfeed">
 
-        <ul id="listaKohteista">
-            <!-- <li>
-
-                <div class="pr3">
-                    <a href="/Kohde/Ravintolat/Amarillo/amarillo.html">
-                        <img id="sryhma" src="/Kuvat/RavintolaKuvat/Amarillo/img.main_amarillo.jpeg" alt="Amarillo">
-                        <div id="destinationText">
-                            Amarillo
-                        </div>
-                    </a>
-                </div>
-            </li> -->
+        <ul id="listOfDestinations">
+            
             <li>
                 <div  class="pr1">
                     <a href="/Kohde/Ravintolat/Classic Pizza/classicpizza.html">
                         <img id="group"src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg"
                             alt="Classic">
                         <div id="destinationText">
-                            ClassicPizza
+                            ClassicPizza group
                         </div>
                     </a>
                 </div>
@@ -101,7 +92,7 @@
                     <a href="/Kohde/Ravintolat/Picnic/picnic.html">
                         <img id="snack" src="/Kuvat/RavintolaKuvat/Picnic/img.main_picnic.jpeg" alt="Picnic">
                         <div id="destinationText">
-                            Picnic
+                            Picnic snack
                         </div>
                     </a>
                 </div>
@@ -111,7 +102,7 @@
                     <a href="/Kohde/Ravintolat/Fafa's/fafas.html">
                         <img id="disabled" class="pr1" src="/Kuvat/RavintolaKuvat/Fafas/img.main_fafas.jpeg" alt="fafas">
                         <div id="destinationText">
-                            Fafas
+                            Fafas disabled
                         </div>
                     </a>
                 </div>
@@ -121,7 +112,7 @@
                     <a href="/Kohde/Ravintolat/Frans & Camille/franscamille.html">
                         <img id="diverse"  src="/Kuvat/RavintolaKuvat/Frans&Camille/Frans&camille.jpeg" alt="frans">
                         <div id="destinationText">
-                            Frans & Camille
+                            Frans & Camille diverse
                         </div>
                     </a>
                 </div>
@@ -131,7 +122,7 @@
                     <a href="/Kohde/Ravintolat/Puistola/puistola.html">
                         <img id="everyone" src="/Kuvat/RavintolaKuvat/Puistola/img.puistola_main.jpeg" alt="Puistola">
                         <div id="destinationText">
-                            Puistola
+                            Puistola everyone
                         </div>
                     </a>
                 </div>
@@ -141,7 +132,7 @@
                     <a href="/Kohde/Ravintolat/Wok's/wok.html">
                         <img id="vegetarian" src="/Kuvat/RavintolaKuvat/Woks/Woks.jpeg" alt="Woks">
                         <div id="destinationText">
-                            Wok's
+                            Wok's vegetarian
                         </div>
                     </a>
                 </div>
@@ -152,7 +143,7 @@
                         <img id="comfy" src="/Kuvat/RavintolaKuvat/Amarillo/Amarillo2.jpeg" alt="Amarillo">
 
                         <div id="destinationText">
-                            Amarillo
+                            Amarillo comfy
                         </div>
                     </a>
                 </div>

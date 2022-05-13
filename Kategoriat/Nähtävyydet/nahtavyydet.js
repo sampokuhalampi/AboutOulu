@@ -75,7 +75,6 @@ function filteringShow(filter) {
 
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
     li[i].style.display = "none";
   }
   console.log(filter);

@@ -27,6 +27,7 @@ function search() {
   console.log("hinta: " + priceRange);
 
   if (priceRange == 1) {
+    var pr1Selected = [];
     if (selected.length != 0) {
       for (var i = 0; i < selected.length; i++) {
         if (
@@ -37,10 +38,13 @@ function search() {
           selected[i] != "vegetarian"
         ) {
           document.getElementById(selected[i]).style.display = "";
+          pr1Selected[i] = selected[i];
         }
       }
+      filteringShow(pr1Selected);
     } else {
-      var pr1Destinations = ["group", "disabled", "comfy"];
+      var pr1Destinations = ["group", "disabled"];
+      filteringShow(pr1Destinations);
       for (var i = 0; i < pr1Destinations.length; i++) {
         document.getElementById(pr1Destinations[i]).style.display = "";
       }
@@ -48,12 +52,15 @@ function search() {
   }
 
   if (priceRange == 2) {
+    var pr2Selected = [];
     if (selected.length != 0) {
       for (var i = 0; i < selected.length; i++) {
         if (selected[i] != "diverse" && selected[i] != "comfy") {
           document.getElementById(selected[i]).style.display = "";
+          pr2Selected[i] = selected[i];
         }
       }
+      filteringShow(pr2Selected);
     } else {
       var pr2Destinations = [
         "group",
@@ -62,6 +69,7 @@ function search() {
         "everyone",
         "vegetarian",
       ];
+      filteringShow(pr2Destinations);
 
       for (var i = 0; i < pr2Destinations.length; i++) {
         document.getElementById(pr2Destinations[i]).style.display = "";
@@ -70,10 +78,13 @@ function search() {
   }
 
   if (priceRange == 3) {
+    var pr3Selected = [];
     if (selected.length != 0) {
       for (var i = 0; i < selected.length; i++) {
         document.getElementById(selected[i]).style.display = "";
+        pr3Selected[i] = selected[i];
       }
+      filteringShow(pr3Selected);
     } else {
       var pr3Destinations = [
         "group",
@@ -85,6 +96,7 @@ function search() {
         "comfy",
         "vegetarian",
       ];
+      filteringShow(pr3Destinations);
 
       for (var i = 0; i < pr3Destinations.length; i++) {
         document.getElementById(pr3Destinations[i]).style.display = "";
@@ -132,11 +144,11 @@ function checkPriceRange() {
   return document.getElementById("priceSlider").value;
 }
 
-function textSearch() {
+function textSearch(filter) {
   var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById("tekstikentta");
+  input = document.getElementById("searchBox");
   filter = input.value.toUpperCase();
-  ul = document.getElementById("listaKohteista");
+  ul = document.getElementById("listOfDestinations");
   li = ul.getElementsByTagName("li");
 
   for (i = 0; i < li.length; i++) {
@@ -147,6 +159,46 @@ function textSearch() {
     } else {
       li[i].style.display = "none";
     }
+  }
+}
+
+function filteringShow(filter) {
+  ul = document.getElementById("listOfDestinations");
+  li = ul.getElementsByTagName("li");
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    li[i].style.display = "none";
+  }
+
+  console.log(filter);
+  if (filter.includes("group") == true) {
+    console.log("filtering ryhmille");
+    li[0].style.display = "";
+  }
+  if (filter.includes("snack") == true) {
+    console.log("filtering pientä purtavaa");
+    li[1].style.display = "";
+  }
+  if (filter.includes("disabled") == true) {
+    console.log("filtering liikuntarajoitteisille");
+    li[2].style.display = "";
+  }
+  if (filter.includes("diverse") == true) {
+    console.log("filtering monipuolinen");
+    li[3].style.display = "";
+  }
+  if (filter.includes("everyone") == true) {
+    console.log("filtering kaikenikäisille");
+    li[4].style.display = "";
+  }
+  if (filter.includes("vegetarian") == true) {
+    console.log("filtering kasvisruoka");
+    li[5].style.display = "";
+  }
+  if (filter.includes("comfy") == true) {
+    console.log("filtering viihtyisä");
+    li[6].style.display = "";
   }
 }
 
