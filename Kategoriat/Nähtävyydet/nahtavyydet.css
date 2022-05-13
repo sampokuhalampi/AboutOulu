@@ -155,7 +155,7 @@ img {
    
 }
 
-#listaKohteista {
+#listOfDestinations {
     
         padding-left: 0;
         list-style: none;
@@ -164,17 +164,6 @@ img {
         flex-flow: row wrap;
     }
 
-#scandicTeksti {
-    opacity: 0;
-}
-
-#sokosTeksti {
-    opacity: 0;
-}
-
-#radissonTeksti {
-    opacity: 0;
-}
 
 
 
@@ -193,6 +182,6 @@ body {
     
 }
 
-#destinationText {
+/* #destinationText {
     opacity: 0;
-}
+} */
