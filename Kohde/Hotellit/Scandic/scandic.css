@@ -66,8 +66,10 @@ h1 {
   top: 8px;
 }
 
-.logo {
-  display: inline-block;
+#logo {
+  cursor: pointer;
+  font-size: 3vw;
+  background-color: none;
 }
 
 .destinationName {
