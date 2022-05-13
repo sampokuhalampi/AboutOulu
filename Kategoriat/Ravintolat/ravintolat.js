@@ -1,8 +1,6 @@
 function returnToMain() {
-  location.href = "/Main Screen/main.html";
+  location.href = "/index.html";
 }
-
-//button.onClick = takaisin()({});
 
 function search() {
   console.log("hae painettu");
@@ -90,7 +88,6 @@ function search() {
         "group",
         "disabled",
         "diverse",
-        "comfy",
         "snack",
         "everyone",
         "comfy",

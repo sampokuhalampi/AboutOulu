@@ -20,137 +20,133 @@
         </div>
         <div class="searchBox">
             <input type="text" id="searchBox" onkeyup="textSearch()" placeholder="Hae Nähtävyyttä">
-    </div>
-    </div>
-<main>
-
-
-    <div class="dropdown">
-        <nav></nav>
-
-        <label for="touch"><span>Lisää hakuehtoja</span></label>
-        <input type="checkbox" id="touch">
-        <div class="dropdown-content" style="list-style-type:none;">
-            <div class="container">
-                <div id="filterText">Valitse mieluisia hakuehtoja</div>
-                <div class="filterBox">
-
-                    <a class="btn" id="snackOpt">Pientä purtavaa</a>
-                    <input type="checkbox" id="snackCB" />
-
-                    <a class="btn" id="vegetarianOpt">Kasvisruokaa</a>
-                    <input type="checkbox" id="vegetarianCB" />
-
-                    <a class="btn" id="everyoneOpt">Kaikenikäisille</a>
-                    <input type="checkbox" id="everyoneCB" />
-
-                    <a class="btn" id="comfyOpt">Viihtyisä</a>
-                    <input type="checkbox" id="comfyCB" />
-
-                    <a class="btn" id="disabledOpt">Liikuntarajoitteisille</a>
-                    <input type="checkbox" id="disabledCB" />
-                    
-                    <a class="btn" id="groupOpt">Ryhmille</a>
-                    <input type="checkbox" id="groupCB" />
-
-                    <a class="btn" id="diverseOpt">Monipuolinen</a>
-                    <input type="checkbox" id="diverseCB" />
-
-                    <input onclick="clearCB()" type="button" value="Tyhjennä haku">
-
-                    <div class="priceSlider">
-                        <input type="range" min="1" max="3" value="2" class="slider" id="priceSlider">
-                    </div>
-                    $............$$........$$$
-                    <br>
-                    <input onclick="search()" type="button" value="Hae">
-                </div>
-
-            </div>
         </div>
-        </nav>
     </div>
+    <main>
 
 
-    <div class="mainfeed">
+        <div class="dropdown">
+            <nav></nav>
 
-        <ul id="listOfDestinations">
-            
-            <li>
-                
+            <label for="touch"><span>Lisää hakuehtoja</span></label>
+            <input type="checkbox" id="touch">
+            <div class="dropdown-content" style="list-style-type:none;">
+                <div class="container">
+                    <div id="filterText">Valitse mieluisia hakuehtoja</div>
+                    <div class="filterBox">
+
+                        <a class="btn" id="snackOpt">Pientä purtavaa</a>
+                        <input type="checkbox" id="snackCB" />
+
+                        <a class="btn" id="vegetarianOpt">Kasvisruokaa</a>
+                        <input type="checkbox" id="vegetarianCB" />
+
+                        <a class="btn" id="everyoneOpt">Kaikenikäisille</a>
+                        <input type="checkbox" id="everyoneCB" />
+
+                        <a class="btn" id="comfyOpt">Viihtyisä</a>
+                        <input type="checkbox" id="comfyCB" />
+
+                        <a class="btn" id="disabledOpt">Liikuntarajoitteisille</a>
+                        <input type="checkbox" id="disabledCB" />
+
+                        <a class="btn" id="groupOpt">Ryhmille</a>
+                        <input type="checkbox" id="groupCB" />
+
+                        <a class="btn" id="diverseOpt">Monipuolinen</a>
+                        <input type="checkbox" id="diverseCB" />
+
+                        <input onclick="clearCB()" type="button" value="Tyhjennä haku">
+
+                        <div class="priceSlider">
+                            <input type="range" min="1" max="3" value="2" class="slider" id="priceSlider">
+                        </div>
+                        $............$$........$$$
+                        <br>
+                        <input onclick="search()" type="button" value="Hae">
+                    </div>
+
+                </div>
+            </div>
+            </nav>
+        </div>
+
+
+        <div class="mainfeed">
+
+            <ul id="listOfDestinations">
+
+                <li>
                     <a href="/Kohde/Ravintolat/Classic Pizza/classicpizza.html">
-                        <img id="group"src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg"
+                        <img id="group" src="/Kuvat/RavintolaKuvat/ClassicPizza/img.main_classicpizza.jpeg"
                             alt="Classic">
                         <div id="destinationText">
                             ClassicPizza group
                         </div>
                     </a>
-                
-            </li>
-            <li>
-                
+                </li>
+                <li>
                     <a href="/Kohde/Ravintolat/Picnic/picnic.html">
                         <img id="snack" src="/Kuvat/RavintolaKuvat/Picnic/img.main_picnic.jpeg" alt="Picnic">
                         <div id="destinationText">
                             Picnic snack
                         </div>
                     </a>
-                
-            </li>
-            <li>
-                
+                </li>
+                <li>
                     <a href="/Kohde/Ravintolat/Fafa's/fafas.html">
-                        <img id="disabled" class="pr1" src="/Kuvat/RavintolaKuvat/Fafas/img.main_fafas.jpeg" alt="fafas">
+                        <img id="disabled" class="pr1" src="/Kuvat/RavintolaKuvat/Fafas/img.main_fafas.jpeg"
+                            alt="fafas">
                         <div id="destinationText">
                             Fafas disabled
                         </div>
                     </a>
-                </div>
-            </li>
-            <li>
-                <div class="pr3">
-                    <a href="/Kohde/Ravintolat/Frans & Camille/franscamille.html">
-                        <img id="diverse"  src="/Kuvat/RavintolaKuvat/Frans&Camille/Frans&camille.jpeg" alt="frans">
-                        <div id="destinationText">
-                            Frans & Camille diverse
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="pr2">
-                    <a href="/Kohde/Ravintolat/Puistola/puistola.html">
-                        <img id="everyone" src="/Kuvat/RavintolaKuvat/Puistola/img.puistola_main.jpeg" alt="Puistola">
-                        <div id="destinationText">
-                            Puistola everyone
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="pr2">
-                    <a href="/Kohde/Ravintolat/Wok's/wok.html">
-                        <img id="vegetarian" src="/Kuvat/RavintolaKuvat/Woks/Woks.jpeg" alt="Woks">
-                        <div id="destinationText">
-                            Wok's vegetarian
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="pr3">
-                    <a href="/Kohde/Ravintolat/Amarillo/amarillo.html">
-                        <img id="comfy" src="/Kuvat/RavintolaKuvat/Amarillo/Amarillo2.jpeg" alt="Amarillo">
+                </li>
+                <li>
+                    <div class="pr3">
+                        <a href="/Kohde/Ravintolat/Frans & Camille/franscamille.html">
+                            <img id="diverse" src="/Kuvat/RavintolaKuvat/Frans&Camille/Frans&camille.jpeg" alt="frans">
+                            <div id="destinationText">
+                                Frans & Camille diverse
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pr2">
+                        <a href="/Kohde/Ravintolat/Puistola/puistola.html">
+                            <img id="everyone" src="/Kuvat/RavintolaKuvat/Puistola/img.puistola_main.jpeg"
+                                alt="Puistola">
+                            <div id="destinationText">
+                                Puistola everyone
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pr2">
+                        <a href="/Kohde/Ravintolat/Wok's/wok.html">
+                            <img id="vegetarian" src="/Kuvat/RavintolaKuvat/Woks/Woks.jpeg" alt="Woks">
+                            <div id="destinationText">
+                                Wok's vegetarian
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pr3">
+                        <a href="/Kohde/Ravintolat/Amarillo/amarillo.html">
+                            <img id="comfy" src="/Kuvat/RavintolaKuvat/Amarillo/Amarillo2.jpeg" alt="Amarillo">
 
-                        <div id="destinationText">
-                            Amarillo comfy
-                        </div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</main>
+                            <div id="destinationText">
+                                Amarillo comfy
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
 </body>
 
 </html>

@@ -1,7 +1,3 @@
-function takaisin () {
-    location.href = "/index.html "
+function returnToMain() {
+  location.href = "/index.html";
 }
-
-button.onClick = takaisin () ({
-    
-})
