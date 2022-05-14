@@ -1,3 +1,5 @@
+//This is a template for all the destinations
+
 let imageIndex = 1;
 showImage(imageIndex);
 
