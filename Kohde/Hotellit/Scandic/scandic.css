@@ -55,7 +55,7 @@ button {
 
 h1 {
   margin: 0;
-  font-size: 3.0vw;
+  font-size: 3vw;
   display: inline-block;
   font-weight: normal;
 }
@@ -76,7 +76,7 @@ h1 {
   font-weight: normal;
   font-family: sans-serif;
   text-align: center;
-  font-size: 2.0vw;
+  font-size: 2vw;
 }
 
 .description {
@@ -109,7 +109,7 @@ h1 {
   border: 1px solid #000;
   padding: 2px;
   width: 300px;
-  font-size: 1.0vw;
+  font-size: 1vw;
 }
 
 .comment {
@@ -161,7 +161,7 @@ h1 {
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .image-container {
@@ -176,7 +176,7 @@ h1 {
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.0s;
+  animation-duration: 1s;
 }
 
 .previousImage,
@@ -246,10 +246,10 @@ h1 {
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }

@@ -4,7 +4,6 @@ body {
 }
 
 .heading {
-
     text-align: center;
     font-family: sans-serif;
     font-weight: normal;
@@ -34,7 +33,7 @@ h2 {
     padding-bottom: 0.5%;
     max-height: fit-content;
     max-width: fit-content;
-    border-radius: 10%; 
+    border-radius: 10%;
     background-color: rgb(190, 200, 229);
 }
 
@@ -64,7 +63,7 @@ button {
 .header1 {
     display: inline-block;
 }
- 
+
 .Guide {
     padding: 10px;
     font-size: 1.3vw;
