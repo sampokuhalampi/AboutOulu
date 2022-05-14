@@ -17,7 +17,7 @@ body {
 .information {
     text-align: center;
     font-family: sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1vw;
 }
 
 .info {
@@ -58,10 +58,9 @@ button {
     font-size: 20%;
 }
 
-
 h3 {
     font-weight: normal;
-    font-size: 1.4em;
+    font-size: 1.6vw;
 }
 
 h1 {
