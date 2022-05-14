@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Antte",
       title: "Vegaaninen",
       body: "Loistava vegaaninen ravintola Oulussa! Mikäli olet vegaani, suosittelen ravintolaa ehdottomasti!",
-      email: "antte.heatta@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

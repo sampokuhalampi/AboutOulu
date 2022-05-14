@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Antte",
       title: "Suosittelen",
       body: "Kohtuuhintainen, mutta loistava ravintola. Sopii niin treffi-iltoihin sekä lounastapaamisiin!",
-      email: "antte.heatta@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

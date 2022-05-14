@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Sampo",
       title: "Hieno maamerkki",
       body: "Yksi koko Oulun viihtyisimmistä paikoista vierailla. Tarjolla kaikkea mukavaa pientä ostettavaa!",
-      email: "sampo.kuhalampi@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 
