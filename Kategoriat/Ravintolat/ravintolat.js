@@ -1,8 +1,7 @@
-function returnToMain() {
-  location.href = "/Main Screen/main.html";
-}
 
-//button.onClick = takaisin()({});
+function returnToMain() {
+  location.href = "/index.html";
+}
 
 function search() {
   console.log("hae painettu");

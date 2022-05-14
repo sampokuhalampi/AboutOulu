@@ -16,7 +16,6 @@
 button {
     border: none;
     color: inherit;
-    border: none;
     padding: 0;
     background: none;
     font: inherit;
@@ -36,7 +35,7 @@ button {
     font-size: 20%;
 }
 h3 {
-    font-size: 2.0vw;
+    font-size: 2vw;
     font-weight: normal;
 }
 
@@ -44,7 +43,7 @@ h1 {
     margin: 0;
     display: inline-block;
     font-weight: normal;
-    font-size: 3.0vw;
+    font-size: 3vw;
 }
 
 .dropdown {
@@ -64,7 +63,7 @@ h1 {
     overflow: hidden;
     text-align: center;
     background-color: rgb(190, 200, 229);
-    transition: height .4s ease;
+    transition: height 0.4s ease;
     margin-top: 0px;
     position: absolute;
     font-size: 1em;
@@ -76,7 +75,6 @@ h1 {
 }
 
 .header1 {
-
     display: inline-block;
 }
 
@@ -100,32 +98,10 @@ body {
     font-family: sans-serif;
 }
 
-h3 {
-    font-weight: normal;
-}
-
-h1 {
-    margin: 0;
-    display: inline-block;
-    font-weight: normal;
-}
-
-.button1 {
-    position: absolute;
-    left: 0;
-}
-
-.header1 {
-
-    display: inline-block;
-}
-
-
 #filterText {
     font-weight: bold;
     padding: 2px;
 }
-
 
 #dropdown-content li button {
     text-decoration: none;
@@ -161,7 +137,7 @@ span::after {
     height: 0px;
 }
 
-#touch:checked+.dropdown-content {
+#touch:checked + .dropdown-content {
     height: 125px;
 }
 
@@ -182,11 +158,9 @@ img {
 
 #destinationText {
     opacity: 0;
-
 }
 
 #listOfDestinations {
-
     padding-left: 0;
     list-style: none;
     justify-content: center;
