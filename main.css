@@ -31,7 +31,7 @@ body {
     padding-bottom: 1%;
     max-height: fit-content;
     max-width: fit-content;
-    border-radius: 10%; 
+    border-radius: 10%;
     background-color: rgb(190, 200, 229);
 }
 
@@ -67,7 +67,7 @@ h1 {
     margin: 0;
     display: inline-block;
     font-weight: normal;
-    font-size: 3.0vw;
+    font-size: 3vw;
 }
 
 .button1 {
@@ -94,7 +94,7 @@ h1 {
     overflow: hidden;
     text-align: center;
     background-color: rgb(190, 200, 229);
-    transition: height .4s ease;
+    transition: height 0.4s ease;
     margin-top: 0px;
     position: absolute;
     font-size: 16px;
@@ -134,7 +134,7 @@ span::after {
     height: 0px;
 }
 
-#touch:checked+.dropdown-content {
+#touch:checked + .dropdown-content {
     height: 125px;
 }
 
