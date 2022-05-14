@@ -1,8 +1,9 @@
-
+//Returns the user to the main page
 function returnToMain() {
   location.href = "/index.html";
 }
 
+//Search funtion shows destinations that match the search parameters
 function search() {
   console.log("hae painettu");
   var allDestinations = [
@@ -104,6 +105,7 @@ function search() {
   }
 }
 
+//Checks selected checkboxes and adds their set values to an array, which is returned
 function checkSelected() {
   var chosen = [];
 
@@ -139,10 +141,12 @@ function checkSelected() {
   return chosen;
 }
 
+//Checks the value of the price slider and returns its value
 function checkPriceRange() {
   return document.getElementById("priceSlider").value;
 }
 
+//Searches destionation by text and show destinations that match the searched text
 function textSearch(filter) {
   var input, filter, ul, li, a, i, txtValue;
   input = document.getElementById("searchBox");
@@ -161,6 +165,7 @@ function textSearch(filter) {
   }
 }
 
+//Shows destinations that are present in the filter-parameter
 function filteringShow(filter) {
   ul = document.getElementById("listOfDestinations");
   li = ul.getElementsByTagName("li");
@@ -201,6 +206,7 @@ function filteringShow(filter) {
   }
 }
 
+//Unchecks the checkboxes and performs a search on the current price range without checkboxes
 function clearCB() {
   console.log("haku cleared");
 
