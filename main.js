@@ -1,19 +1,24 @@
+//Link to infopage
 function infoNappi() {
   location.href = "/Info-sivu/infoPage.html";
 }
 
+//Link to restaurants
 function ravintolat() {
   location.href = "/Kategoriat/Ravintolat/ravintolat.html";
 }
 
+//Link to attractions
 function nahtavyydet() {
   location.href = "/Kategoriat/Nähtävyydet/nahtavyydet.html";
 }
 
+//Link to hotels
 function hotellit() {
   location.href = "/Kategoriat/Hotellit/hotellit.html";
 }
 
+//Searches destionation by text and show destinations that match the searched text
 function textSearch() {
   var input, uppercase, ul, li, a, i, text;
   input = document.getElementById("searchBox");
