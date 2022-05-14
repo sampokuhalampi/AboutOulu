@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Sampo Kuhalampi",
       title: "Mahtava Hotelli!",
       body: "Majoitun hotellissa työreissuni ajan. Hotellin palvelu erinomaista. Aamiainen sisältyi hintaa. Wifi hieman hidas. Kokonaisuudessaan hyvä hotelli!",
-      email: "sampo.kuhalampi@nokia.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

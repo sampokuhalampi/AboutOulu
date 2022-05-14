@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Antte Heatta",
       title: "Viihtyisä",
       body: "Valkean kesäkatu on mahtava tapaamispaikka Oulun keskustassa. Auki myös ympäri vuorokauden. Kuitenkin öisin kesäkadulla liikkuu huomattavan epämääräistä porukkaa.",
-      email: "antte.heatta@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

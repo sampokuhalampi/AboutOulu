@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Sampo",
       title: "Suosittelen",
       body: "Yksi Oulun viihtyisimmistä ravintoloista! Ruoka ja tarjoilu aina priimaa. Suosittelen käymään ravintolassa, jos haluaa nauttia tunnelmasta niin perjantai tai lauantai iltoina. Arkisin rauhallisempaa.",
-      email: "sampo.kuhalampi@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

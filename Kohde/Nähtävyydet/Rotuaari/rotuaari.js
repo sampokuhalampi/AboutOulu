@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Emilia",
       title: "Katu kaiken keskellä",
       body: "Rotuaari on yksi Oulun tunnetuimmista ellei tunnetuin katu. Rotuaarilla pääsee näkemään Oulua parhaimmillaan. Suosittelen vahvasti käymään tutustumaan rotuaariin mikäli vierailet Oulussa!",
-      email: "emppu@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

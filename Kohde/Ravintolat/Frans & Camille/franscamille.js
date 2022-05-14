@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Sampo",
       title: "Suosittelen",
       body: "Sopii loistavasti pariskunnille, jotka haluavat luoda arkeensa ripauksen romantiikkaa!",
-      email: "sampo.kuhalampi@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

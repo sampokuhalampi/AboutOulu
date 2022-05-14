@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Antte",
       title: "Suosittelen",
       body: "Picnic on loistava paikka nopeaa lounasta varten. Viihtyisät tilat ja asiakaspalvelu on erittäin miellyttävää!",
-      email: "antte.heatta@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

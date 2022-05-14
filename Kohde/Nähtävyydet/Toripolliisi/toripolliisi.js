@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Antte",
       title: "Legendaarinen Toripolliisi",
       body: "Legendaarinen Oulun Toripolliisi. Jokaisen Oulussa vierailevan kannattaa laittaa se bucketlistalle reissua varten. ",
-      email: "antte.heatta@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

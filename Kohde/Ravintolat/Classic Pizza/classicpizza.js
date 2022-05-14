@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Antte",
       title: "Suosittelen",
       body: "Oulun PARAS pizzeria. Olen ollut kanta-asiakkaana useamman vuoden ajan ja ravintola silti jaksaa, joka kerta yllättää pizzoillaan! Suosittelen!",
-      email: "antte.heatta@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

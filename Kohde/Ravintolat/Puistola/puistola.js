@@ -142,7 +142,7 @@ $(document).ready(function () {
       name: "Antte",
       title: "Suosittelen",
       body: "Oululainen ravintola! Mahtavaa ruokaa, maukkaita viinejä sekä sopii mihin vain tilanteeseen!",
-      email: "antte.heatta@gmail.com",
+      email: "malli.mallikas@testi.com",
     },
   ];
 

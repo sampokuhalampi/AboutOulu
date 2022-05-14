@@ -3,7 +3,7 @@ function infoNappi() {
 }
 
 function ravintolat() {
-  location.href = "https://sampokuhalampi.github.io/AboutOulu/Kategoriat/Ravintolat/ravintolat.html";
+  location.href = "/Kategoriat/Ravintolat/ravintolat.html";
 }
 
 function nahtavyydet() {
